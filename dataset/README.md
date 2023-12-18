@@ -29,6 +29,11 @@ The dataset has been transform to Stanford Format in the dir "stanford_format".
 
 2. spaCy binary format: In the dir "spacy_format".
    
-3. Ensemble format
+3. Flair format
+> get VB
+> 
+> id NN
+
+4. Ensemble format
     * TYPE: The return value's type of the method.
     * DECLARATION: Other parts of a method declaration.
