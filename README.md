@@ -1,10 +1,16 @@
 TaggerEva
 ========
 ### Install Selected Taggers
+#### NL Taggers
 * [NLTK](https://www.nltk.org/install.html)
 * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
+* [Apache OpenNLP](https://opennlp.apache.org/)
 * [spaCy](https://spacy.io/)
 * [Flair](https://github.com/flairNLP/flair)
+  
+#### ID Taggers
+* [SWUM](https://github.com/SCANL/SWUM)
+* [POSSE](https://github.com/SCANL/POSSE) 
 * [Ensemble*](https://github.com/SCANL/ensemble_tagger)
 
 ### Dataset
