@@ -17,10 +17,10 @@ The dataset is splitted into three parts:
 
 | Data | #Item | #Project |
 |----|----|----|
-|Train|9,000|9|
-|Dev|1,000|1|
-|Test(MNDataSet)|3,000|3|
-|Test(NLDataSet)|3,000|-|
+|MNTrain-training|9,000|9|
+|MNTrain-dev|1,000|1|
+|Test(IDData)|9,000|9|
+|Test(NLData)|3,000|-|
 
 Adoption for taggers
 ------
