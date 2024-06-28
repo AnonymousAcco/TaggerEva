@@ -1,5 +1,6 @@
-from itertools import chain
 import argparse
+from itertools import chain
+
 from nltk.tag import PerceptronTagger
 from nltk.corpus import wordnet as wn
 import spacy
@@ -15,7 +16,8 @@ from flair.datasets import ColumnCorpus
 
 
 from corpus import Corpus
-from evaluation import list2str
+from vocab import Vocab
+from evaluation import list2str, parse_opennlp_output, evaluate
 
 
 def train_nltk(train_ids, train_poses):
@@ -31,12 +33,12 @@ def train_nltk(train_ids, train_poses):
 
     # print(brown_tagger.evaluate(test_data))
     trained_tagger = PerceptronTagger()
-    trained_tagger.train(training_data, './model/nltk/retrain.per.tagger.pickle')
+    trained_tagger.train(training_data, 'retrain.per.tagger.pickle')
 
     print(trained_tagger.accuracy(training_data))
     return trained_tagger
 
-def eva_nltk(ids, poses, model_path='./model/nltk', model_name='retrain.per.tagger'):
+def eva_nltk(ids, poses, model_name='retrain.per.tagger'):
     print('eva-mode: nltk:')
     print("perceptron model")
     # brown_tagged_sents = brown.tagged_sents()
@@ -49,7 +51,7 @@ def eva_nltk(ids, poses, model_path='./model/nltk', model_name='retrain.per.tagg
 
     # print(brown_tagger.evaluate(test_data))
     trained_tagger = PerceptronTagger()
-    trained_tagger.load('./'+model_path+'/'+model_name+'.pickle')
+    trained_tagger.load('./'+model_name+'.pickle')
     # trained_tagger.train(training_data, 'retrain.per.tagger')
 
     print('Acc: ')
@@ -74,7 +76,7 @@ def read_stanford(path='stanford_out.txt'):
             out.append(" ".join(tags))
     return out
 
-def create_stanford_data(ids, poses, out_name='./dataset/stanford_format/stanford_train.txt'):
+def create_stanford_data(ids, poses, out_name='stanford_train.txt'):
     with open(out_name, 'w') as file:
         for id, tags in zip(ids, poses):
             line = []
@@ -87,23 +89,28 @@ def preprocess2spacy(ids, poses, data_type='train'):
     nlp = spacy.blank('en')
     data = []
     db = DocBin()
-    for id, pos in zip(ids, poses):
+    for i, (id, pos) in enumerate(zip(ids, poses)):
+
         words = id
         tags = pos
         nlp(" ".join(id))
-        doc = Doc(nlp.vocab, words=words, tags=tags)
+        try:
+            doc = Doc(nlp.vocab, words=words, tags=tags)
+        except Exception as e:
+            print(e)
+            print(i, id, tags)
         # for word in doc:
         #     print(word)
         # doc.tags = tags
         example = Example.from_dict(doc, {'words':words, 'tags':tags})
 
         db.add(doc)
-    db.to_disk('./dataset/model/spacy_format'+data_type+'.spacy')
+    db.to_disk('./'+data_type+'.spacy')
 
 
 
 def test_spacy(ids, poses):
-    nlp = spacy.load('./model/spacy/model-best')
+    nlp = spacy.load('./spacy_model/model-best')
     out_list = []
     for id, pos in zip(ids, poses):
         doc = nlp(" ".join(id))
@@ -117,7 +124,7 @@ def test_spacy(ids, poses):
 def train_flair(train_ids, train_poses):
     # data
     training_data = []
-    with open('./dataset/flair_format/flair_train.txt', 'w') as file:
+    with open('./new_data/flair_train.txt', 'w') as file:
         for id, pos in zip(train_ids, train_poses):
             for word, tag in zip(id, pos):
                 line = word + ' ' + tag + '\n'
@@ -125,7 +132,7 @@ def train_flair(train_ids, train_poses):
             file.write('\n')
 
     columns = {0: 'text', 1: 'pos'}
-    data_folder = './dataset/flair_format'
+    data_folder = './new_data/'
     corpus: Corpus = ColumnCorpus(data_folder, columns,
                                   train_file='flair_train.txt',
                                   )
@@ -147,7 +154,7 @@ def train_flair(train_ids, train_poses):
                             use_crf=True)
     trainer = ModelTrainer(tagger, corpus)
 
-    trainer.train('./model/flair',
+    trainer.train('./flair_tagger',
                   learning_rate=0.1,
                   mini_batch_size=32)
 
@@ -156,7 +163,8 @@ def train_flair(train_ids, train_poses):
     return tagger
 
 def eva_flair(identifiers, tags):
-    tagger = Classifier.load('./model/flair/best-model.pt')
+    tagger = Classifier.load('./flair_tagger/best-model.pt')
+    print(tagger)
     total = len(identifiers)
     total_tokens = len(list(chain(*identifiers)))
     correct_ids = 0
@@ -220,45 +228,135 @@ def eva_flair(identifiers, tags):
         #     if golden == out:
         #         correct_tokens += 1
     print('Flair')
-    print("ExactMatch: {}".format(correct_ids/total))
+    print("Identifier Accuracy: {}".format(correct_ids/total))
     print("Token Accuracy: {}".format(correct_tokens/total_tokens))
     return out_tags
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Retrain taggers. -m ')
-    parser.add_argument('-m', '--mode', help='Choose the mode: preprocess data or retrain. pre/train/eva')
-    args = parser.parse_args()
-    corpus = Corpus('./dataset')
-    if args.mode == 'pre':
-        create_stanford_data(corpus.train_input, corpus.train_tags)
-        create_stanford_data(corpus.test_input, corpus.test_tags, 'stanford_test.txt')
-        create_stanford_data(corpus.dev_input, corpus.dev_tags, 'stanford_dev.txt')
 
-        preprocess2spacy(corpus.train_input, corpus.train_tags)
-        preprocess2spacy(corpus.test_input, corpus.test_tags, 'test')
-        preprocess2spacy(corpus.dev_input, corpus.dev_tags, 'dev')
-    elif args.mode == 'train':
-        nltk_tagger = train_nltk(corpus.train_input, corpus.train_tags)
-        eva_nltk(corpus.dev_input, corpus.dev_tags)
-        nltk_out = eva_nltk(corpus.test_input, corpus.test_tags)
-        print(nltk_out)
-        stanford_out = read_stanford()
-        print(stanford_out)
-        train_flair(corpus.train_input, corpus.train_tags)
-        flair_out = eva_flair(corpus.test_input, corpus.test_tags)
-        print(flair_out)
-        spacy_out = test_spacy(corpus.test_input, corpus.test_tags)
-        data = {'sentence': list2str(corpus.test_input),
-                'pos': list2str(corpus.test_tags),
-                'nltk': nltk_out,
-                'stanford': stanford_out,
-                'spacy': spacy_out,
-                'flair': flair_out}
-        df = pd.DataFrame(data)
-        df.to_csv('./retrain_out.csv')
-    elif args.mode == 'eva':
-        nltk_out = eva_nltk(corpus.test_input, corpus.test_tags)
-        stanford_out = read_stanford()
-        flair_out = eva_flair(corpus.test_input, corpus.test_tags)
-        spacy_out = test_spacy(corpus.test_input, corpus.test_tags)
+def preprocess2opennlp(ids, poses, mode):
+    out_lines = []
+    for i, (id, pos_line) in enumerate(zip(ids, poses)):
+        line = []
+        for token, pos in zip(id, pos_line):
+            pair = token+'_'+pos
+            line.append(pair)
+        line_str = ' '.join(line) + '\n'
+        out_lines.append(line_str)
+    with open('./opennlp_'+mode+'.train', 'w') as f:
+        f.writelines(out_lines)
+    return out_lines
+
+
+def conllu(ids, poses, name):
+    # from nltk.stem import WordNetLemmatizer
+    import stanza
+
+    nlp = stanza.Pipeline(lang='en', processors='tokenize,mwt,pos,lemma,depparse')
+    # wnl = WordNetLemmatizer()
+    lines = []
+    for i, (form_line, xpos_line) in enumerate(zip(ids, poses)):
+
+        line = ' '.join(form_line)
+        doc = nlp(line)
+        sent = doc.sentences[0]
+
+        meta_1 = '# sent_id = ' + str(i) + '\n'
+        meta_2 = '# text = ' + line + '\n'
+        lines.append(meta_1)
+        lines.append(meta_2)
+        if len(form_line) != len(sent.words):
+            print(i)
+
+        # for j, (form, xpos, word) in enumerate(zip(form_line, xpos_line, sent.words)):
+        for j in range(len(form_line)):
+            if len(sent.words) <= j:
+                word = sent.words[-1]
+            else:
+                word = sent.words[j]
+            # id = j
+
+            out_line = (str(j+1)+'\t'+ form_line[j]+'\t')
+            # lemma = wnl.lemmatize(form, xpos)
+            # lemma = word.lemma
+            # print(word.lemma)
+            out_line += (word.lemma + '\t')
+            # upos = word.upos
+            out_line += (word.upos + '\t')
+            out_line += word.xpos + '\t'
+            feats = word.feats if word.feats else "_"
+            out_line += feats+'\t'
+            # head = # sent.words[word.head-1].text if word.head > 0 else "root"
+            head = word.head if word.head < len(sent.words) else len(sent.words) -1
+            out_line += str(head) +'\t'
+            deprel = word.deprel
+            out_line += deprel +'\t'
+            deps = '_'
+            out_line += deps + '\t'
+            misc = '_'
+            out_line += misc + '\n'
+            lines.append(out_line)
+
+            # print(f'{j}: {out_line}')
+        lines.append('\n')
+
+    with open('./'+'en_test-ud-'+name+'.conllu', 'w') as f:
+        f.writelines(lines)
+
+
+def read_opennlp(tags, mode):
+    # mode = config.mode
+    # create_opennlp_input(mode, corpus.test_input)
+    # opennlp_pos_tag(config, corpus.test_input)
+    opennlp_out = parse_opennlp_output(f'./opennlp_retrain_{mode}_results.txt')
+    # opennlp_out = parse_opennlp_output(config.opennlp_home+f'/opennlp_{mode}_results_per.txt')
+
+    em, token_acc = evaluate(opennlp_out, tags)
+    print('em: ', em)
+    print('Token Acc: ', token_acc)
+    return list2str(opennlp_out)
+
+
+if __name__ == '__main__':
+    # mode = 'class'
+    parser = argparse.ArgumentParser(description='Test retrained taggers on method/args/class/all/')
+    # mode id or nl
+    parser.add_argument('-m', '--mode', help='Choose method/args/class/all to process.')
+    args = parser.parse_args()
+    mode = args.mode
+    data_path = './dataset/'
+    corpus = Corpus(data_path, mode)
+    vocab = Vocab(corpus)
+    nltk_tagger = train_nltk(corpus.train_input, corpus.train_tags)
+    eva_nltk(corpus.dev_input, corpus.dev_tags)
+    nltk_out = eva_nltk(corpus.test_input, corpus.test_tags)
+    # print(nltk_out)
+    train_flair(corpus.train_input, corpus.train_tags)
+    flair_out = eva_flair(corpus.test_input, corpus.test_tags)
+    # print(flair_out)
+    # # create_stanford_data(corpus.train_input, corpus.train_tags)
+    # create_stanford_data(corpus.test_input, corpus.test_tags, 'stanford_test'+config.mode+'.txt')
+    # create_stanford_data(corpus.dev_input, corpus.dev_tags, 'stanford_dev.txt')
+    #
+    # # preprocess2spacy(corpus.train_input, corpus.train_tags)
+    # preprocess2spacy(corpus.test_input, corpus.test_tags, config.mode)
+    # preprocess2spacy(corpus.dev_input, corpus.dev_tags, 'dev')
+    stanford_out = read_stanford('./stanford_'+mode+'_out.txt')
+    opennlp_out = read_opennlp(corpus.test_tags, mode)
+    spacy_out = test_spacy(corpus.test_input, corpus.test_tags)
+
+    # preprocess2opennlp(corpus.train_input, corpus.train_tags, 'train')
+    # preprocess2opennlp(corpus.dev_input, corpus.dev_tags, 'dev')
+    # conllu(corpus.train_input, corpus.train_tags, name='train')
+    # conllu(corpus.dev_input, corpus.dev_tags, name='dev')
+    # conllu(corpus.test_input, corpus.test_tags, name='test')
+    data = {'sequence': list2str(corpus.test_input),
+            'pos': list2str(corpus.test_tags),
+            'nltk': nltk_out,
+            'corenlp': stanford_out,
+            'opennlp': opennlp_out,
+            'spacy': spacy_out,
+            'flair': flair_out}
+    df = pd.DataFrame(data)
+    df.to_csv('./retrain_'+mode+'.csv')
+

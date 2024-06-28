@@ -7,6 +7,7 @@ TaggerEva
 * [Apache OpenNLP](https://opennlp.apache.org/)
 * [spaCy](https://spacy.io/)
 * [Flair](https://github.com/flairNLP/flair)
+* [Stanza](https://stanfordnlp.github.io/stanza/)
   
 #### ID Taggers
 * [SWUM](https://github.com/SCANL/SWUM)
@@ -24,47 +25,62 @@ Please click [data](https://github.com/AnonymousAcco/TaggerEva/tree/main/dataset
 ```python -m spacy download en_core_web_sm```
 
 ### Evaluation of Taggers
-#### Origin Taggers
+#### Natural language Taggers
+Need to run OpenNLP first.
+
+##### OpenNLP
+OpenNLP needs command line:
+1. Download the default maxent [model](https://opennlp.sourceforge.net/models-1.5/en-pos-maxent.bin) into its installation path.
+2. Run the following command and copy the output file into the project.
+```
+./opennlp POSTagger ../models/en-pos-maxent.bin < ../opennlp_format/opennlp_{id-type/nl}_input.txt > opennlp_{id-type/nl}_results.txt
+```
+
 Run the evaluation.py using
 ```
-python evaluation.py -m nl # NLDataSet
-python evaluation.py -m id # MNDataSet
-```
-#### Retrained Taggers
-Run the retrain.py using
-```
-python retrain.py -m eva 
+python evaluation.py -m nl # NLData
+python evaluation.py -m method/args/class/all # IDData
 ```
 
-#### Evaluation of Ensemble
-1. Setup the tagger following its [documentation](https://github.com/SCANL/ensemble_tagger);
-2. Copy the "eva_et.py" under "ensemble_tagger_implementation";
+
+#### Evaluation of ID Taggers
+1. Setup the taggers following its [documentation](https://github.com/SCANL/ensemble_tagger);
+2. Copy the "get_id_tagers_outputs.py" under "ensemble_tagger_implementation";
 3. Run the script by
 ```
-python eva_et.py
+python get_id_tagers_outputs.py
 ```
-to get the output file "et_out.txt";
-4. Copy "et_out.txt" back to TaggerEva and run "utils.py"
+to get the output file "out.txt";
+4. Copy "out.txt" back to TaggerEva and run "utils.py"
 
-### Train the Taggers
+### Train Taggers
 #### NLTK & Flair
 ```
-python retrain.py -m train
+python train.py -m method/args/class/all
 ```
 Can directly train NLTK and Flair.
 
-#### Stanford & spaCy
+#### CoreNLP & OpenNLP & spaCy
 These two taggers need to be trained by the command line interface. "train.py" can preprocess the dataset into their format.
 ```
-python retrain.py -m pre
+python retrain.py -m method/args/class/all
 ```
-##### Stanford
+##### Stanford CoreNLP
 * Copy the stanford_format data and "./model/stanford/maxnet.props" into the installation directory of Stanford CoreNLP.
 * Run the command in command line:
 ```
 java -mx1g -cp "*" edu.stanford.nlp.tagger.maxent.MaxentTagger -model "retrain_stanford.model" -testFile "stanford_test.txt" > stanford_out.txt
 ```
 * Copy the "stanford_out.txt" back to TaggerEva
+
+##### OpenNLP
+* Copy the opennlp_format data into the installation path of opennlp.
+* Run the command in command line:
+```
+./opennlp POSTaggerTrainer -model en-pos-maxent-retrain.bin -lang en -data ./opennlp_format/MNTrain.train -encoding UTF-8
+./opennlp POSTagger ../models/en-pos-maxent-retrain.bin < ../opennlp_format/opennlp_{id-type}_input.txt > opennlp_retrain_{id-type}_results.txt
+```
+* Copy the output file back and run train.py to parse it.
 
 ##### spaCy
  
@@ -75,10 +91,10 @@ java -mx1g -cp "*" edu.stanford.nlp.tagger.maxent.MaxentTagger -model "retrain_s
 
 After training, you can run the command:
 ```
-python retrain.py -m eva
+python train.py -m method/args/class/all
 ```
 for evaluation.
 
 ### Model
-The nltk, stanford and spacy retrained model has stored in "model". Due to the size limitation of Github, the flair model currently not been committed.
+The nltk, corenlp, opennlp and spacy retrained model has stored in "model". Due to the size limitation of Github, the flair model currently not been committed.
 

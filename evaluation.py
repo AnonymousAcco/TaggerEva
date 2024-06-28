@@ -6,8 +6,10 @@ from stanfordcorenlp import StanfordCoreNLP
 import spacy
 from flair.nn import Classifier
 from flair.data import Sentence
+import stanza
 
 from corpus import Corpus
+from utils import evaluate
 
 
 def nltk_pos_tag(identifiers, tags):
@@ -34,7 +36,7 @@ def nltk_pos_tag(identifiers, tags):
     return out_tags
 
 
-def stanford_pos_tag(identifiers, tags, path2stanford):
+def corenlp_pos_tag(identifiers, tags, path2stanford):
     nlp = StanfordCoreNLP(path2stanford)
     # print(nlp.pos_tag('Get Name'))
     total = len(identifiers)
@@ -115,6 +117,47 @@ def stanford_pos_tag(identifiers, tags, path2stanford):
     print("Token Accuracy: {}".format(correct_tokens/total_tokens))
     return out_tags
 
+
+def parse_opennlp_output(out_file_path):
+    out_lines = []
+    # start_line = 4
+    start_line = 3
+    end_line = -6
+
+
+    with open(out_file_path, 'r') as f:
+        lines = f.readlines()
+        lines = lines[start_line:end_line]
+        for line in lines:
+            pairs = line.strip().split(' ')
+            tag_line = []
+            for pair in pairs:
+                token_and_tag = pair.split('_')
+                token = token_and_tag[0]
+                tag = token_and_tag[-1]
+                tag_line.append(tag)
+            out_lines.append(tag_line)
+
+    # print(len(out_lines), out_lines[-1])
+    return out_lines
+
+def opennlp_pos_tag(identifiers, tags, mode):
+    opennlp_out = parse_opennlp_output(f'./opennlp_format/{mode}.txt')
+    if mode == 'nl':
+        data = pd.read_csv('./NLData/nl_data.csv')
+        # sentences = data['sentences'].values.tolist()
+        poses = data['POS'].values.tolist()
+
+        # sentences = [sentence.split(' ') for sentence in sentences]
+        tags = [pos.split(' ') for pos in poses]
+    # else:
+    #     tags = corpus.test_tags
+        # sentences = corpus.test_input
+    em, token_acc = evaluate(opennlp_out, tags)
+    print('OpenNLP')
+    print("ExactMatch: {}".format(em))
+    print("Token Accuracy: {}".format(token_acc))
+    return opennlp_out
 
 def spacy_pos_tag(identifiers, tags):
     nlp = spacy.load('en_core_web_sm')
@@ -236,6 +279,92 @@ def flair_pos_tag(identifiers, tags):
     return out_tags
 
 
+def stanza_pos_tag(identifiers, tags):
+    # stanza.download('en')
+    # model_path = './saved_models/pos/en_test_charlm_tagger.pt'
+    # nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos', pos_model_path=model_path, download_method=None)
+    nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos')
+    total = len(identifiers)
+    total_tokens = len(list(chain(*identifiers)))
+    correct_ids = 0
+    correct_tokens = 0
+    out_tags = []
+    wrong_tokenization = 0
+    for i, (identifier, tag) in enumerate(zip(identifiers, tags)):
+        stanford_input = " ".join(identifier)
+        result = nlp(stanford_input)
+        result_tags = []
+        tokens = []
+        for sent in result.sentences:
+            result_tags =  [word.xpos for word in sent.words]
+            tokens = [word.text for word in sent.words]
+
+        if tag == result_tags:
+            correct_ids += 1
+
+        if len(result_tags) == len(identifier):
+            for j, (golden, out) in enumerate(zip(tag, result_tags)):
+                if golden == out:
+                    correct_tokens += 1
+        elif len(result_tags) > len(tag):
+            for k, token in enumerate(identifier):
+                if token == tokens[k]:
+                    if tag[k] == result_tags[k]:
+                        correct_tokens += 1
+                else:
+                    for l in range(k+1, len(tokens)):
+                        temp_token = ''.join(tokens[k:l+1])
+                        if temp_token == token:
+                            del tokens[k:l+1]
+                            del result_tags[k:l+1]
+                            tokens.insert(k, temp_token)
+                            result_tags.insert(k, '<UNK>')
+                            wrong_tokenization += 1
+                            break
+                        if ('+'+temp_token) == token:
+                            # + and wrong number tokenization
+                            del tokens[k:l+1]
+                            del result_tags[k:l+1]
+                            tokens.insert(k, '+'+temp_token)
+                            result_tags.insert(k, '<UNK>')
+                            wrong_tokenization += 1
+                            break
+                # except IndexError as e:
+                #     print(k, identifier[k], tokens, len(tag), tag)
+        elif len(result_tags) < len(tag):
+            # nl tel number may be wrong tokenized "1 201 123" will be processed as one token
+            for k, token in enumerate(tokens):
+                if token == identifier[k]:
+                    if tag[k] == result_tags[k]:
+                        correct_tokens += 1
+                elif identifier[k] == '+':
+                    # + is missing in this situation
+                    tokens.insert(k, '+')
+                    result_tags.insert(k, '<UNK>')
+                    wrong_tokenization += 1
+                else:
+                    for l in range(k+1, len(identifier)):
+                        temp_token = ' '.join(identifier[k:l+1])
+                        if temp_token == token:
+                            del tokens[k]
+                            del result_tags[k]
+                            for m in range(k, l+1):
+                                tokens.insert(m, identifier[m])
+                                result_tags.insert(m, '<UNK>')
+                                wrong_tokenization += 1
+                            break
+        if len(result_tags) != len(identifier):
+            print('Wrong sequence: ', identifier, tag)
+            print(tokens, result_tags)
+
+        out_tags.append(result_tags)
+
+
+    print('Stanford Stanza')
+    print("Identifier Accuracy: {}".format(correct_ids/total), correct_ids, total)
+    print("Token Accuracy: {}".format(correct_tokens/total_tokens), correct_tokens, total_tokens)
+    return out_tags
+
 def list2str(lists):
     new_lists = []
     for l in lists:
@@ -244,49 +373,43 @@ def list2str(lists):
 
 
 
+
+
 if __name__ == '__main__':
     # nltk.download('averaged_perceptron_tagger')
-    parser = argparse.ArgumentParser(description='Evaluation on four taggers')
+    parser = argparse.ArgumentParser(description='Evaluation on six natural language taggers')
     # mode id or nl
-    parser.add_argument('-m', '--mode', help='Choose id or nl to process.')
+    parser.add_argument('-m', '--mode', help='Choose method/args/class/all or nl to process.')
     args = parser.parse_args()
     eva_mode = args.mode
     print(eva_mode)
-    if eva_mode == 'id':
-        # print(eva_mode)
-        corpus = Corpus('./dataset')
-        nltk_out = nltk_pos_tag(corpus.test_input, corpus.test_tags)
-        stanford_out = stanford_pos_tag(corpus.test_input, corpus.test_tags, path2stanford='../corenlp')
-        spacy_out = spacy_pos_tag(corpus.test_input, corpus.test_tags)
-        flair_out = flair_pos_tag(corpus.test_input, corpus.test_tags)
-        # flair_pos_tag()
-        data = {'SEQUENCE': list2str(corpus.test_input),
-                'POS': list2str(corpus.test_tags),
-                'NLTK': list2str(nltk_out),
-                'STANFORD': list2str(stanford_out),
-                'SPACY': list2str(spacy_out),
-                'FLAIR': list2str(flair_out)}
-        df = pd.DataFrame(data)
-        df.to_csv('./evaluation_id.csv')
-    elif eva_mode == 'nl':
-        # print(eva_mode)
-        data = pd.read_csv('./dataset/nl_data.csv')
-        sentences = data['SEQUENCE'].values.tolist()
+
+    if eva_mode == 'nl':
+        data = pd.read_csv('./dataset/NLData/nl_data.csv')
+        sequences = data['SEQUENCE'].values.tolist()
         poses = data['POS'].values.tolist()
 
-        sentences = [sentence.split(' ') for sentence in sentences]
+        sequences = [sentence.split(' ') for sentence in sequences]
         poses = [pos.split(' ') for pos in poses]
+    else:
+        corpus = Corpus('./dataset', eva_mode)
+        sequences = corpus.test_input
+        poses = corpus.test_tags
 
-        nltk_out = nltk_pos_tag(sentences, poses)
-        stanford_out = stanford_pos_tag(sentences, poses, path2stanford='../corenlp')
-        spacy_out = spacy_pos_tag(sentences, poses)
-        flair_out = flair_pos_tag(sentences, poses)
-        # flair_pos_tag()
-        data = {'SEQUENCE': list2str(sentences),
-                'POS': list2str(poses),
-                'NLTK': list2str(nltk_out),
-                'STANFORD': list2str(stanford_out),
-                'SPACY': list2str(spacy_out),
-                'FLAIR': list2str(flair_out)}
-        df = pd.DataFrame(data)
-        df.to_csv('./evaluation_nl.csv')
+    nltk_out = nltk_pos_tag(sequences, poses)
+    corenlp_out = corenlp_pos_tag(sequences, poses, path2stanford='../stanford-corenlp-4.3.2')
+    opennlp_out = opennlp_pos_tag(sequences, poses, mode=eva_mode)
+    spacy_out = spacy_pos_tag(sequences, poses)
+    flair_out = flair_pos_tag(sequences, poses)
+    stanza_out = stanza_pos_tag(sequences, poses)
+    # flair_pos_tag()
+    data = {'SEQUENCE': list2str(sequences),
+            'POS': list2str(poses),
+            'NLTK': list2str(nltk_out),
+            'CORENLP': list2str(corenlp_out),
+            'OPENNLP': list2str(opennlp_out),
+            'SPACY': list2str(spacy_out),
+            'FLAIR': list2str(flair_out),
+            'STANZA': list2str(stanza_out)}
+    df = pd.DataFrame(data)
+    df.to_csv(f'./evaluation_{eva_mode}.csv')

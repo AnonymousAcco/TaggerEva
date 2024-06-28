@@ -28,6 +28,7 @@ class Corpus:
         if not os.path.exists(path):
             return None
         df = pd.read_csv(path)
+        df['SEQUENCE'] = df['SEQUENCE'].str.lower()
         return df
 
     def get_test_data(self, path, mode='all'):
@@ -46,5 +47,5 @@ class Corpus:
 
 if __name__ == "__main__":
     data_path = './dataset/'
-    corpus = Corpus(data_path, 'args')
+    corpus = Corpus(data_path, 'class')
     print(len(corpus.test_tags))

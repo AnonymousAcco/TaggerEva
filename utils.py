@@ -1,4 +1,5 @@
 import os
+from itertools import chain
 import pandas as pd
 
 
@@ -45,7 +46,7 @@ def compare(corpus, path='./et_out.txt'):
     true_results = []
 
 
-    pos_tags = pd.read_csv('./dataset/test.csv')['POS'].values.tolist()
+    pos_tags = pd.read_csv('./dataset/mdata.csv')['POS'].values.tolist()
         # print(filename, len(et_result))
     true_results += [line.strip().split(' ') for line in pos_tags]
 
@@ -86,6 +87,39 @@ def compare(corpus, path='./et_out.txt'):
                 corr_token += 1
     print('token: ', corr_token/token_num, corr_token, token_num)
     print('EM: ', corr_id/id_num, corr_id, id_num)
+
+
+def evaluate(out_tags, true_tags):
+    # if type(out_tags[0]) is str:
+    #     new_tags = [line_tags.strip().split(' ') for line_tags in out_tags]
+    #     out_tags = new_tags
+    #     print('abc')
+    #
+    # if type(true_tags[0]) is str:
+    #     new_tags = [line_tags.strip().split(' ') for line_tags in true_tags]
+    #     true_tags = new_tags
+    #     print('abc')
+    token_num = len(list(chain(*true_tags)))
+    id_num = len(true_tags)
+    true_token = 0
+    true_id = 0
+
+    for i, (out_line, true_line) in enumerate(zip(out_tags, true_tags)):
+        # EM
+        if ' '.join(out_line) == ' '.join(true_line):
+            true_id += 1
+        # token acc
+        if len(out_line) > len(true_line):
+            out_line = out_line[:len(true_line)]
+        elif len(out_line) < len(true_line):
+            out_line += ['UNK'] * (len(true_line)-len(out_line))
+        for j, (out_tag, true_tag) in enumerate(zip(out_line, true_line)):
+            if out_tag == true_tag:
+                true_token += 1
+
+    em = true_id / id_num
+    token_acc = true_token /token_num
+    return em, token_acc
 
 
 if __name__ == '__main__':
