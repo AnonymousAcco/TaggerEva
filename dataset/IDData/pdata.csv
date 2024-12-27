@@ -1,3001 +1,664 @@
-﻿ID,SEQUENCE,POS,PROJECT,FILE
-0,data,NNS,libobs,obs-avc.c
-1,size,NN,libobs,obs-avc.c
-2,p,FW,libobs,obs-avc.c
-3,end,NN,libobs,obs-avc.c
-4,nal start,NNP NN,libobs,obs-avc.c
-5,is key frame,VBZ JJ NN,libobs,obs-avc.c
-6,priority,NN,libobs,obs-avc.c
-7,s,FW,libobs,obs-avc.c
-8,data,NNS,libobs,obs-avc.c
-9,size,NN,libobs,obs-avc.c
-10,is key frame,VBZ JJ NN,libobs,obs-avc.c
-11,priority,NN,libobs,obs-avc.c
-12,avc packet,NNP NN,libobs,obs-avc.c
-13,src,NN,libobs,obs-avc.c
-14,packet,NN,libobs,obs-avc.c
-15,data,NNS,libobs,obs-avc.c
-16,data,NNS,libobs,obs-avc.c
-17,size,NN,libobs,obs-avc.c
-18,sps,NNP,libobs,obs-avc.c
-19,sps size,NNP NN,libobs,obs-avc.c
-20,pps,NNP,libobs,obs-avc.c
-21,pps size,NNP NN,libobs,obs-avc.c
-22,header,NN,libobs,obs-avc.c
-23,data,NNS,libobs,obs-avc.c
-24,size,NN,libobs,obs-avc.c
-25,packet,NN,libobs,obs-avc.c
-26,size,NN,libobs,obs-avc.c
-27,new packet data,JJ NN NNS,libobs,obs-avc.c
-28,new packet size,JJ NN NN,libobs,obs-avc.c
-29,header data,NN NNS,libobs,obs-avc.c
-30,header size,NN NN,libobs,obs-avc.c
-31,sei data,FW NNS,libobs,obs-avc.c
-32,sei size,FW NN,libobs,obs-avc.c
-33,vi,NNP,libobs,obs.c
-34,ovi,NNP,libobs,obs.c
-35,video,NN,libobs,obs.c
-36,video,NN,libobs,obs.c
-37,video,NN,libobs,obs.c
-38,i,FW,libobs,obs.c
-39,video,NN,libobs,obs.c
-40,effect,NN,libobs,obs.c
-41,file,NN,libobs,obs.c
-42,ovi,NNP,libobs,obs.c
-43,video,NN,libobs,obs.c
-44,info,NN,libobs,obs.c
-45,ovi,NNP,libobs,obs.c
-46,video,NN,libobs,obs.c
-47,ovi,NNP,libobs,obs.c
-48,ovi,NNP,libobs,obs.c
-49,video,NN,libobs,obs.c
-50,video,NN,libobs,obs.c
-51,ai,NNP,libobs,obs.c
-52,view,NN,libobs,obs.c
-53,unused,JJ,libobs,obs.c
-54,locale,NN,libobs,obs.c
-55,module config path,NN NN NN,libobs,obs.c
-56,store,NN,libobs,obs.c
-57,file,NN,libobs,obs.c
-58,path,NN,libobs,obs.c
-59,path,NN,libobs,obs.c
-60,locale,NN,libobs,obs.c
-61,module config path,NN NN NN,libobs,obs.c
-62,store,NN,libobs,obs.c
-63,argc,NNP,libobs,obs.c
-64,argv,NNP,libobs,obs.c
-65,locale,NN,libobs,obs.c
-66,width,NN,libobs,obs.c
-67,height,NN,libobs,obs.c
-68,ovi,NNP,libobs,obs.c
-69,oai,NNP,libobs,obs.c
-70,oai,NNP,libobs,obs.c
-71,ovi,NNP,libobs,obs.c
-72,sdr white level,NNP NN NN,libobs,obs.c
-73,hdr nominal peak level,NN JJ NN NN,libobs,obs.c
-74,oai,NNP,libobs,obs.c
-75,idx,NN,libobs,obs.c
-76,id,NN,libobs,obs.c
-77,idx,NN,libobs,obs.c
-78,id,NN,libobs,obs.c
-79,idx,NN,libobs,obs.c
-80,id,NN,libobs,obs.c
-81,unversioned id,JJ NN,libobs,obs.c
-82,unversioned id,JJ NN,libobs,obs.c
-83,idx,NN,libobs,obs.c
-84,id,NN,libobs,obs.c
-85,idx,NN,libobs,obs.c
-86,id,NN,libobs,obs.c
-87,idx,NN,libobs,obs.c
-88,id,NN,libobs,obs.c
-89,idx,NN,libobs,obs.c
-90,id,NN,libobs,obs.c
-91,idx,NN,libobs,obs.c
-92,id,NN,libobs,obs.c
-93,channel,NN,libobs,obs.c
-94,channel,NN,libobs,obs.c
-95,source,NN,libobs,obs.c
-96,param,NN,libobs,obs.c
-97,param,NN,libobs,obs.c
-98,p start,FW NN,libobs,obs.c
-99,mutex,NN,libobs,obs.c
-100,proc,NN,libobs,obs.c
-101,param,NN,libobs,obs.c
-102,p start,FW NN,libobs,obs.c
-103,mutex,NN,libobs,obs.c
-104,proc,NN,libobs,obs.c
-105,param,NN,libobs,obs.c
-106,param,NN,libobs,obs.c
-107,param,NN,libobs,obs.c
-108,param,NN,libobs,obs.c
-109,param,NN,libobs,obs.c
-110,v first,FW NN,libobs,obs.c
-111,name,NN,libobs,obs.c
-112,mutex,NN,libobs,obs.c
-113,p table,FW NN,libobs,obs.c
-114,uuid,NNP,libobs,obs.c
-115,mutex,NN,libobs,obs.c
-116,ref,NN,libobs,obs.c
-117,ref,NN,libobs,obs.c
-118,ref,NN,libobs,obs.c
-119,ref,NN,libobs,obs.c
-120,data,NNS,libobs,obs.c
-121,name,NN,libobs,obs.c
-122,uuid,NNP,libobs,obs.c
-123,name,NN,libobs,obs.c
-124,uuid,NNP,libobs,obs.c
-125,name,NN,libobs,obs.c
-126,name,NN,libobs,obs.c
-127,name,NN,libobs,obs.c
-128,effect,NN,libobs,obs.c
-129,src c,NN FW,libobs,obs.c
-130,dest c,NN FW,libobs,obs.c
-131,src a,NN FW,libobs,obs.c
-132,dest a,NN FW,libobs,obs.c
-133,volume,NN,libobs,obs.c
-134,source data,NN NNS,libobs,obs.c
-135,is private,VBZ JJ,libobs,obs.c
-136,source data,NN NNS,libobs,obs.c
-137,source data,NN NNS,libobs,obs.c
-138,array,NN,libobs,obs.c
-139,cb,NNP,libobs,obs.c
-140,private data,JJ NNS,libobs,obs.c
-141,source,NN,libobs,obs.c
-142,cb,NNP,libobs,obs.c
-143,data,NNS,libobs,obs.c
-144,data,NNS,libobs,obs.c
-145,source,NN,libobs,obs.c
-146,name,NN,libobs,obs.c
-147,private,JJ,libobs,obs.c
-148,context,NN,libobs,obs.c
-149,type,NN,libobs,obs.c
-150,settings,NNS,libobs,obs.c
-151,name,NN,libobs,obs.c
-152,uuid,NNP,libobs,obs.c
-153,hot key data,JJ NN NNS,libobs,obs.c
-154,private,JJ,libobs,obs.c
-155,context,NN,libobs,obs.c
-156,type,NN,libobs,obs.c
-157,settings,NNS,libobs,obs.c
-158,name,NN,libobs,obs.c
-159,uuid,NNP,libobs,obs.c
-160,hot key data,JJ NN NNS,libobs,obs.c
-161,private,JJ,libobs,obs.c
-162,context,NN,libobs,obs.c
-163,context,NN,libobs,obs.c
-164,object,NN,libobs,obs.c
-165,destroy,VB,libobs,obs.c
-166,context,NN,libobs,obs.c
-167,mutex,NN,libobs,obs.c
-168,p first,FW NN,libobs,obs.c
-169,p hash,FW NN,libobs,obs.c
-170,name,NN,libobs,obs.c
-171,context,NN,libobs,obs.c
-172,mutex,NN,libobs,obs.c
-173,p first,FW NN,libobs,obs.c
-174,context,NN,libobs,obs.c
-175,mutex,NN,libobs,obs.c
-176,p first uuid,FW NN NNP,libobs,obs.c
-177,context,NN,libobs,obs.c
-178,context,NN,libobs,obs.c
-179,p head,FW NN,libobs,obs.c
-180,context,NN,libobs,obs.c
-181,p uuid head,FW NNP NN,libobs,obs.c
-182,context,NN,libobs,obs.c
-183,context,NN,libobs,obs.c
-184,name,NN,libobs,obs.c
-185,context,NN,libobs,obs.c
-186,name,NN,libobs,obs.c
-187,p head,FW NN,libobs,obs.c
-188,obj,NN,libobs,obs.c
-189,obj,NN,libobs,obs.c
-190,obj,NN,libobs,obs.c
-191,obj,NN,libobs,obs.c
-192,obj,NN,libobs,obs.c
-193,name,NN,libobs,obs.c
-194,id,NN,libobs,obs.c
-195,name,NN,libobs,obs.c
-196,id,NN,libobs,obs.c
-197,param,NN,libobs,obs.c
-198,param,NN,libobs,obs.c
-199,param,NN,libobs,obs.c
-200,param,NN,libobs,obs.c
-201,param,NN,libobs,obs.c
-202,param,NN,libobs,obs.c
-203,v,FW,libobs,obs.c
-204,v,FW,libobs,obs.c
-205,conversion,NN,libobs,obs.c
-206,frame rate divisor,NN NN NN,libobs,obs.c
-207,param,NN,libobs,obs.c
-208,v,FW,libobs,obs.c
-209,param,NN,libobs,obs.c
-210,conversion,NN,libobs,obs.c
-211,param,NN,libobs,obs.c
-212,conversion,NN,libobs,obs.c
-213,frame rate divisor,NN NN NN,libobs,obs.c
-214,param,NN,libobs,obs.c
-215,param,NN,libobs,obs.c
-216,mix idx,NN NN,libobs,obs.c
-217,conversion,NN,libobs,obs.c
-218,callback,NN,libobs,obs.c
-219,param,NN,libobs,obs.c
-220,mix idx,NN NN,libobs,obs.c
-221,callback,NN,libobs,obs.c
-222,param,NN,libobs,obs.c
-223,settings,NNS,libobs,obs.c
-224,settings,NNS,libobs,obs.c
-225,encoder,NN,libobs,obs.c
-226,encoder,NN,libobs,obs.c
-227,param,NN,libobs,obs.c
-228,unused,JJ,libobs,obs.c
-229,type,NN,libobs,obs.c
-230,type,NN,libobs,obs.c
-231,task,NN,libobs,obs.c
-232,param,NN,libobs,obs.c
-233,wait,VB,libobs,obs.c
-234,unused,JJ,libobs,obs.c
-235,handler,NN,libobs,obs.c
-236,object,NN,libobs,obs.c
-237,object,NN,libobs,obs.c
-238,weak,JJ,libobs,obs.c
-239,weak,JJ,libobs,obs.c
-240,object,NN,libobs,obs.c
-241,weak,JJ,libobs,obs.c
-242,weak,JJ,libobs,obs.c
-243,weak,JJ,libobs,obs.c
-244,object,NN,libobs,obs.c
-245,protocol,NN,libobs,obs.c
-246,idx,NN,libobs,obs.c
-247,protocol,NN,libobs,obs.c
-248,view,NN,libobs,obs-view.c
-249,view,NN,libobs,obs-view.c
-250,view,NN,libobs,obs-view.c
-251,view,NN,libobs,obs-view.c
-252,channel,NN,libobs,obs-view.c
-253,view,NN,libobs,obs-view.c
-254,channel,NN,libobs,obs-view.c
-255,source,NN,libobs,obs-view.c
-256,view,NN,libobs,obs-view.c
-257,view,NN,libobs,obs-view.c
-258,view,NN,libobs,obs-view.c
-259,view,NN,libobs,obs-view.c
-260,ovi,NNP,libobs,obs-view.c
-261,view,NN,libobs,obs-view.c
-262,view,NN,libobs,obs-view.c
-263,ovi,NNP,libobs,obs-view.c
-264,view,NN,libobs,obs-view.c
-265,param,NN,libobs,obs-view.c
-266,source,NN,libobs,obs-source.c
-267,f,FW,libobs,obs-source.c
-268,source,NN,libobs,obs-source.c
-269,source,NN,libobs,obs-source.c
-270,id,NN,libobs,obs-source.c
-271,unversioned id,JJ NN,libobs,obs-source.c
-272,ver,NN,libobs,obs-source.c
-273,source,NN,libobs,obs-source.c
-274,settings,NNS,libobs,obs-source.c
-275,name,NN,libobs,obs-source.c
-276,uuid,NNP,libobs,obs-source.c
-277,hot key data,JJ NN NNS,libobs,obs-source.c
-278,private,JJ,libobs,obs-source.c
-279,id,NN,libobs,obs-source.c
-280,source,NN,libobs,obs-source.c
-281,source,NN,libobs,obs-source.c
-282,source,NN,libobs,obs-source.c
-283,source,NN,libobs,obs-source.c
-284,source,NN,libobs,obs-source.c
-285,source,NN,libobs,obs-source.c
-286,source,NN,libobs,obs-source.c
-287,data,NNS,libobs,obs-source.c
-288,id,NN,libobs,obs-source.c
-289,key,NN,libobs,obs-source.c
-290,pressed,JJ,libobs,obs-source.c
-291,data,NNS,libobs,obs-source.c
-292,id,NN,libobs,obs-source.c
-293,key,NN,libobs,obs-source.c
-294,pressed,JJ,libobs,obs-source.c
-295,data,NNS,libobs,obs-source.c
-296,id,NN,libobs,obs-source.c
-297,key,NN,libobs,obs-source.c
-298,pressed,JJ,libobs,obs-source.c
-299,data,NNS,libobs,obs-source.c
-300,id,NN,libobs,obs-source.c
-301,key,NN,libobs,obs-source.c
-302,pressed,JJ,libobs,obs-source.c
-303,source,NN,libobs,obs-source.c
-304,id,NN,libobs,obs-source.c
-305,name,NN,libobs,obs-source.c
-306,uuid,NNP,libobs,obs-source.c
-307,settings,NNS,libobs,obs-source.c
-308,hot key data,JJ NN NNS,libobs,obs-source.c
-309,private,JJ,libobs,obs-source.c
-310,last obs ver,JJ FW NN,libobs,obs-source.c
-311,id,NN,libobs,obs-source.c
-312,name,NN,libobs,obs-source.c
-313,settings,NNS,libobs,obs-source.c
-314,hot key data,JJ NN NNS,libobs,obs-source.c
-315,id,NN,libobs,obs-source.c
-316,name,NN,libobs,obs-source.c
-317,settings,NNS,libobs,obs-source.c
-318,id,NN,libobs,obs-source.c
-319,name,NN,libobs,obs-source.c
-320,uuid,NNP,libobs,obs-source.c
-321,settings,NNS,libobs,obs-source.c
-322,hot key data,JJ NN NNS,libobs,obs-source.c
-323,last obs ver,JJ FW NN,libobs,obs-source.c
-324,is private,VBZ JJ,libobs,obs-source.c
-325,dst,NNP,libobs,obs-source.c
-326,name,NN,libobs,obs-source.c
-327,dst,NNP,libobs,obs-source.c
-328,src,NN,libobs,obs-source.c
-329,private,JJ,libobs,obs-source.c
-330,dst,NNP,libobs,obs-source.c
-331,src,NN,libobs,obs-source.c
-332,dst,NNP,libobs,obs-source.c
-333,filter,NN,libobs,obs-source.c
-334,dst,NNP,libobs,obs-source.c
-335,filter,NN,libobs,obs-source.c
-336,source,NN,libobs,obs-source.c
-337,new name,JJ NN,libobs,obs-source.c
-338,create private,VB JJ,libobs,obs-source.c
-339,frame,NN,libobs,obs-source.c
-340,format,NN,libobs,obs-source.c
-341,width,NN,libobs,obs-source.c
-342,height,NN,libobs,obs-source.c
-343,frame,NN,libobs,obs-source.c
-344,source,NN,libobs,obs-source.c
-345,source,NN,libobs,obs-source.c
-346,source,NN,libobs,obs-source.c
-347,source,NN,libobs,obs-source.c
-348,weak,JJ,libobs,obs-source.c
-349,weak,JJ,libobs,obs-source.c
-350,source,NN,libobs,obs-source.c
-351,source,NN,libobs,obs-source.c
-352,weak,JJ,libobs,obs-source.c
-353,weak,JJ,libobs,obs-source.c
-354,weak,JJ,libobs,obs-source.c
-355,source,NN,libobs,obs-source.c
-356,source,NN,libobs,obs-source.c
-357,source,NN,libobs,obs-source.c
-358,info,NN,libobs,obs-source.c
-359,id,NN,libobs,obs-source.c
-360,id,NN,libobs,obs-source.c
-361,id,NN,libobs,obs-source.c
-362,source,NN,libobs,obs-source.c
-363,cb,NNP,libobs,obs-source.c
-364,source,NN,libobs,obs-source.c
-365,new path,JJ NN,libobs,obs-source.c
-366,data,NNS,libobs,obs-source.c
-367,id,NN,libobs,obs-source.c
-368,source,NN,libobs,obs-source.c
-369,source,NN,libobs,obs-source.c
-370,source,NN,libobs,obs-source.c
-371,id,NN,libobs,obs-source.c
-372,source,NN,libobs,obs-source.c
-373,source,NN,libobs,obs-source.c
-374,settings,NNS,libobs,obs-source.c
-375,source,NN,libobs,obs-source.c
-376,settings,NNS,libobs,obs-source.c
-377,source,NN,libobs,obs-source.c
-378,source,NN,libobs,obs-source.c
-379,event,NN,libobs,obs-source.c
-380,type,NN,libobs,obs-source.c
-381,mouse up,NN RP,libobs,obs-source.c
-382,click count,VB NN,libobs,obs-source.c
-383,source,NN,libobs,obs-source.c
-384,event,NN,libobs,obs-source.c
-385,mouse leave,NN VB,libobs,obs-source.c
-386,source,NN,libobs,obs-source.c
-387,event,NN,libobs,obs-source.c
-388,x delta,FW NN,libobs,obs-source.c
-389,y delta,FW NN,libobs,obs-source.c
-390,source,NN,libobs,obs-source.c
-391,focus,NN,libobs,obs-source.c
-392,source,NN,libobs,obs-source.c
-393,event,NN,libobs,obs-source.c
-394,key up,VB RP,libobs,obs-source.c
-395,source,NN,libobs,obs-source.c
-396,source,NN,libobs,obs-source.c
-397,centered,JJ,libobs,obs-source.c
-398,source,NN,libobs,obs-source.c
-399,source,NN,libobs,obs-source.c
-400,source,NN,libobs,obs-source.c
-401,source,NN,libobs,obs-source.c
-402,parent,NN,libobs,obs-source.c
-403,child,NN,libobs,obs-source.c
-404,param,NN,libobs,obs-source.c
-405,parent,NN,libobs,obs-source.c
-406,child,NN,libobs,obs-source.c
-407,param,NN,libobs,obs-source.c
-408,parent,NN,libobs,obs-source.c
-409,child,NN,libobs,obs-source.c
-410,param,NN,libobs,obs-source.c
-411,parent,NN,libobs,obs-source.c
-412,child,NN,libobs,obs-source.c
-413,param,NN,libobs,obs-source.c
-414,source,NN,libobs,obs-source.c
-415,type,NN,libobs,obs-source.c
-416,source,NN,libobs,obs-source.c
-417,type,NN,libobs,obs-source.c
-418,source,NN,libobs,obs-source.c
-419,ref frame,NN NN,libobs,obs-source.c
-420,source,NN,libobs,obs-source.c
-421,source,NN,libobs,obs-source.c
-422,source,NN,libobs,obs-source.c
-423,seconds,NNS,libobs,obs-source.c
-424,sample rate,NN NN,libobs,obs-source.c
-425,frames,NNS,libobs,obs-source.c
-426,sample rate,NN NN,libobs,obs-source.c
-427,duration,NN,libobs,obs-source.c
-428,source,NN,libobs,obs-source.c
-429,timestamp,NN,libobs,obs-source.c
-430,os time,NNP NN,libobs,obs-source.c
-431,source,NN,libobs,obs-source.c
-432,os time,NNP NN,libobs,obs-source.c
-433,source,NN,libobs,obs-source.c
-434,expected,JJ,libobs,obs-source.c
-435,ts,NNP,libobs,obs-source.c
-436,diff,NN,libobs,obs-source.c
-437,os time,NNP NN,libobs,obs-source.c
-438,source,NN,libobs,obs-source.c
-439,in,IN,libobs,obs-source.c
-440,muted,JJ,libobs,obs-source.c
-441,ts 1,NNP CD,libobs,obs-source.c
-442,ts 2,NNP CD,libobs,obs-source.c
-443,audio,NN,libobs,obs-source.c
-444,offset,NN,libobs,obs-source.c
-445,source,NN,libobs,obs-source.c
-446,in,IN,libobs,obs-source.c
-447,source,NN,libobs,obs-source.c
-448,in,IN,libobs,obs-source.c
-449,source,NN,libobs,obs-source.c
-450,os time,NNP NN,libobs,obs-source.c
-451,source,NN,libobs,obs-source.c
-452,data,NNS,libobs,obs-source.c
-453,format,NN,libobs,obs-source.c
-454,full range,JJ NN,libobs,obs-source.c
-455,trc,NNP,libobs,obs-source.c
-456,source,NN,libobs,obs-source.c
-457,frame,NN,libobs,obs-source.c
-458,source,NN,libobs,obs-source.c
-459,frame,NN,libobs,obs-source.c
-460,source,NN,libobs,obs-source.c
-461,frame,NN,libobs,obs-source.c
-462,source,NN,libobs,obs-source.c
-463,frame,NN,libobs,obs-source.c
-464,source,NN,libobs,obs-source.c
-465,frame,NN,libobs,obs-source.c
-466,source,NN,libobs,obs-source.c
-467,frame,NN,libobs,obs-source.c
-468,source,NN,libobs,obs-source.c
-469,frame,NN,libobs,obs-source.c
-470,source,NN,libobs,obs-source.c
-471,frame,NN,libobs,obs-source.c
-472,source,NN,libobs,obs-source.c
-473,frame,NN,libobs,obs-source.c
-474,source,NN,libobs,obs-source.c
-475,frame,NN,libobs,obs-source.c
-476,source,NN,libobs,obs-source.c
-477,frame,NN,libobs,obs-source.c
-478,source,NN,libobs,obs-source.c
-479,frame,NN,libobs,obs-source.c
-480,source,NN,libobs,obs-source.c
-481,frame,NN,libobs,obs-source.c
-482,source,NN,libobs,obs-source.c
-483,frame,NN,libobs,obs-source.c
-484,source,NN,libobs,obs-source.c
-485,frame,NN,libobs,obs-source.c
-486,source,NN,libobs,obs-source.c
-487,frame,NN,libobs,obs-source.c
-488,source,NN,libobs,obs-source.c
-489,frame,NN,libobs,obs-source.c
-490,source,NN,libobs,obs-source.c
-491,frame,NN,libobs,obs-source.c
-492,source,NN,libobs,obs-source.c
-493,frame,NN,libobs,obs-source.c
-494,source,NN,libobs,obs-source.c
-495,frame,NN,libobs,obs-source.c
-496,source,NN,libobs,obs-source.c
-497,frame,NN,libobs,obs-source.c
-498,frame,NN,libobs,obs-source.c
-499,format,NN,libobs,obs-source.c
-500,full range,JJ NN,libobs,obs-source.c
-501,trc,NNP,libobs,obs-source.c
-502,format,NN,libobs,obs-source.c
-503,effect,NN,libobs,obs-source.c
-504,name,NN,libobs,obs-source.c
-505,val,NN,libobs,obs-source.c
-506,effect,NN,libobs,obs-source.c
-507,name,NN,libobs,obs-source.c
-508,val,NN,libobs,obs-source.c
-509,source,NN,libobs,obs-source.c
-510,frame,NN,libobs,obs-source.c
-511,tex render,NN VB,libobs,obs-source.c
-512,source,NN,libobs,obs-source.c
-513,frame,NN,libobs,obs-source.c
-514,tex,NNP,libobs,obs-source.c
-515,tex render,NN VB,libobs,obs-source.c
-516,source,NN,libobs,obs-source.c
-517,frame,NN,libobs,obs-source.c
-518,tex render,NN VB,libobs,obs-source.c
-519,source,NN,libobs,obs-source.c
-520,effect,NN,libobs,obs-source.c
-521,source,NN,libobs,obs-source.c
-522,format,NN,libobs,obs-source.c
-523,source,NN,libobs,obs-source.c
-524,frame,NN,libobs,obs-source.c
-525,source,NN,libobs,obs-source.c
-526,source,NN,libobs,obs-source.c
-527,rotation,NN,libobs,obs-source.c
-528,source,NN,libobs,obs-source.c
-529,source,NN,libobs,obs-source.c
-530,source,NN,libobs,obs-source.c
-531,source,NN,libobs,obs-source.c
-532,source,NN,libobs,obs-source.c
-533,source,NN,libobs,obs-source.c
-534,source,NN,libobs,obs-source.c
-535,effect,NN,libobs,obs-source.c
-536,source,NN,libobs,obs-source.c
-537,source,NN,libobs,obs-source.c
-538,type,NN,libobs,obs-source.c
-539,source,NN,libobs,obs-source.c
-540,source,NN,libobs,obs-source.c
-541,source,NN,libobs,obs-source.c
-542,source,NN,libobs,obs-source.c
-543,source,NN,libobs,obs-source.c
-544,source,NN,libobs,obs-source.c
-545,source,NN,libobs,obs-source.c
-546,count,VB,libobs,obs-source.c
-547,preferred spaces,JJ NNS,libobs,obs-source.c
-548,source,NN,libobs,obs-source.c
-549,source,NN,libobs,obs-source.c
-550,filter,NN,libobs,obs-source.c
-551,filter,NN,libobs,obs-source.c
-552,source,NN,libobs,obs-source.c
-553,filter,NN,libobs,obs-source.c
-554,source,NN,libobs,obs-source.c
-555,filter,NN,libobs,obs-source.c
-556,source,NN,libobs,obs-source.c
-557,filter,NN,libobs,obs-source.c
-558,source,NN,libobs,obs-source.c
-559,filter,NN,libobs,obs-source.c
-560,source,NN,libobs,obs-source.c
-561,filter,NN,libobs,obs-source.c
-562,cur idx,NN NN,libobs,obs-source.c
-563,source,NN,libobs,obs-source.c
-564,filter,NN,libobs,obs-source.c
-565,cur idx,NN NN,libobs,obs-source.c
-566,source,NN,libobs,obs-source.c
-567,source,NN,libobs,obs-source.c
-568,filter,NN,libobs,obs-source.c
-569,movement,NN,libobs,obs-source.c
-570,source,NN,libobs,obs-source.c
-571,filter,NN,libobs,obs-source.c
-572,movement,NN,libobs,obs-source.c
-573,source,NN,libobs,obs-source.c
-574,filter,NN,libobs,obs-source.c
-575,source,NN,libobs,obs-source.c
-576,filter,NN,libobs,obs-source.c
-577,index,NN,libobs,obs-source.c
-578,source,NN,libobs,obs-source.c
-579,filter,NN,libobs,obs-source.c
-580,index,NN,libobs,obs-source.c
-581,source,NN,libobs,obs-source.c
-582,source,NN,libobs,obs-source.c
-583,in,IN,libobs,obs-source.c
-584,dst,NNP,libobs,obs-source.c
-585,src,NN,libobs,obs-source.c
-586,plane,NN,libobs,obs-source.c
-587,y,FW,libobs,obs-source.c
-588,dst,NNP,libobs,obs-source.c
-589,src,NNP,libobs,obs-source.c
-590,plane,NN,libobs,obs-source.c
-591,lines,NNS,libobs,obs-source.c
-592,dst,NNP,libobs,obs-source.c
-593,src,NN,libobs,obs-source.c
-594,dst,NNP,libobs,obs-source.c
-595,src,NN,libobs,obs-source.c
-596,source,NN,libobs,obs-source.c
-597,frame,NN,libobs,obs-source.c
-598,source,NN,libobs,obs-source.c
-599,source,NN,libobs,obs-source.c
-600,source,NN,libobs,obs-source.c
-601,frame,NN,libobs,obs-source.c
-602,source,NN,libobs,obs-source.c
-603,frame,NN,libobs,obs-source.c
-604,source,NN,libobs,obs-source.c
-605,frame,NN,libobs,obs-source.c
-606,source,NN,libobs,obs-source.c
-607,frame,NN,libobs,obs-source.c
-608,source,NN,libobs,obs-source.c
-609,rotation,NN,libobs,obs-source.c
-610,source,NN,libobs,obs-source.c
-611,captions,NNS,libobs,obs-source.c
-612,source,NN,libobs,obs-source.c
-613,callback,NN,libobs,obs-source.c
-614,param,NN,libobs,obs-source.c
-615,source,NN,libobs,obs-source.c
-616,callback,NN,libobs,obs-source.c
-617,param,NN,libobs,obs-source.c
-618,source,NN,libobs,obs-source.c
-619,in,IN,libobs,obs-source.c
-620,source,NN,libobs,obs-source.c
-621,frame,NN,libobs,obs-source.c
-622,source,NN,libobs,obs-source.c
-623,frame,NN,libobs,obs-source.c
-624,source,NN,libobs,obs-source.c
-625,frame,NN,libobs,obs-source.c
-626,source,NN,libobs,obs-source.c
-627,source,NN,libobs,obs-source.c
-628,frame,NN,libobs,obs-source.c
-629,source,NN,libobs,obs-source.c
-630,frame,NN,libobs,obs-source.c
-631,source,NN,libobs,obs-source.c
-632,frame,NN,libobs,obs-source.c
-633,source,NN,libobs,obs-source.c
-634,in,IN,libobs,obs-source.c
-635,source,NN,libobs,obs-source.c
-636,audio,NN,libobs,obs-source.c
-637,source,NN,libobs,obs-source.c
-638,frames,NNS,libobs,obs-source.c
-639,ts,NNP,libobs,obs-source.c
-640,source,NN,libobs,obs-source.c
-641,frames,NNS,libobs,obs-source.c
-642,source,NN,libobs,obs-source.c
-643,frames,NNS,libobs,obs-source.c
-644,balance,NN,libobs,obs-source.c
-645,type,NN,libobs,obs-source.c
-646,source,NN,libobs,obs-source.c
-647,audio,NN,libobs,obs-source.c
-648,source,NN,libobs,obs-source.c
-649,audio in,NN IN,libobs,obs-source.c
-650,source,NN,libobs,obs-source.c
-651,frame,NN,libobs,obs-source.c
-652,source,NN,libobs,obs-source.c
-653,sys time,NN NN,libobs,obs-source.c
-654,source,NN,libobs,obs-source.c
-655,sys time,NN NN,libobs,obs-source.c
-656,source,NN,libobs,obs-source.c
-657,source,NN,libobs,obs-source.c
-658,frame,NN,libobs,obs-source.c
-659,source,NN,libobs,obs-source.c
-660,source,NN,libobs,obs-source.c
-661,source,NN,libobs,obs-source.c
-662,name,NN,libobs,obs-source.c
-663,source,NN,libobs,obs-source.c
-664,source,NN,libobs,obs-source.c
-665,source,NN,libobs,obs-source.c
-666,target,NN,libobs,obs-source.c
-667,effect,NN,libobs,obs-source.c
-668,tech name,NN NN,libobs,obs-source.c
-669,tex,NN,libobs,obs-source.c
-670,effect,NN,libobs,obs-source.c
-671,width,NN,libobs,obs-source.c
-672,height,NN,libobs,obs-source.c
-673,tech name,NN NN,libobs,obs-source.c
-674,target,VB,libobs,obs-source.c
-675,parent,NN,libobs,obs-source.c
-676,filter flags,NN NNS,libobs,obs-source.c
-677,parent flags,JJ NNS,libobs,obs-source.c
-678,allow direct,VB JJ,libobs,obs-source.c
-679,space,NN,libobs,obs-source.c
-680,filter,NN,libobs,obs-source.c
-681,format,NN,libobs,obs-source.c
-682,allow direct,VB JJ,libobs,obs-source.c
-683,filter,NN,libobs,obs-source.c
-684,format,NN,libobs,obs-source.c
-685,space,NN,libobs,obs-source.c
-686,allow direct,VB JJ,libobs,obs-source.c
-687,filter,NN,libobs,obs-source.c
-688,effect,NN,libobs,obs-source.c
-689,width,NN,libobs,obs-source.c
-690,height,NN,libobs,obs-source.c
-691,tech name,NN NN,libobs,obs-source.c
-692,filter,NN,libobs,obs-source.c
-693,effect,NN,libobs,obs-source.c
-694,width,NN,libobs,obs-source.c
-695,height,NN,libobs,obs-source.c
-696,filter,NN,libobs,obs-source.c
-697,source,NN,libobs,obs-source.c
-698,source,NN,libobs,obs-source.c
-699,source,NN,libobs,obs-source.c
-700,volume,NN,libobs,obs-source.c
-701,source,NN,libobs,obs-source.c
-702,source,NN,libobs,obs-source.c
-703,offset,VB,libobs,obs-source.c
-704,source,NN,libobs,obs-source.c
-705,parent,NN,libobs,obs-source.c
-706,child,NN,libobs,obs-source.c
-707,param,NN,libobs,obs-source.c
-708,source,NN,libobs,obs-source.c
-709,enum callback,NN NN,libobs,obs-source.c
-710,param,NN,libobs,obs-source.c
-711,source,NN,libobs,obs-source.c
-712,enum callback,NN NN,libobs,obs-source.c
-713,param,NN,libobs,obs-source.c
-714,parent,NN,libobs,obs-source.c
-715,child,NN,libobs,obs-source.c
-716,param,NN,libobs,obs-source.c
-717,source,NN,libobs,obs-source.c
-718,enum callback,NN NN,libobs,obs-source.c
-719,param,NN,libobs,obs-source.c
-720,parent,NN,libobs,obs-source.c
-721,child,NN,libobs,obs-source.c
-722,param,NN,libobs,obs-source.c
-723,parent,NN,libobs,obs-source.c
-724,child,NN,libobs,obs-source.c
-725,parent,NN,libobs,obs-source.c
-726,child,NN,libobs,obs-source.c
-727,source,NN,libobs,obs-source.c
-728,source,NN,libobs,obs-source.c
-729,source,NN,libobs,obs-source.c
-730,source,NN,libobs,obs-source.c
-731,source,NN,libobs,obs-source.c
-732,source,NN,libobs,obs-source.c
-733,source,NN,libobs,obs-source.c
-734,flags,NNS,libobs,obs-source.c
-735,source,NN,libobs,obs-source.c
-736,flags,NNS,libobs,obs-source.c
-737,source,NN,libobs,obs-source.c
-738,source,NN,libobs,obs-source.c
-739,mixers,NNS,libobs,obs-source.c
-740,source,NN,libobs,obs-source.c
-741,color matrix,NN NN,libobs,obs-source.c
-742,color range min,NN NN NN,libobs,obs-source.c
-743,color range max,NN NN NN,libobs,obs-source.c
-744,texture,NN,libobs,obs-source.c
-745,x,FW,libobs,obs-source.c
-746,y,FW,libobs,obs-source.c
-747,cx,FW,libobs,obs-source.c
-748,cy,FW,libobs,obs-source.c
-749,flip,VB,libobs,obs-source.c
-750,source,NN,libobs,obs-source.c
-751,source,NN,libobs,obs-source.c
-752,source,NN,libobs,obs-source.c
-753,source,NN,libobs,obs-source.c
-754,source,NN,libobs,obs-source.c
-755,callback,NN,libobs,obs-source.c
-756,param,NN,libobs,obs-source.c
-757,source,NN,libobs,obs-source.c
-758,hidden,JJ,libobs,obs-source.c
-759,source,NN,libobs,obs-source.c
-760,source,NN,libobs,obs-source.c
-761,name,NN,libobs,obs-source.c
-762,source,NN,libobs,obs-source.c
-763,source,NN,libobs,obs-source.c
-764,source,NN,libobs,obs-source.c
-765,enabled,VBN,libobs,obs-source.c
-766,source,NN,libobs,obs-source.c
-767,source,NN,libobs,obs-source.c
-768,muted,JJ,libobs,obs-source.c
-769,source,NN,libobs,obs-source.c
-770,signal,NN,libobs,obs-source.c
-771,enabled,VBN,libobs,obs-source.c
-772,source,NN,libobs,obs-source.c
-773,signal,NN,libobs,obs-source.c
-774,delay,VB,libobs,obs-source.c
-775,source,NN,libobs,obs-source.c
-776,source,NN,libobs,obs-source.c
-777,enabled,VBN,libobs,obs-source.c
-778,source,NN,libobs,obs-source.c
-779,source,NN,libobs,obs-source.c
-780,delay,NN,libobs,obs-source.c
-781,source,NN,libobs,obs-source.c
-782,source,NN,libobs,obs-source.c
-783,enabled,VBN,libobs,obs-source.c
-784,source,NN,libobs,obs-source.c
-785,source,NN,libobs,obs-source.c
-786,delay,NN,libobs,obs-source.c
-787,source,NN,libobs,obs-source.c
-788,source,NN,libobs,obs-source.c
-789,os time,NNP NN,libobs,obs-source.c
-790,source,NN,libobs,obs-source.c
-791,mix,NN,libobs,obs-source.c
-792,channels,NNS,libobs,obs-source.c
-793,vol,NN,libobs,obs-source.c
-794,source,NN,libobs,obs-source.c
-795,mix,NN,libobs,obs-source.c
-796,channels,NNS,libobs,obs-source.c
-797,vol data,NN NNS,libobs,obs-source.c
-798,source,NN,libobs,obs-source.c
-799,action,NN,libobs,obs-source.c
-800,source,NN,libobs,obs-source.c
-801,channels,NNS,libobs,obs-source.c
-802,sample rate,NN NN,libobs,obs-source.c
-803,source,NN,libobs,obs-source.c
-804,mixers,NNS,libobs,obs-source.c
-805,channels,NNS,libobs,obs-source.c
-806,sample rate,NN NN,libobs,obs-source.c
-807,source,NN,libobs,obs-source.c
-808,mixers,NNS,libobs,obs-source.c
-809,channels,NNS,libobs,obs-source.c
-810,sample rate,NN NN,libobs,obs-source.c
-811,source,NN,libobs,obs-source.c
-812,channels,NNS,libobs,obs-source.c
-813,sample rate,NN NN,libobs,obs-source.c
-814,source,NN,libobs,obs-source.c
-815,mixers,NNS,libobs,obs-source.c
-816,channels,NNS,libobs,obs-source.c
-817,sample rate,NN NN,libobs,obs-source.c
-818,size,NN,libobs,obs-source.c
-819,source,NN,libobs,obs-source.c
-820,mixers,NNS,libobs,obs-source.c
-821,channels,NNS,libobs,obs-source.c
-822,sample rate,NN NN,libobs,obs-source.c
-823,size,NN,libobs,obs-source.c
-824,source,NN,libobs,obs-source.c
-825,source,NN,libobs,obs-source.c
-826,source,NN,libobs,obs-source.c
-827,audio,NN,libobs,obs-source.c
-828,source,NN,libobs,obs-source.c
-829,callback,NN,libobs,obs-source.c
-830,param,NN,libobs,obs-source.c
-831,source,NN,libobs,obs-source.c
-832,callback,NN,libobs,obs-source.c
-833,param,NN,libobs,obs-source.c
-834,source,NN,libobs,obs-source.c
-835,callback,NN,libobs,obs-source.c
-836,param,NN,libobs,obs-source.c
-837,source,NN,libobs,obs-source.c
-838,callback,NN,libobs,obs-source.c
-839,param,NN,libobs,obs-source.c
-840,source,NN,libobs,obs-source.c
-841,type,NN,libobs,obs-source.c
-842,source,NN,libobs,obs-source.c
-843,source,NN,libobs,obs-source.c
-844,unbuffered,JJ,libobs,obs-source.c
-845,source,NN,libobs,obs-source.c
-846,source,NN,libobs,obs-source.c
-847,source,NN,libobs,obs-source.c
-848,decouple,VB,libobs,obs-source.c
-849,source,NN,libobs,obs-source.c
-850,name,NN,libobs,obs-source.c
-851,enable,VB,libobs,obs-source.c
-852,source,NN,libobs,obs-source.c
-853,source,NN,libobs,obs-source.c
-854,balance,NN,libobs,obs-source.c
-855,source,NN,libobs,obs-source.c
-856,source,NN,libobs,obs-source.c
-857,active,JJ,libobs,obs-source.c
-858,source,NN,libobs,obs-source.c
-859,source,NN,libobs,obs-source.c
-860,id,NN,libobs,obs-source.c
-861,source,NN,libobs,obs-source.c
-862,pause,VB,libobs,obs-source.c
-863,source,NN,libobs,obs-source.c
-864,source,NN,libobs,obs-source.c
-865,source,NN,libobs,obs-source.c
-866,source,NN,libobs,obs-source.c
-867,source,NN,libobs,obs-source.c
-868,source,NN,libobs,obs-source.c
-869,source,NN,libobs,obs-source.c
-870,ms,NNP,libobs,obs-source.c
-871,source,NN,libobs,obs-source.c
-872,source,NN,libobs,obs-source.c
-873,source,NN,libobs,obs-source.c
-874,source,NN,libobs,obs-source.c
-875,source,NN,libobs,obs-source.c
-876,array,NN,libobs,obs-source.c
-877,data,NNS,libobs,obs-hevc.c
-878,size,NN,libobs,obs-hevc.c
-879,nal start,NNP NN,libobs,obs-hevc.c
-880,is key frame,VBZ JJ NN,libobs,obs-hevc.c
-881,priority,NN,libobs,obs-hevc.c
-882,s,FW,libobs,obs-hevc.c
-883,data,NNS,libobs,obs-hevc.c
-884,size,NN,libobs,obs-hevc.c
-885,is key frame,VBZ JJ NN,libobs,obs-hevc.c
-886,priority,NN,libobs,obs-hevc.c
-887,hevc packet,NNP NN,libobs,obs-hevc.c
-888,src,NN,libobs,obs-hevc.c
-889,packet,NN,libobs,obs-hevc.c
-890,packet,NN,libobs,obs-hevc.c
-891,size,NN,libobs,obs-hevc.c
-892,new packet data,JJ NN NNS,libobs,obs-hevc.c
-893,new packet size,JJ NN NN,libobs,obs-hevc.c
-894,header data,NN NNS,libobs,obs-hevc.c
-895,header size,NN NN,libobs,obs-hevc.c
-896,sei data,FW NNS,libobs,obs-hevc.c
-897,sei size,FW NN,libobs,obs-hevc.c
-898,data,NNS,libobs,obs-win-crash-handler.c
-899,module,NN,libobs,obs-win-crash-handler.c
-900,func,NN,libobs,obs-win-crash-handler.c
-901,data,NNS,libobs,obs-win-crash-handler.c
-902,trace,NN,libobs,obs-win-crash-handler.c
-903,data,NNS,libobs,obs-win-crash-handler.c
-904,data,NNS,libobs,obs-win-crash-handler.c
-905,data,NNS,libobs,obs-win-crash-handler.c
-906,module name,NN NN,libobs,obs-win-crash-handler.c
-907,module base,NN NN,libobs,obs-win-crash-handler.c
-908,module size,NN NN,libobs,obs-win-crash-handler.c
-909,data,NNS,libobs,obs-win-crash-handler.c
-910,data,NNS,libobs,obs-win-crash-handler.c
-911,data,NNS,libobs,obs-win-crash-handler.c
-912,module name,NN NN,libobs,obs-win-crash-handler.c
-913,module base,NN NN,libobs,obs-win-crash-handler.c
-914,module size,NN NN,libobs,obs-win-crash-handler.c
-915,info,NN,libobs,obs-win-crash-handler.c
-916,data,NNS,libobs,obs-win-crash-handler.c
-917,info,NN,libobs,obs-win-crash-handler.c
-918,data,NNS,libobs,obs-win-crash-handler.c
-919,thread,NN,libobs,obs-win-crash-handler.c
-920,trace,VB,libobs,obs-win-crash-handler.c
-921,thread,NN,libobs,obs-win-crash-handler.c
-922,data,NNS,libobs,obs-win-crash-handler.c
-923,entry,NN,libobs,obs-win-crash-handler.c
-924,first thread,JJ NN,libobs,obs-win-crash-handler.c
-925,data,NNS,libobs,obs-win-crash-handler.c
-926,data,NNS,libobs,obs-win-crash-handler.c
-927,data,NNS,libobs,obs-win-crash-handler.c
-928,exception,NN,libobs,obs-win-crash-handler.c
-929,exception,NN,libobs,obs-win-crash-handler.c
-930,id,NN,libobs,obs-encoder.c
-931,id,NN,libobs,obs-encoder.c
-932,encoder,NN,libobs,obs-encoder.c
-933,name,NN,libobs,obs-encoder.c
-934,settings,NNS,libobs,obs-encoder.c
-935,hot key data,JJ NN NNS,libobs,obs-encoder.c
-936,id,NN,libobs,obs-encoder.c
-937,type,NN,libobs,obs-encoder.c
-938,name,NN,libobs,obs-encoder.c
-939,settings,NNS,libobs,obs-encoder.c
-940,mixer idx,NN NN,libobs,obs-encoder.c
-941,hot key data,JJ NN NNS,libobs,obs-encoder.c
-942,id,NN,libobs,obs-encoder.c
-943,name,NN,libobs,obs-encoder.c
-944,settings,NNS,libobs,obs-encoder.c
-945,hot key data,JJ NN NNS,libobs,obs-encoder.c
-946,id,NN,libobs,obs-encoder.c
-947,name,NN,libobs,obs-encoder.c
-948,settings,NNS,libobs,obs-encoder.c
-949,mixer idx,NN NN,libobs,obs-encoder.c
-950,hot key data,JJ NN NNS,libobs,obs-encoder.c
-951,encoder,NN,libobs,obs-encoder.c
-952,info,NN,libobs,obs-encoder.c
-953,encoder,NN,libobs,obs-encoder.c
-954,info,NN,libobs,obs-encoder.c
-955,encoder,NN,libobs,obs-encoder.c
-956,encoder,NN,libobs,obs-encoder.c
-957,encoder,NN,libobs,obs-encoder.c
-958,encoder,NN,libobs,obs-encoder.c
-959,shutdown,NN,libobs,obs-encoder.c
-960,encoder,NN,libobs,obs-encoder.c
-961,encoder,NN,libobs,obs-encoder.c
-962,encoder,NN,libobs,obs-encoder.c
-963,encoder,NN,libobs,obs-encoder.c
-964,encoder,NN,libobs,obs-encoder.c
-965,name,NN,libobs,obs-encoder.c
-966,info,NN,libobs,obs-encoder.c
-967,id,NN,libobs,obs-encoder.c
-968,encoder,NN,libobs,obs-encoder.c
-969,id,NN,libobs,obs-encoder.c
-970,encoder,NN,libobs,obs-encoder.c
-971,encoder,NN,libobs,obs-encoder.c
-972,settings,NNS,libobs,obs-encoder.c
-973,encoder,NN,libobs,obs-encoder.c
-974,extra data,JJ NNS,libobs,obs-encoder.c
-975,size,NN,libobs,obs-encoder.c
-976,encoder,NN,libobs,obs-encoder.c
-977,encoder,NN,libobs,obs-encoder.c
-978,encoder,NN,libobs,obs-encoder.c
-979,encoder,NN,libobs,obs-encoder.c
-980,encoder,NN,libobs,obs-encoder.c
-981,reroute id,VB NN,libobs,obs-encoder.c
-982,encoder,NN,libobs,obs-encoder.c
-983,encoder,NN,libobs,obs-encoder.c
-984,encoder,NN,libobs,obs-encoder.c
-985,encoder,NN,libobs,obs-encoder.c
-986,param,NN,libobs,obs-encoder.c
-987,pause,VB,libobs,obs-encoder.c
-988,encoder,NN,libobs,obs-encoder.c
-989,param,NN,libobs,obs-encoder.c
-990,encoder,NN,libobs,obs-encoder.c
-991,param,NN,libobs,obs-encoder.c
-992,encoder,NN,libobs,obs-encoder.c
-993,param,NN,libobs,obs-encoder.c
-994,encoder,NN,libobs,obs-encoder.c
-995,param,NN,libobs,obs-encoder.c
-996,encoder,NN,libobs,obs-encoder.c
-997,id,NN,libobs,obs-encoder.c
-998,encoder,NN,libobs,obs-encoder.c
-999,id,NN,libobs,obs-encoder.c
-1000,input,NN,mpv-master,chmap.c
-1001,expected selection,JJ NN,mpv-master,chmap.c
-1002,layouts,NNS,mpv-master,chmap.c
-1003,av layout,FW NN,mpv-master,chmap.c
-1004,mp layout,FW NN,mpv-master,chmap.c
-1005,require default unspec,VB JJ JJ,mpv-master,chmap.c
-1006,p ctx,FW NN,mpv-master,scale_sws.c
-1007,dst,NNP,mpv-master,scale_sws.c
-1008,src,NN,mpv-master,scale_sws.c
-1009,p ctx,FW NN,mpv-master,scale_sws.c
-1010,img fmt dst,NN NN NNP,mpv-master,scale_sws.c
-1011,img fmt src,NN NN NN,mpv-master,scale_sws.c
-1012,argc,NNP,mpv-master,scale_sws.c
-1013,status,NN,mpv-master,libmpv_test.c
-1014,property,NN,mpv-master,libmpv_test.c
-1015,expect,VB,mpv-master,libmpv_test.c
-1016,property,NN,mpv-master,libmpv_test.c
-1017,expect,VB,mpv-master,libmpv_test.c
-1018,property,NN,mpv-master,libmpv_test.c
-1019,expect,VB,mpv-master,libmpv_test.c
-1020,property,NN,mpv-master,libmpv_test.c
-1021,expect,VB,mpv-master,libmpv_test.c
-1022,file,NN,mpv-master,libmpv_test.c
-1023,file,NN,mpv-master,libmpv_test.c
-1024,argc,NNP,mpv-master,libmpv_test.c
-1025,p ctx,FW NN,mpv-master,scale_zimg.c
-1026,dst,NNP,mpv-master,scale_zimg.c
-1027,src,NN,mpv-master,scale_zimg.c
-1028,p ctx,FW NN,mpv-master,scale_zimg.c
-1029,img fmt dst,NN NN NNP,mpv-master,scale_zimg.c
-1030,img fmt src,NN NN NN,mpv-master,scale_zimg.c
-1031,argc,NNP,mpv-master,scale_zimg.c
-1032,a,FW,mpv-master,img_utils.c
-1033,b,FW,mpv-master,img_utils.c
-1034,w,FW,mpv-master,scale_test.c
-1035,h,FW,mpv-master,scale_test.c
-1036,bytes,NNS,mpv-master,scale_test.c
-1037,rgb,NNP,mpv-master,scale_test.c
-1038,alpha,NN,mpv-master,scale_test.c
-1039,s test,FW NN,mpv-master,scale_test.c
-1040,name,NN,mpv-master,scale_test.c
-1041,img,NN,mpv-master,scale_test.c
-1042,s test,FW NN,mpv-master,scale_test.c
-1043,f,FW,mpv-master,scale_test.c
-1044,ref,NN,mpv-master,scale_test.c
-1045,new,JJ,mpv-master,scale_test.c
-1046,s test,FW NN,mpv-master,scale_test.c
-1047,type,NN,mpv-master,img_format.c
-1048,argc,NNP,mpv-master,img_format.c
-1049,file,NN,mpv-master,paths.c
-1050,line,NN,mpv-master,paths.c
-1051,a,FW,mpv-master,paths.c
-1052,b,FW,mpv-master,paths.c
-1053,c,FW,mpv-master,paths.c
-1054,file,NN,mpv-master,paths.c
-1055,line,NN,mpv-master,paths.c
-1056,abs,NNP,mpv-master,paths.c
-1057,a,FW,mpv-master,paths.c
-1058,file,NN,mpv-master,test_utils.c
-1059,line,NN,mpv-master,test_utils.c
-1060,a,FW,mpv-master,test_utils.c
-1061,b,FW,mpv-master,test_utils.c
-1062,file,NN,mpv-master,test_utils.c
-1063,line,NN,mpv-master,test_utils.c
-1064,a,FW,mpv-master,test_utils.c
-1065,b,FW,mpv-master,test_utils.c
-1066,file,NN,mpv-master,test_utils.c
-1067,line,NN,mpv-master,test_utils.c
-1068,a,FW,mpv-master,test_utils.c
-1069,b,FW,mpv-master,test_utils.c
-1070,tolerance,NN,mpv-master,test_utils.c
-1071,out dir,NN NN,mpv-master,test_utils.c
-1072,name,NN,mpv-master,test_utils.c
-1073,file,NN,mpv-master,test_utils.c
-1074,line,NN,mpv-master,test_utils.c
-1075,ref dir,NN NN,mpv-master,test_utils.c
-1076,out dir,NN NN,mpv-master,test_utils.c
-1077,ref,NN,mpv-master,test_utils.c
-1078,new,JJ,mpv-master,test_utils.c
-1079,err,NN,mpv-master,test_utils.c
-1080,d,FW,mpv-master,test_utils.c
-1081,size,NN,mpv-master,test_utils.c
-1082,file,NN,mpv-master,test_utils.c
-1083,line,NN,mpv-master,test_utils.c
-1084,a,FW,mpv-master,test_utils.c
-1085,b,FW,mpv-master,test_utils.c
-1086,size,NN,mpv-master,test_utils.c
-1087,log,NN,mpv-master,test_utils.c
-1088,lev,NNP,mpv-master,test_utils.c
-1089,format,NN,mpv-master,test_utils.c
-1090,s,FW,mpv-master,test_utils.c
-1091,log,VB,mpv-master,test_utils.c
-1092,log,VB,mpv-master,test_utils.c
-1093,lev,NNP,mpv-master,test_utils.c
-1094,w stream,FW NN,mpv-master,test_utils.c
-1095,format,NN,mpv-master,test_utils.c
-1096,args,NNP,mpv-master,test_utils.c
-1097,w stream,FW NN,mpv-master,test_utils.c
-1098,str,NN,mpv-master,test_utils.c
-1099,handle,VB,mpv-master,test_utils.c
-1100,dict,NN,mpv-master,test_utils.c
-1101,kv,NNP,mpv-master,test_utils.c
-1102,tal loc ctx,NNP NN NN,mpv-master,test_utils.c
-1103,parent,NN,mpv-master,test_utils.c
-1104,name,NN,mpv-master,test_utils.c
-1105,item,NN,mpv-master,linked_list.c
-1106,lst,NNP,mpv-master,linked_list.c
-1107,c,FW,mpv-master,linked_list.c
-1108,num c,NN FW,mpv-master,linked_list.c
-1109,img fmt,NN NN,mpv-master,repack.c
-1110,f,FW,mpv-master,repack.c
-1111,img fmt,VB NN,mpv-master,repack.c
-1112,flags,NNS,mpv-master,repack.c
-1113,not if fmt,RB IN NN,mpv-master,repack.c
-1114,img fmt,NN NN,mpv-master,repack.c
-1115,csp,NNP,mpv-master,repack.c
-1116,levels,NNS,mpv-master,repack.c
-1117,f,FW,mpv-master,repack.c
-1118,img fmt,NN NN,mpv-master,repack.c
-1119,argc,NNP,mpv-master,repack.c
-1120,data,NNS,mpv-master,jni.c
-1121,log,NN,mpv-master,jni.c
-1122,env,NN,mpv-master,jni.c
-1123,string,NN,mpv-master,jni.c
-1124,log,NN,mpv-master,jni.c
-1125,env,NN,mpv-master,jni.c
-1126,utf chars,NNP NNS,mpv-master,jni.c
-1127,log,NN,mpv-master,jni.c
-1128,env,NN,mpv-master,jni.c
-1129,exception,NN,mpv-master,jni.c
-1130,error,NN,mpv-master,jni.c
-1131,log,NN,mpv-master,jni.c
-1132,env,NN,mpv-master,jni.c
-1133,logging,VBG,mpv-master,jni.c
-1134,log,NN,mpv-master,jni.c
-1135,env,NN,mpv-master,jni.c
-1136,j fields,FW NNS,mpv-master,jni.c
-1137,j fields mapping,FW NNS NN,mpv-master,jni.c
-1138,global,JJ,mpv-master,jni.c
-1139,log,NN,mpv-master,jni.c
-1140,env,NN,mpv-master,jni.c
-1141,j fields,FW NNS,mpv-master,jni.c
-1142,j fields mapping,FW NNS NN,mpv-master,jni.c
-1143,global,JJ,mpv-master,jni.c
-1144,log,NN,mpv-master,jni.c
-1145,path,NN,mpv-master,path_utils.c
-1146,path,NN,mpv-master,path_utils.c
-1147,path,NN,mpv-master,path_utils.c
-1148,path,NN,mpv-master,path_utils.c
-1149,root,NN,mpv-master,path_utils.c
-1150,path,NN,mpv-master,path_utils.c
-1151,tal loc ctx,NNP NN NN,mpv-master,path_utils.c
-1152,p 1,FW CD,mpv-master,path_utils.c
-1153,p 2,FW CD,mpv-master,path_utils.c
-1154,tal loc ctx,NNP NN NN,mpv-master,path_utils.c
-1155,p 1,FW CD,mpv-master,path_utils.c
-1156,p 2,FW CD,mpv-master,path_utils.c
-1157,tal loc ctx,NNP NN NN,mpv-master,path_utils.c
-1158,tal loc ctx,NNP NN NN,mpv-master,path_utils.c
-1159,path,NN,mpv-master,path_utils.c
-1160,path,NN,mpv-master,path_utils.c
-1161,path,NN,mpv-master,path_utils.c
-1162,path,NN,mpv-master,path_utils.c
-1163,path,NN,mpv-master,path_utils.c
-1164,out url,NN NNP,mpv-master,path_utils.c
-1165,dir,NN,mpv-master,path_utils.c
-1166,p,FW,mpv-master,dispatch.c
-1167,ta parent,FW NN,mpv-master,dispatch.c
-1168,queue,NN,mpv-master,dispatch.c
-1169,wakeup ctx,NN NN,mpv-master,dispatch.c
-1170,queue,NN,mpv-master,dispatch.c
-1171,on lock ctx,IN NN NN,mpv-master,dispatch.c
-1172,queue,NN,mpv-master,dispatch.c
-1173,item,NN,mpv-master,dispatch.c
-1174,queue,NN,mpv-master,dispatch.c
-1175,fn,NNP,mpv-master,dispatch.c
-1176,fn data,NNP NNS,mpv-master,dispatch.c
-1177,queue,NN,mpv-master,dispatch.c
-1178,fn,NNP,mpv-master,dispatch.c
-1179,fn data,NNP NNS,mpv-master,dispatch.c
-1180,queue,NN,mpv-master,dispatch.c
-1181,fn,NNP,mpv-master,dispatch.c
-1182,fn data,NNP NNS,mpv-master,dispatch.c
-1183,queue,NN,mpv-master,dispatch.c
-1184,fn,NNP,mpv-master,dispatch.c
-1185,fn data,NNP NNS,mpv-master,dispatch.c
-1186,queue,NN,mpv-master,dispatch.c
-1187,fn,NNP,mpv-master,dispatch.c
-1188,fn data,NNP NNS,mpv-master,dispatch.c
-1189,queue,NN,mpv-master,dispatch.c
-1190,timeout,NN,mpv-master,dispatch.c
-1191,queue,NN,mpv-master,dispatch.c
-1192,queue,NN,mpv-master,dispatch.c
-1193,until,RB,mpv-master,dispatch.c
-1194,queue,NN,mpv-master,dispatch.c
-1195,queue,NN,mpv-master,dispatch.c
-1196,arg,NN,mpv-master,thread_pool.c
-1197,ctx,NN,mpv-master,thread_pool.c
-1198,pool,NN,mpv-master,thread_pool.c
-1199,ta parent,FW NN,mpv-master,thread_pool.c
-1200,init threads,VB NNS,mpv-master,thread_pool.c
-1201,min threads,JJ NNS,mpv-master,thread_pool.c
-1202,max threads,JJ NNS,mpv-master,thread_pool.c
-1203,pool,NN,mpv-master,thread_pool.c
-1204,fn ctx,NNP NN,mpv-master,thread_pool.c
-1205,allow queue,VB NN,mpv-master,thread_pool.c
-1206,pool,NN,mpv-master,thread_pool.c
-1207,fn ctx,NNP NN,mpv-master,thread_pool.c
-1208,pool,NN,mpv-master,thread_pool.c
-1209,fn ctx,NNP NN,mpv-master,thread_pool.c
-1210,s,FW,mpv-master,json.c
-1211,c,FW,mpv-master,json.c
-1212,src,NN,mpv-master,json.c
-1213,src,NN,mpv-master,json.c
-1214,ta parent,FW NN,mpv-master,json.c
-1215,dst,NNP,mpv-master,json.c
-1216,src,NN,mpv-master,json.c
-1217,ta parent,FW NN,mpv-master,json.c
-1218,dst,NNP,mpv-master,json.c
-1219,src,NN,mpv-master,json.c
-1220,ta parent,FW NN,mpv-master,json.c
-1221,dst,NNP,mpv-master,json.c
-1222,src,NN,mpv-master,json.c
-1223,max depth,JJ NN,mpv-master,json.c
-1224,ta parent,FW NN,mpv-master,json.c
-1225,dst,NNP,mpv-master,json.c
-1226,src,NN,mpv-master,json.c
-1227,max depth,JJ NN,mpv-master,json.c
-1228,b,FW,mpv-master,json.c
-1229,str,NN,mpv-master,json.c
-1230,b,FW,mpv-master,json.c
-1231,indent,NN,mpv-master,json.c
-1232,b,FW,mpv-master,json.c
-1233,src,NN,mpv-master,json.c
-1234,indent,NN,mpv-master,json.c
-1235,dst,NNP,mpv-master,json.c
-1236,src,NN,mpv-master,json.c
-1237,indent,NN,mpv-master,json.c
-1238,dst,NNP,mpv-master,json.c
-1239,src,NN,mpv-master,json.c
-1240,dst,NNP,mpv-master,json.c
-1241,src,NN,mpv-master,json.c
-1242,user cp,NN NN,mpv-master,charset_conv.c
-1243,user cp,NN NN,mpv-master,charset_conv.c
-1244,buf,NN,mpv-master,charset_conv.c
-1245,tal loc ctx,NNP NN NN,mpv-master,charset_conv.c
-1246,log,NN,mpv-master,charset_conv.c
-1247,buf,NN,mpv-master,charset_conv.c
-1248,tal loc ctx,NNP NN NN,mpv-master,charset_conv.c
-1249,log,NN,mpv-master,charset_conv.c
-1250,buf,NN,mpv-master,charset_conv.c
-1251,user cp,NN NN,mpv-master,charset_conv.c
-1252,flags,NNS,mpv-master,charset_conv.c
-1253,log,NN,mpv-master,charset_conv.c
-1254,buf,NN,mpv-master,charset_conv.c
-1255,cp,NN,mpv-master,charset_conv.c
-1256,flags,NNS,mpv-master,charset_conv.c
-1257,template,NN,mpv-master,io_utils.c
-1258,suffix len,NN NN,mpv-master,io_utils.c
-1259,flags,NNS,mpv-master,io_utils.c
-1260,file path,NN NN,mpv-master,io_utils.c
-1261,data,NNS,mpv-master,io_utils.c
-1262,size,NN,mpv-master,io_utils.c
-1263,str 1,NN CD,mpv-master,bstr.c
-1264,str 2,NN CD,mpv-master,bstr.c
-1265,str 1,NN CD,mpv-master,bstr.c
-1266,str 2,NN CD,mpv-master,bstr.c
-1267,str,NN,mpv-master,bstr.c
-1268,c,FW,mpv-master,bstr.c
-1269,str,NN,mpv-master,bstr.c
-1270,c,FW,mpv-master,bstr.c
-1271,str,NN,mpv-master,bstr.c
-1272,reject,VB,mpv-master,bstr.c
-1273,str,NN,mpv-master,bstr.c
-1274,accept,VB,mpv-master,bstr.c
-1275,haystack,NN,mpv-master,bstr.c
-1276,needle,NN,mpv-master,bstr.c
-1277,str,NN,mpv-master,bstr.c
-1278,str,NN,mpv-master,bstr.c
-1279,str,NN,mpv-master,bstr.c
-1280,sep,VB,mpv-master,bstr.c
-1281,rest,NN,mpv-master,bstr.c
-1282,str,NN,mpv-master,bstr.c
-1283,tok,NN,mpv-master,bstr.c
-1284,out left,NN JJ,mpv-master,bstr.c
-1285,out right,NN JJ,mpv-master,bstr.c
-1286,str,NN,mpv-master,bstr.c
-1287,start,NN,mpv-master,bstr.c
-1288,end,NN,mpv-master,bstr.c
-1289,str,NN,mpv-master,bstr.c
-1290,rest,NN,mpv-master,bstr.c
-1291,base,NN,mpv-master,bstr.c
-1292,str,NN,mpv-master,bstr.c
-1293,rest,NN,mpv-master,bstr.c
-1294,str,NN,mpv-master,bstr.c
-1295,rest,NN,mpv-master,bstr.c
-1296,c,FW,mpv-master,bstr.c
-1297,str,NN,mpv-master,bstr.c
-1298,s,FW,mpv-master,bstr.c
-1299,prefix,NN,mpv-master,bstr.c
-1300,s,FW,mpv-master,bstr.c
-1301,prefix,NN,mpv-master,bstr.c
-1302,str,NN,mpv-master,bstr.c
-1303,str,NN,mpv-master,bstr.c
-1304,format,NN,mpv-master,bstr.c
-1305,b,FW,mpv-master,bstr.c
-1306,s,FW,mpv-master,bstr.c
-1307,out next,NN JJ,mpv-master,bstr.c
-1308,str,NN,mpv-master,bstr.c
-1309,out next,NN JJ,mpv-master,bstr.c
-1310,s,NN,mpv-master,bstr.c
-1311,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1312,s,FW,mpv-master,bstr.c
-1313,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1314,s,FW,mpv-master,bstr.c
-1315,append min,VB NN,mpv-master,bstr.c
-1316,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1317,s,FW,mpv-master,bstr.c
-1318,append,VB,mpv-master,bstr.c
-1319,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1320,s,FW,mpv-master,bstr.c
-1321,fmt,NN,mpv-master,bstr.c
-1322,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1323,s,FW,mpv-master,bstr.c
-1324,fmt,NN,mpv-master,bstr.c
-1325,ap,FW,mpv-master,bstr.c
-1326,s,NN,mpv-master,bstr.c
-1327,prefix,NN,mpv-master,bstr.c
-1328,s,FW,mpv-master,bstr.c
-1329,suffix,NN,mpv-master,bstr.c
-1330,str,NN,mpv-master,bstr.c
-1331,s,FW,mpv-master,bstr.c
-1332,c,FW,mpv-master,bstr.c
-1333,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1334,hex,NN,mpv-master,bstr.c
-1335,out,NN,mpv-master,bstr.c
-1336,tal loc ctx,NNP NN NN,mpv-master,bstr.c
-1337,s,FW,mpv-master,bstr.c
-1338,ret,NNP,mpv-master,bstr.c
-1339,dst,NNP,mpv-master,node.c
-1340,format,NN,mpv-master,node.c
-1341,parent,NN,mpv-master,node.c
-1342,dst,NNP,mpv-master,node.c
-1343,format,NN,mpv-master,node.c
-1344,dst,NNP,mpv-master,node.c
-1345,key,NN,mpv-master,node.c
-1346,format,NN,mpv-master,node.c
-1347,dst,NNP,mpv-master,node.c
-1348,key,NN,mpv-master,node.c
-1349,format,NN,mpv-master,node.c
-1350,dst,NNP,mpv-master,node.c
-1351,key,NN,mpv-master,node.c
-1352,val,NN,mpv-master,node.c
-1353,dst,NNP,mpv-master,node.c
-1354,key,NN,mpv-master,node.c
-1355,v,FW,mpv-master,node.c
-1356,dst,NNP,mpv-master,node.c
-1357,key,NN,mpv-master,node.c
-1358,v,FW,mpv-master,node.c
-1359,dst,NNP,mpv-master,node.c
-1360,key,NN,mpv-master,node.c
-1361,v,NNP,mpv-master,node.c
-1362,src,NN,mpv-master,node.c
-1363,key,NN,mpv-master,node.c
-1364,src,NNP,mpv-master,node.c
-1365,key,NN,mpv-master,node.c
-1366,a,FW,mpv-master,node.c
-1367,b,FW,mpv-master,node.c
-1368,format,NN,mpv-master,node.c
-1369,a,FW,mpv-master,node.c
-1370,b,FW,mpv-master,node.c
-1371,s,FW,mpv-master,language.c
-1372,k,FW,mpv-master,language.c
-1373,lang,NN,mpv-master,language.c
-1374,size,NN,mpv-master,language.c
-1375,l 1,FW CD,mpv-master,language.c
-1376,s 1,FW CD,mpv-master,language.c
-1377,l 2,FW CD,mpv-master,language.c
-1378,s 2,FW CD,mpv-master,language.c
-1379,l 1,FW CD,mpv-master,language.c
-1380,l 2,FW CD,mpv-master,language.c
-1381,waiter,NN,mpv-master,thread_tools.c
-1382,waiter,NN,mpv-master,thread_tools.c
-1383,value,NN,mpv-master,thread_tools.c
-1384,waiter,NN,mpv-master,thread_tools.c
-1385,p,FW,mpv-master,thread_tools.c
-1386,tal loc ctx,NNP NN NN,mpv-master,thread_tools.c
-1387,c,FW,mpv-master,thread_tools.c
-1388,c,FW,mpv-master,thread_tools.c
-1389,c,FW,mpv-master,thread_tools.c
-1390,c,FW,mpv-master,thread_tools.c
-1391,c,FW,mpv-master,thread_tools.c
-1392,timeout,NN,mpv-master,thread_tools.c
-1393,c,FW,mpv-master,thread_tools.c
-1394,c,FW,mpv-master,thread_tools.c
-1395,ctx,NN,mpv-master,thread_tools.c
-1396,slave,NN,mpv-master,thread_tools.c
-1397,parent,NN,mpv-master,thread_tools.c
-1398,c,FW,mpv-master,thread_tools.c
-1399,c,FW,mpv-master,thread_tools.c
-1400,in,IN,mpv-master,uuid.c
-1401,uu,FW,mpv-master,uuid.c
-1402,c,FW,mpv-master,uuid.c
-1403,in start,IN NN,mpv-master,uuid.c
-1404,in end,IN NN,mpv-master,uuid.c
-1405,uu,FW,mpv-master,uuid.c
-1406,uuid,NNP,mpv-master,uuid.c
-1407,out,IN,mpv-master,uuid.c
-1408,in,IN,mpv-master,uuid.c
-1409,uu,FW,mpv-master,uuid.c
-1410,tag,NN,mpv-master,rendezvous.c
-1411,value,NN,mpv-master,rendezvous.c
-1412,x,FW,mpv-master,random.c
-1413,k,FW,mpv-master,random.c
-1414,x,FW,mpv-master,random.c
-1415,seed,NN,mpv-master,random.c
-1416,name 1,NN CD,mpv-master,natural_sort.c
-1417,name 2,NN CD,mpv-master,natural_sort.c
-1418,s,FW,mpv-master,ta_talloc.c
-1419,a,FW,mpv-master,ta_talloc.c
-1420,s,FW,mpv-master,ta_talloc.c
-1421,a,FW,mpv-master,ta_talloc.c
-1422,s,FW,mpv-master,ta_talloc.c
-1423,a,FW,mpv-master,ta_talloc.c
-1424,n,FW,mpv-master,ta_talloc.c
-1425,s,FW,mpv-master,ta_talloc.c
-1426,a,FW,mpv-master,ta_talloc.c
-1427,n,FW,mpv-master,ta_talloc.c
-1428,s,FW,mpv-master,ta_talloc.c
-1429,fmt,NN,mpv-master,ta_talloc.c
-1430,ap,FW,mpv-master,ta_talloc.c
-1431,s,FW,mpv-master,ta_talloc.c
-1432,fmt,NN,mpv-master,ta_talloc.c
-1433,ap,FW,mpv-master,ta_talloc.c
-1434,s,FW,mpv-master,ta_talloc.c
-1435,fmt,NN,mpv-master,ta_talloc.c
-1436,s,FW,mpv-master,ta_talloc.c
-1437,fmt,NN,mpv-master,ta_talloc.c
-1438,ptr,NN,mpv-master,ta.c
-1439,ptr,NN,mpv-master,ta.c
-1440,ta parent,FW NN,mpv-master,ta.c
-1441,ptr,NN,mpv-master,ta.c
-1442,ta parent,FW NN,mpv-master,ta.c
-1443,size,NN,mpv-master,ta.c
-1444,ta parent,FW NN,mpv-master,ta.c
-1445,size,NN,mpv-master,ta.c
-1446,ta parent,IN NN,mpv-master,ta.c
-1447,ptr,FW,mpv-master,ta.c
-1448,size,NN,mpv-master,ta.c
-1449,ptr,NN,mpv-master,ta.c
-1450,ptr,NN,mpv-master,ta.c
-1451,ptr,NN,mpv-master,ta.c
-1452,ptr,NN,mpv-master,ta.c
-1453,h,FW,mpv-master,ta.c
-1454,h,FW,mpv-master,ta.c
-1455,h,FW,mpv-master,ta.c
-1456,h,FW,mpv-master,ta.c
-1457,ptr,NN,mpv-master,ta.c
-1458,loc,NN,mpv-master,ta.c
-1459,ptr,NN,mpv-master,ta.c
-1460,h,FW,mpv-master,ta.c
-1461,h,FW,mpv-master,ta.c
-1462,h,FW,mpv-master,ta.c
-1463,ptr,NN,mpv-master,ta.c
-1464,loc,NN,mpv-master,ta.c
-1465,ptr,NN,mpv-master,ta.c
-1466,element size,NN NN,mpv-master,ta_utils.c
-1467,count,NN,mpv-master,ta_utils.c
-1468,next idx,JJ NN,mpv-master,ta_utils.c
-1469,ta parent,FW NN,mpv-master,ta_utils.c
-1470,ta parent,FW NN,mpv-master,ta_utils.c
-1471,ptr,NN,mpv-master,ta_utils.c
-1472,ta parent,FW NN,mpv-master,ta_utils.c
-1473,ptr,NN,mpv-master,ta_utils.c
-1474,size,NN,mpv-master,ta_utils.c
-1475,str,NN,mpv-master,ta_utils.c
-1476,at,IN,mpv-master,ta_utils.c
-1477,append,VB,mpv-master,ta_utils.c
-1478,append len,VB NN,mpv-master,ta_utils.c
-1479,ta parent,FW NN,mpv-master,ta_utils.c
-1480,str,NN,mpv-master,ta_utils.c
-1481,ta parent,FW NN,mpv-master,ta_utils.c
-1482,str,NN,mpv-master,ta_utils.c
-1483,n,FW,mpv-master,ta_utils.c
-1484,str,NN,mpv-master,ta_utils.c
-1485,a,FW,mpv-master,ta_utils.c
-1486,str,NN,mpv-master,ta_utils.c
-1487,a,FW,mpv-master,ta_utils.c
-1488,str,NN,mpv-master,ta_utils.c
-1489,a,FW,mpv-master,ta_utils.c
-1490,n,FW,mpv-master,ta_utils.c
-1491,str,NN,mpv-master,ta_utils.c
-1492,a,FW,mpv-master,ta_utils.c
-1493,n,FW,mpv-master,ta_utils.c
-1494,str,NN,mpv-master,ta_utils.c
-1495,at,IN,mpv-master,ta_utils.c
-1496,fmt,NN,mpv-master,ta_utils.c
-1497,ap,FW,mpv-master,ta_utils.c
-1498,ta parent,FW NN,mpv-master,ta_utils.c
-1499,fmt,NN,mpv-master,ta_utils.c
-1500,ta parent,FW NN,mpv-master,ta_utils.c
-1501,fmt,NN,mpv-master,ta_utils.c
-1502,ap,FW,mpv-master,ta_utils.c
-1503,str,NN,mpv-master,ta_utils.c
-1504,fmt,NN,mpv-master,ta_utils.c
-1505,str,NN,mpv-master,ta_utils.c
-1506,fmt,NN,mpv-master,ta_utils.c
-1507,ap,FW,mpv-master,ta_utils.c
-1508,str,NN,mpv-master,ta_utils.c
-1509,fmt,NN,mpv-master,ta_utils.c
-1510,str,NN,mpv-master,ta_utils.c
-1511,fmt,NN,mpv-master,ta_utils.c
-1512,ap,FW,mpv-master,ta_utils.c
-1513,ta parent,FW NN,mpv-master,ta_utils.c
-1514,ptr,NN,mpv-master,ta_utils.c
-1515,size,NN,mpv-master,ta_utils.c
-1516,ta parent,FW NN,mpv-master,ta_utils.c
-1517,ptr,NN,mpv-master,ta_utils.c
-1518,size,NN,mpv-master,ta_utils.c
-1519,ta parent,FW NN,mpv-master,ta_utils.c
-1520,str,NN,mpv-master,ta_utils.c
-1521,ta parent,FW NN,mpv-master,ta_utils.c
-1522,str,NN,mpv-master,ta_utils.c
-1523,n,FW,mpv-master,ta_utils.c
-1524,stream,NN,mpv-master,stream_null.c
-1525,c,FW,mpv-master,stream.c
-1526,url,NNP,mpv-master,stream.c
-1527,tal loc ctx,NNP NN NN,mpv-master,stream.c
-1528,url,NN,mpv-master,stream.c
-1529,ok,NN,mpv-master,stream.c
-1530,url,NNP,mpv-master,stream.c
-1531,proto,NN,mpv-master,stream.c
-1532,src,NN,mpv-master,stream.c
-1533,new,JJ,mpv-master,stream.c
-1534,s,FW,mpv-master,stream.c
-1535,dst,NNP,mpv-master,stream.c
-1536,len,NN,mpv-master,stream.c
-1537,pos,NN,mpv-master,stream.c
-1538,s,FW,mpv-master,stream.c
-1539,keep,VB,mpv-master,stream.c
-1540,new,JJ,mpv-master,stream.c
-1541,s info,FW NN,mpv-master,stream.c
-1542,args,NNP,mpv-master,stream.c
-1543,ret,NNP,mpv-master,stream.c
-1544,args,NNP,mpv-master,stream.c
-1545,ret,NNP,mpv-master,stream.c
-1546,url,NNP,mpv-master,stream.c
-1547,flags,NNS,mpv-master,stream.c
-1548,c,FW,mpv-master,stream.c
-1549,global,JJ,mpv-master,stream.c
-1550,filename,NN,mpv-master,stream.c
-1551,global,JJ,mpv-master,stream.c
-1552,s,FW,mpv-master,stream.c
-1553,buf,NN,mpv-master,stream.c
-1554,len,NN,mpv-master,stream.c
-1555,s,FW,mpv-master,stream.c
-1556,forward,VB,mpv-master,stream.c
-1557,s,FW,mpv-master,stream.c
-1558,buf,NN,mpv-master,stream.c
-1559,buf size,NN NN,mpv-master,stream.c
-1560,s,FW,mpv-master,stream.c
-1561,s,FW,mpv-master,stream.c
-1562,mem,NN,mpv-master,stream.c
-1563,total,NN,mpv-master,stream.c
-1564,s,FW,mpv-master,stream.c
-1565,forward size,JJ NN,mpv-master,stream.c
-1566,s,FW,mpv-master,stream.c
-1567,buf,NN,mpv-master,stream.c
-1568,buf size,NN NN,mpv-master,stream.c
-1569,s,FW,mpv-master,stream.c
-1570,buf,NN,mpv-master,stream.c
-1571,len,NN,mpv-master,stream.c
-1572,s,FW,mpv-master,stream.c
-1573,len,NN,mpv-master,stream.c
-1574,s,FW,mpv-master,stream.c
-1575,s,FW,mpv-master,stream.c
-1576,new pos,JJ NN,mpv-master,stream.c
-1577,s,FW,mpv-master,stream.c
-1578,pos,NN,mpv-master,stream.c
-1579,s,FW,mpv-master,stream.c
-1580,pos,NN,mpv-master,stream.c
-1581,s,FW,mpv-master,stream.c
-1582,cmd,NN,mpv-master,stream.c
-1583,arg,NN,mpv-master,stream.c
-1584,s,FW,mpv-master,stream.c
-1585,s,FW,mpv-master,stream.c
-1586,s,FW,mpv-master,stream.c
-1587,s,FW,mpv-master,stream.c
-1588,tal loc ctx,NNP NN NN,mpv-master,stream.c
-1589,max size,JJ NN,mpv-master,stream.c
-1590,filename,NN,mpv-master,stream.c
-1591,tal loc ctx,NNP NN NN,mpv-master,stream.c
-1592,global,JJ,mpv-master,stream.c
-1593,max size,JJ NN,mpv-master,stream.c
-1594,log,NN,mpv-master,stream.c
-1595,proto,NN,mpv-master,stream.c
-1596,stream,NN,mpv-master,stream_avdevice.c
-1597,s,FW,mpv-master,stream_libarchive.c
-1598,s,FW,mpv-master,stream_libarchive.c
-1599,s,FW,mpv-master,stream_libarchive.c
-1600,src,NN,mpv-master,stream_libarchive.c
-1601,vol,NN,mpv-master,stream_libarchive.c
-1602,arch,NN,mpv-master,stream_libarchive.c
-1603,priv,JJ,mpv-master,stream_libarchive.c
-1604,buffer,NN,mpv-master,stream_libarchive.c
-1605,arch,NN,mpv-master,stream_libarchive.c
-1606,priv,JJ,mpv-master,stream_libarchive.c
-1607,offset,NN,mpv-master,stream_libarchive.c
-1608,whence,WRB,mpv-master,stream_libarchive.c
-1609,arch,NN,mpv-master,stream_libarchive.c
-1610,priv,JJ,mpv-master,stream_libarchive.c
-1611,request,NN,mpv-master,stream_libarchive.c
-1612,arch,NN,mpv-master,stream_libarchive.c
-1613,priv,JJ,mpv-master,stream_libarchive.c
-1614,vol,NN,mpv-master,stream_libarchive.c
-1615,arch,NN,mpv-master,stream_libarchive.c
-1616,priv,JJ,mpv-master,stream_libarchive.c
-1617,mpa,NNP,mpv-master,stream_libarchive.c
-1618,mpa,NNP,mpv-master,stream_libarchive.c
-1619,r,FW,mpv-master,stream_libarchive.c
-1620,mpa,NNP,mpv-master,stream_libarchive.c
-1621,mpa,NNP,mpv-master,stream_libarchive.c
-1622,src,NN,mpv-master,stream_libarchive.c
-1623,url,NNP,mpv-master,stream_libarchive.c
-1624,index,NN,mpv-master,stream_libarchive.c
-1625,ctx,NN,mpv-master,stream_libarchive.c
-1626,format,NN,mpv-master,stream_libarchive.c
-1627,base,NN,mpv-master,stream_libarchive.c
-1628,index,NN,mpv-master,stream_libarchive.c
-1629,ctx,NN,mpv-master,stream_libarchive.c
-1630,format,NN,mpv-master,stream_libarchive.c
-1631,base,NN,mpv-master,stream_libarchive.c
-1632,index,NN,mpv-master,stream_libarchive.c
-1633,mpa,NNP,mpv-master,stream_libarchive.c
-1634,flags,NNS,mpv-master,stream_libarchive.c
-1635,log,NN,mpv-master,stream_libarchive.c
-1636,src,NN,mpv-master,stream_libarchive.c
-1637,flags,NNS,mpv-master,stream_libarchive.c
-1638,max volumes,JJ NNS,mpv-master,stream_libarchive.c
-1639,log,NN,mpv-master,stream_libarchive.c
-1640,src,NN,mpv-master,stream_libarchive.c
-1641,flags,NNS,mpv-master,stream_libarchive.c
-1642,max volumes,JJ NNS,mpv-master,stream_libarchive.c
-1643,mpa,NNP,mpv-master,stream_libarchive.c
-1644,s,FW,mpv-master,stream_libarchive.c
-1645,s,FW,mpv-master,stream_libarchive.c
-1646,buffer,NN,mpv-master,stream_libarchive.c
-1647,max len,JJ NN,mpv-master,stream_libarchive.c
-1648,s,FW,mpv-master,stream_libarchive.c
-1649,new pos,JJ NN,mpv-master,stream_libarchive.c
-1650,s,FW,mpv-master,stream_libarchive.c
-1651,s,FW,mpv-master,stream_libarchive.c
-1652,stream,NN,mpv-master,stream_libarchive.c
-1653,s,FW,mpv-master,stream_concat.c
-1654,buffer,NN,mpv-master,stream_concat.c
-1655,len,NN,mpv-master,stream_concat.c
-1656,s,FW,mpv-master,stream_concat.c
-1657,new pos,JJ NN,mpv-master,stream_concat.c
-1658,s,NNP,mpv-master,stream_concat.c
-1659,s,NNP,mpv-master,stream_concat.c
-1660,cur,NN,mpv-master,stream_concat.c
-1661,new,JJ,mpv-master,stream_concat.c
-1662,stream,NN,mpv-master,stream_concat.c
-1663,args,NNP,mpv-master,stream_concat.c
-1664,global,JJ,mpv-master,stream_concat.c
-1665,c,FW,mpv-master,stream_concat.c
-1666,streams,NNS,mpv-master,stream_concat.c
-1667,num streams,NN NNS,mpv-master,stream_concat.c
-1668,del sys,VB NN,mpv-master,dvb_tune.c
-1669,fe fd,FW FW,mpv-master,dvb_tune.c
-1670,log,NN,mpv-master,dvb_tune.c
-1671,priv,JJ,mpv-master,dvb_tune.c
-1672,adapter,NN,mpv-master,dvb_tune.c
-1673,frontend,NN,mpv-master,dvb_tune.c
-1674,demux cnt,NN NN,mpv-master,dvb_tune.c
-1675,priv,JJ,mpv-master,dvb_tune.c
-1676,cnt,NN,mpv-master,dvb_tune.c
-1677,priv,JJ,mpv-master,dvb_tune.c
-1678,fd,FW,mpv-master,dvb_tune.c
-1679,pid,NNP,mpv-master,dvb_tune.c
-1680,pes type,NNP NN,mpv-master,dvb_tune.c
-1681,priv,JJ,mpv-master,dvb_tune.c
-1682,dev no,NN NN,mpv-master,dvb_tune.c
-1683,service id,NN NN,mpv-master,dvb_tune.c
-1684,priv,JJ,mpv-master,dvb_tune.c
-1685,fe status,FW NN,mpv-master,dvb_tune.c
-1686,priv,JJ,mpv-master,dvb_tune.c
-1687,fd frontend,FW NN,mpv-master,dvb_tune.c
-1688,tm out,VB RP,mpv-master,dvb_tune.c
-1689,fd,FW,mpv-master,dvb_tune.c
-1690,v,FW,mpv-master,dvb_tune.c
-1691,cmd,NN,mpv-master,dvb_tune.c
-1692,t,FW,mpv-master,dvb_tune.c
-1693,b,FW,mpv-master,dvb_tune.c
-1694,secfd,FW,mpv-master,dvb_tune.c
-1695,sat no,NNP NN,mpv-master,dvb_tune.c
-1696,polv,NNP,mpv-master,dvb_tune.c
-1697,hi lo,UH FW,mpv-master,dvb_tune.c
-1698,priv,JJ,mpv-master,dvb_tune.c
-1699,fd frontend,FW NN,mpv-master,dvb_tune.c
-1700,del sys,VB NN,mpv-master,dvb_tune.c
-1701,cmd seq,NN NN,mpv-master,dvb_tune.c
-1702,priv,JJ,mpv-master,dvb_tune.c
-1703,fd frontend,FW NN,mpv-master,dvb_tune.c
-1704,del sys,VB NN,mpv-master,dvb_tune.c
-1705,freq,NN,mpv-master,dvb_tune.c
-1706,s rate,FW NN,mpv-master,dvb_tune.c
-1707,pol,NNP,mpv-master,dvb_tune.c
-1708,stream id,NN NN,mpv-master,dvb_tune.c
-1709,spec Inv,NN NN,mpv-master,dvb_tune.c
-1710,diseqc,NNP,mpv-master,dvb_tune.c
-1711,modulation,NN,mpv-master,dvb_tune.c
-1712,HP Code Rate,FW NN NN,mpv-master,dvb_tune.c
-1713,Transmission Mode,NN NN,mpv-master,dvb_tune.c
-1714,guard Interval,NN NN,mpv-master,dvb_tune.c
-1715,bandwidth,NN,mpv-master,dvb_tune.c
-1716,LP Code Rate,FW NN NN,mpv-master,dvb_tune.c
-1717,hier,NNP,mpv-master,dvb_tune.c
-1718,timeout,NN,mpv-master,dvb_tune.c
-1719,priv,JJ,mpv-master,dvb_tune.c
-1720,del sys,VB NN,mpv-master,dvb_tune.c
-1721,freq,NN,mpv-master,dvb_tune.c
-1722,pol,NNP,mpv-master,dvb_tune.c
-1723,s rate,FW NN,mpv-master,dvb_tune.c
-1724,diseqc,NNP,mpv-master,dvb_tune.c
-1725,stream id,NN NN,mpv-master,dvb_tune.c
-1726,spec Inv,NN NN,mpv-master,dvb_tune.c
-1727,modulation,NN,mpv-master,dvb_tune.c
-1728,guard Interval,NN NN,mpv-master,dvb_tune.c
-1729,Transmission Mode,NN NN,mpv-master,dvb_tune.c
-1730,band Width,NN NN,mpv-master,dvb_tune.c
-1731,HP Code Rate,FW NN NN,mpv-master,dvb_tune.c
-1732,LP Code Rate,FW NN NN,mpv-master,dvb_tune.c
-1733,hier,NNP,mpv-master,dvb_tune.c
-1734,timeout,NN,mpv-master,dvb_tune.c
-1735,tal loc ctx,NNP NN NN,mpv-master,cookies.c
-1736,src,NN,mpv-master,cookies.c
-1737,ptr,NN,mpv-master,cookies.c
-1738,ctx,NN,mpv-master,cookies.c
-1739,global,JJ,mpv-master,cookies.c
-1740,log,NN,mpv-master,cookies.c
-1741,filename,NN,mpv-master,cookies.c
-1742,tal loc ctx,NNP NN NN,mpv-master,cookies.c
-1743,global,JJ,mpv-master,cookies.c
-1744,log,NN,mpv-master,cookies.c
-1745,file,NN,mpv-master,cookies.c
-1746,stream,NN,mpv-master,stream_dvdnav.c
-1747,device,NN,mpv-master,stream_dvdnav.c
-1748,speed,NN,mpv-master,stream_dvdnav.c
-1749,path,NN,mpv-master,stream_dvdnav.c
-1750,ext,NNP,mpv-master,stream_dvdnav.c
-1751,sig,NN,mpv-master,stream_dvdnav.c
-1752,stream,NN,mpv-master,stream_dvdnav.c
-1753,aid,NNP,mpv-master,stream_dvdnav.c
-1754,stream,NN,mpv-master,stream_dvdnav.c
-1755,sid,NNP,mpv-master,stream_dvdnav.c
-1756,stream,NN,mpv-master,stream_dvdnav.c
-1757,s,FW,mpv-master,stream_dvdnav.c
-1758,buf,NN,mpv-master,stream_dvdnav.c
-1759,max len,JJ NN,mpv-master,stream_dvdnav.c
-1760,stream,NN,mpv-master,stream_dvdnav.c
-1761,cmd,NN,mpv-master,stream_dvdnav.c
-1762,arg,NN,mpv-master,stream_dvdnav.c
-1763,s,FW,mpv-master,stream_dvdnav.c
-1764,stream,NN,mpv-master,stream_dvdnav.c
-1765,filename,NN,mpv-master,stream_dvdnav.c
-1766,stream,NN,mpv-master,stream_dvdnav.c
-1767,stream,NN,mpv-master,stream_dvdnav.c
-1768,path,NN,mpv-master,stream_dvdnav.c
-1769,stream,NN,mpv-master,stream_dvdnav.c
-1770,stream,NN,mpv-master,stream_edl.c
-1771,cr,FW,mpv-master,stream_dvb.c
-1772,mod string,NN NN,mpv-master,stream_dvb.c
-1773,vdr par str,NNP NN NN,mpv-master,stream_dvb.c
-1774,ptr,NN,mpv-master,stream_dvb.c
-1775,s,FW,mpv-master,stream_dvb.c
-1776,sep,NN,mpv-master,stream_dvb.c
-1777,p,FW,mpv-master,stream_dvb.c
-1778,log,NN,mpv-master,stream_dvb.c
-1779,pid string,NNP NN,mpv-master,stream_dvb.c
-1780,ptr,NN,mpv-master,stream_dvb.c
-1781,log,NN,mpv-master,stream_dvb.c
-1782,list add,NN VB,mpv-master,stream_dvb.c
-1783,cfg full transponder,NN JJ NN,mpv-master,stream_dvb.c
-1784,filename,NN,mpv-master,stream_dvb.c
-1785,frontend,NN,mpv-master,stream_dvb.c
-1786,del sys,VB NN,mpv-master,stream_dvb.c
-1787,del sys mask,VB NN NN,mpv-master,stream_dvb.c
-1788,stream,NN,mpv-master,stream_dvb.c
-1789,buffer,NN,mpv-master,stream_dvb.c
-1790,size,NN,mpv-master,stream_dvb.c
-1791,stream,NN,mpv-master,stream_dvb.c
-1792,adapter,NN,mpv-master,stream_dvb.c
-1793,n,FW,mpv-master,stream_dvb.c
-1794,s,FW,mpv-master,stream_dvb.c
-1795,cmd,FW,mpv-master,stream_dvb.c
-1796,arg,FW,mpv-master,stream_dvb.c
-1797,stream,NN,mpv-master,stream_dvb.c
-1798,stream,NN,mpv-master,stream_dvb.c
-1799,prog name,NN NN,mpv-master,stream_dvb.c
-1800,stream,NN,mpv-master,stream_dvb.c
-1801,stream,NN,mpv-master,stream_dvb.c
-1802,stream,NN,mpv-master,stream_dvb.c
-1803,stream,NN,mpv-master,stream_dvb.c
-1804,s,FW,mpv-master,stream_slice.c
-1805,buffer,NN,mpv-master,stream_slice.c
-1806,len,NN,mpv-master,stream_slice.c
-1807,s,FW,mpv-master,stream_slice.c
-1808,new pos,JJ NN,mpv-master,stream_slice.c
-1809,s,FW,mpv-master,stream_slice.c
-1810,s,FW,mpv-master,stream_slice.c
-1811,stream,NN,mpv-master,stream_slice.c
-1812,stream,NN,mpv-master,stream_slice.c
-1813,args,NNP,mpv-master,stream_slice.c
-1814,s,FW,mpv-master,stream_file.c
-1815,s,FW,mpv-master,stream_file.c
-1816,buffer,NN,mpv-master,stream_file.c
-1817,max len,JJ NN,mpv-master,stream_file.c
-1818,s,FW,mpv-master,stream_file.c
-1819,buffer,NN,mpv-master,stream_file.c
-1820,len,NN,mpv-master,stream_file.c
-1821,s,FW,mpv-master,stream_file.c
-1822,new pos,JJ NN,mpv-master,stream_file.c
-1823,s,FW,mpv-master,stream_file.c
-1824,tal loc ctx,NNP NN NN,mpv-master,stream_file.c
-1825,url,NNP,mpv-master,stream_file.c
-1826,tal loc ctx,NNP NN NN,mpv-master,stream_file.c
-1827,url,NNP,mpv-master,stream_file.c
-1828,fd,FW,mpv-master,stream_file.c
-1829,fd,FW,mpv-master,stream_file.c
-1830,fd,FW,mpv-master,stream_file.c
-1831,fd,FW,mpv-master,stream_file.c
-1832,stream,NN,mpv-master,stream_file.c
-1833,args,NNP,mpv-master,stream_file.c
-1834,s,FW,mpv-master,stream_lavf.c
-1835,buffer,NN,mpv-master,stream_lavf.c
-1836,max len,JJ NN,mpv-master,stream_lavf.c
-1837,s,FW,mpv-master,stream_lavf.c
-1838,buffer,NN,mpv-master,stream_lavf.c
-1839,len,NN,mpv-master,stream_lavf.c
-1840,s,FW,mpv-master,stream_lavf.c
-1841,new pos,JJ NN,mpv-master,stream_lavf.c
-1842,s,FW,mpv-master,stream_lavf.c
-1843,stream,NN,mpv-master,stream_lavf.c
-1844,s,FW,mpv-master,stream_lavf.c
-1845,cmd,NN,mpv-master,stream_lavf.c
-1846,arg,NN,mpv-master,stream_lavf.c
-1847,ctx,NN,mpv-master,stream_lavf.c
-1848,dict,NN,mpv-master,stream_lavf.c
-1849,target fmt,NN NN,mpv-master,stream_lavf.c
-1850,global,JJ,mpv-master,stream_lavf.c
-1851,log,NN,mpv-master,stream_lavf.c
-1852,ta parent,FW NN,mpv-master,stream_lavf.c
-1853,filename,NN,mpv-master,stream_lavf.c
-1854,stream,NN,mpv-master,stream_lavf.c
-1855,s,FW,mpv-master,stream_lavf.c
-1856,s,FW,mpv-master,stream_cdda.c
-1857,track,NN,mpv-master,stream_cdda.c
-1858,s,FW,mpv-master,stream_cdda.c
-1859,track,NN,mpv-master,stream_cdda.c
-1860,in pos,IN NN,mpv-master,stream_cdda.c
-1861,function,NN,mpv-master,stream_cdda.c
-1862,s,FW,mpv-master,stream_cdda.c
-1863,buffer,NN,mpv-master,stream_cdda.c
-1864,max len,JJ NN,mpv-master,stream_cdda.c
-1865,s,FW,mpv-master,stream_cdda.c
-1866,new pos,JJ NN,mpv-master,stream_cdda.c
-1867,s,FW,mpv-master,stream_cdda.c
-1868,p,FW,mpv-master,stream_cdda.c
-1869,sector,NN,mpv-master,stream_cdda.c
-1870,stream,NN,mpv-master,stream_cdda.c
-1871,cmd,NN,mpv-master,stream_cdda.c
-1872,arg,NN,mpv-master,stream_cdda.c
-1873,st,FW,mpv-master,stream_cdda.c
-1874,st,FW,mpv-master,stream_cdda.c
-1875,s,FW,mpv-master,stream_memory.c
-1876,buffer,NN,mpv-master,stream_memory.c
-1877,len,NN,mpv-master,stream_memory.c
-1878,s,FW,mpv-master,stream_memory.c
-1879,new pos,JJ NN,mpv-master,stream_memory.c
-1880,s,FW,mpv-master,stream_memory.c
-1881,stream,NN,mpv-master,stream_memory.c
-1882,args,NNP,mpv-master,stream_memory.c
-1883,global,JJ,mpv-master,stream_memory.c
-1884,data,NNS,mpv-master,stream_memory.c
-1885,len,NN,mpv-master,stream_memory.c
-1886,stream,NN,mpv-master,stream_mf.c
-1887,s,FW,mpv-master,stream_cb.c
-1888,buffer,NN,mpv-master,stream_cb.c
-1889,max len,JJ NN,mpv-master,stream_cb.c
-1890,s,FW,mpv-master,stream_cb.c
-1891,new pos,JJ NN,mpv-master,stream_cb.c
-1892,s,FW,mpv-master,stream_cb.c
-1893,s,FW,mpv-master,stream_cb.c
-1894,stream,NN,mpv-master,stream_cb.c
-1895,priv,JJ,mpv-master,stream_bluray.c
-1896,priv,JJ,mpv-master,stream_bluray.c
-1897,playlist,NN,mpv-master,stream_bluray.c
-1898,priv,JJ,mpv-master,stream_bluray.c
-1899,title,NN,mpv-master,stream_bluray.c
-1900,s,FW,mpv-master,stream_bluray.c
-1901,s,FW,mpv-master,stream_bluray.c
-1902,ev,FW,mpv-master,stream_bluray.c
-1903,s,FW,mpv-master,stream_bluray.c
-1904,buf,NN,mpv-master,stream_bluray.c
-1905,len,NN,mpv-master,stream_bluray.c
-1906,s,FW,mpv-master,stream_bluray.c
-1907,cmd,NN,mpv-master,stream_bluray.c
-1908,arg,NN,mpv-master,stream_bluray.c
-1909,err,NN,mpv-master,stream_bluray.c
-1910,s,FW,mpv-master,stream_bluray.c
-1911,s,FW,mpv-master,stream_bluray.c
-1912,title guess,NN VB,mpv-master,stream_bluray.c
-1913,s,FW,mpv-master,stream_bluray.c
-1914,s,FW,mpv-master,stream_bluray.c
-1915,path,NN,mpv-master,stream_bluray.c
-1916,path,NN,mpv-master,stream_bluray.c
-1917,stream,NN,mpv-master,stream_bluray.c
-1918,ext,NNP,mpv-master,external_files.c
-1919,list,NN,mpv-master,external_files.c
-1920,opts,NNP,mpv-master,external_files.c
-1921,ext,NNP,mpv-master,external_files.c
-1922,f name,FW NN,mpv-master,external_files.c
-1923,filename,NN,mpv-master,external_files.c
-1924,opts,NNP,mpv-master,external_files.c
-1925,a,FW,mpv-master,external_files.c
-1926,b,FW,mpv-master,external_files.c
-1927,a,FW,mpv-master,external_files.c
-1928,b,FW,mpv-master,external_files.c
-1929,name,NN,mpv-master,external_files.c
-1930,fn start,FW NN,mpv-master,external_files.c
-1931,ctx,NN,mpv-master,external_files.c
-1932,filename,NN,mpv-master,external_files.c
-1933,global,JJ,mpv-master,external_files.c
-1934,opts,NNP,mpv-master,external_files.c
-1935,s list,FW NN,mpv-master,external_files.c
-1936,n sub,FW NN,mpv-master,external_files.c
-1937,path,NN,mpv-master,external_files.c
-1938,f name,FW NN,mpv-master,external_files.c
-1939,limit fuzziness,NN NN,mpv-master,external_files.c
-1940,limit type,NN NN,mpv-master,external_files.c
-1941,s,FW,mpv-master,external_files.c
-1942,end,NN,mpv-master,external_files.c
-1943,s list,FW NN,mpv-master,external_files.c
-1944,n sub,FW NNP,mpv-master,external_files.c
-1945,global,JJ,mpv-master,external_files.c
-1946,opts,NNP,mpv-master,external_files.c
-1947,s list,NN NN,mpv-master,external_files.c
-1948,n subs,FW NNS,mpv-master,external_files.c
-1949,f name,FW NN,mpv-master,external_files.c
-1950,paths,NNS,mpv-master,external_files.c
-1951,cfg path,NNP NN,mpv-master,external_files.c
-1952,type,NN,mpv-master,external_files.c
-1953,global,JJ,mpv-master,external_files.c
-1954,f name,FW NN,mpv-master,external_files.c
-1955,opts,NNP,mpv-master,external_files.c
-1956,mp ctx,FW NN,mpv-master,audio.c
-1957,mp ctx,FW NN,mpv-master,audio.c
-1958,mp ctx,FW NN,mpv-master,audio.c
-1959,db,FW,mpv-master,audio.c
-1960,mp ctx,FW NN,mpv-master,audio.c
-1961,mp ctx,FW NN,mpv-master,audio.c
-1962,mp ctx,FW NN,mpv-master,audio.c
-1963,mp ctx,FW NN,mpv-master,audio.c
-1964,ao c,FW FW,mpv-master,audio.c
-1965,mp ctx,FW NN,mpv-master,audio.c
-1966,mp ctx,FW NN,mpv-master,audio.c
-1967,ao c,FW FW,mpv-master,audio.c
-1968,mp ctx,FW NN,mpv-master,audio.c
-1969,buf,NN,mpv-master,audio.c
-1970,buf sz,NN NN,mpv-master,audio.c
-1971,rate,NN,mpv-master,audio.c
-1972,format,NN,mpv-master,audio.c
-1973,channels,NNS,mpv-master,audio.c
-1974,old,JJ,mpv-master,audio.c
-1975,new,JJ,mpv-master,audio.c
-1976,ao c,FW FW,mpv-master,audio.c
-1977,ao,FW,mpv-master,audio.c
-1978,mp ctx,FW NN,mpv-master,audio.c
-1979,mp ctx,FW NN,mpv-master,audio.c
-1980,track,NN,mpv-master,audio.c
-1981,mp ctx,FW NN,mpv-master,audio.c
-1982,mp ctx,FW NN,mpv-master,audio.c
-1983,track,NN,mpv-master,audio.c
-1984,mp ctx,FW NN,mpv-master,audio.c
-1985,mp ctx,FW NN,mpv-master,audio.c
-1986,mp ctx,FW NN,mpv-master,audio.c
-1987,f,FW,mpv-master,audio.c
-1988,mp ctx,FW NN,mpv-master,audio.c
-1989,mp ctx,FW NN,mpv-master,audio.c
-1990,pts,NNP,mpv-master,audio.c
-1991,mp ctx,FW NN,mpv-master,audio.c
-1992,mp ctx,FW NN,mpv-master,audio.c
-1993,mp ctx,FW NN,mpv-master,audio.c
-1994,L,FW,mpv-master,lua.c
-1995,func,NN,mpv-master,lua.c
-1996,ud,FW,mpv-master,lua.c
-1997,L,FW,mpv-master,lua.c
-1998,arg,NN,mpv-master,lua.c
-1999,p,FW,mpv-master,lua.c
-2000,type,NN,redis,bio.c
-2001,job,NN,redis,bio.c
-2002,free fn,JJ NN,redis,bio.c
-2003,arg count,NN NN,redis,bio.c
-2004,fd,FW,redis,bio.c
-2005,need f sync,VB FW NN,redis,bio.c
-2006,need reclaim cache,VB VB NN,redis,bio.c
-2007,fd,NNP,redis,bio.c
-2008,offset,NN,redis,bio.c
-2009,need reclaim cache,VB VB NN,redis,bio.c
-2010,fd,NNP,redis,bio.c
-2011,offset,VB,redis,bio.c
-2012,need reclaim cache,VB VB NN,redis,bio.c
-2013,arg,NN,redis,bio.c
-2014,type,NN,redis,bio.c
-2015,job type,NN NN,redis,bio.c
-2016,ct,FW,redis,connection.c
-2017,type name,NN NN,redis,connection.c
-2018,type name,NN NN,redis,connection.c
-2019,info,NN,redis,connection.c
-2020,key,NN,redis,lazyfree.c
-2021,obj,NN,redis,lazyfree.c
-2022,db id,NN NN,redis,lazyfree.c
-2023,key,NN,redis,lazyfree.c
-2024,obj,NN,redis,lazyfree.c
-2025,db id,NN NN,redis,lazyfree.c
-2026,db,NNP,redis,lazyfree.c
-2027,tracking,NN,redis,lazyfree.c
-2028,lua scripts,NNP NNS,redis,lazyfree.c
-2029,lua,NNP,redis,lazyfree.c
-2030,functions lib ctx,NNS NN NN,redis,lazyfree.c
-2031,blocks,NNS,redis,lazyfree.c
-2032,index,NN,redis,lazyfree.c
-2033,context,NN,redis,sha1.c
-2034,context,NN,redis,sha1.c
-2035,data,NNS,redis,sha1.c
-2036,len,NN,redis,sha1.c
-2037,context,NN,redis,sha1.c
-2038,argc,NNP,redis,sha1.c
-2039,argv,NNP,redis,sha1.c
-2040,flags,NNS,redis,sha1.c
-2041,n,FW,redis,cluster_legacy.c
-2042,n,FW,redis,cluster_legacy.c
-2043,n,FW,redis,cluster_legacy.c
-2044,use tls,VB NNP,redis,cluster_legacy.c
-2045,n,FW,redis,cluster_legacy.c
-2046,value,NN,redis,cluster_legacy.c
-2047,length,NN,redis,cluster_legacy.c
-2048,n,FW,redis,cluster_legacy.c
-2049,s,FW,redis,cluster_legacy.c
-2050,n,FW,redis,cluster_legacy.c
-2051,n,FW,redis,cluster_legacy.c
-2052,value,NN,redis,cluster_legacy.c
-2053,length,NN,redis,cluster_legacy.c
-2054,n,FW,redis,cluster_legacy.c
-2055,s,FW,redis,cluster_legacy.c
-2056,n,FW,redis,cluster_legacy.c
-2057,n,FW,redis,cluster_legacy.c
-2058,value,NN,redis,cluster_legacy.c
-2059,length,NN,redis,cluster_legacy.c
-2060,n,FW,redis,cluster_legacy.c
-2061,s,FW,redis,cluster_legacy.c
-2062,n,FW,redis,cluster_legacy.c
-2063,n,FW,redis,cluster_legacy.c
-2064,value,NN,redis,cluster_legacy.c
-2065,length,NN,redis,cluster_legacy.c
-2066,n,FW,redis,cluster_legacy.c
-2067,s,FW,redis,cluster_legacy.c
-2068,n,FW,redis,cluster_legacy.c
-2069,filename,NN,redis,cluster_legacy.c
-2070,do f sync,VB FW NN,redis,cluster_legacy.c
-2071,do f sync,VB FW NN,redis,cluster_legacy.c
-2072,filename,NN,redis,cluster_legacy.c
-2073,announced tcp port,JJ NNP NN,redis,cluster_legacy.c
-2074,announced tls port,JJ NNP NN,redis,cluster_legacy.c
-2075,announced c port,JJ FW NN,redis,cluster_legacy.c
-2076,node,NN,redis,cluster_legacy.c
-2077,new,JJ,redis,cluster_legacy.c
-2078,node,NN,redis,cluster_legacy.c
-2079,new,JJ,redis,cluster_legacy.c
-2080,node,NN,redis,cluster_legacy.c
-2081,shard id,NN NN,redis,cluster_legacy.c
-2082,hard,JJ,redis,cluster_legacy.c
-2083,type,NN,redis,cluster_legacy.c
-2084,msg len,NN NN,redis,cluster_legacy.c
-2085,node,NN,redis,cluster_legacy.c
-2086,node,NN,redis,cluster_legacy.c
-2087,link,NN,redis,cluster_legacy.c
-2088,node,NN,redis,cluster_legacy.c
-2089,link,NN,redis,cluster_legacy.c
-2090,conn,NN,redis,cluster_legacy.c
-2091,el,FW,redis,cluster_legacy.c
-2092,fd,FW,redis,cluster_legacy.c
-2093,priv data,JJ NNS,redis,cluster_legacy.c
-2094,mask,NN,redis,cluster_legacy.c
-2095,node name,NN NN,redis,cluster_legacy.c
-2096,flags,NNS,redis,cluster_legacy.c
-2097,failing,VBG,redis,cluster_legacy.c
-2098,sender,NN,redis,cluster_legacy.c
-2099,node,NN,redis,cluster_legacy.c
-2100,node,NN,redis,cluster_legacy.c
-2101,sender,NN,redis,cluster_legacy.c
-2102,node,NN,redis,cluster_legacy.c
-2103,master,NN,redis,cluster_legacy.c
-2104,slave,NN,redis,cluster_legacy.c
-2105,master,NN,redis,cluster_legacy.c
-2106,slave,NN,redis,cluster_legacy.c
-2107,n,FW,redis,cluster_legacy.c
-2108,n,FW,redis,cluster_legacy.c
-2109,node,NN,redis,cluster_legacy.c
-2110,del node,VB NN,redis,cluster_legacy.c
-2111,name,NN,redis,cluster_legacy.c
-2112,length,NN,redis,cluster_legacy.c
-2113,node,NN,redis,cluster_legacy.c
-2114,node,NN,redis,cluster_legacy.c
-2115,new name,JJ NN,redis,cluster_legacy.c
-2116,shard id,NN NN,redis,cluster_legacy.c
-2117,node,NN,redis,cluster_legacy.c
-2118,node,NN,redis,cluster_legacy.c
-2119,sender,NN,redis,cluster_legacy.c
-2120,node,NN,redis,cluster_legacy.c
-2121,node id,NN NN,redis,cluster_legacy.c
-2122,node,NN,redis,cluster_legacy.c
-2123,node,NN,redis,cluster_legacy.c
-2124,ip,NNP,redis,cluster_legacy.c
-2125,port,NN,redis,cluster_legacy.c
-2126,c port,FW NN,redis,cluster_legacy.c
-2127,ip,NNP,redis,cluster_legacy.c
-2128,port,NN,redis,cluster_legacy.c
-2129,c port,FW NN,redis,cluster_legacy.c
-2130,hdr,NNP,redis,cluster_legacy.c
-2131,tls port,NNP NN,redis,cluster_legacy.c
-2132,tcp port,NNP NN,redis,cluster_legacy.c
-2133,g,FW,redis,cluster_legacy.c
-2134,tls port,NNP NN,redis,cluster_legacy.c
-2135,tcp port,NNP NN,redis,cluster_legacy.c
-2136,gossip msg,NN NN,redis,cluster_legacy.c
-2137,g,FW,redis,cluster_legacy.c
-2138,count,NN,redis,cluster_legacy.c
-2139,hdr,NNP,redis,cluster_legacy.c
-2140,link,NN,redis,cluster_legacy.c
-2141,buf,NN,redis,cluster_legacy.c
-2142,link,NN,redis,cluster_legacy.c
-2143,announced ip,JJ NNP,redis,cluster_legacy.c
-2144,node,NN,redis,cluster_legacy.c
-2145,link,NN,redis,cluster_legacy.c
-2146,hdr,NNP,redis,cluster_legacy.c
-2147,n,FW,redis,cluster_legacy.c
-2148,sender,NN,redis,cluster_legacy.c
-2149,sender Config Epoch,NN NN NN,redis,cluster_legacy.c
-2150,slots,NNS,redis,cluster_legacy.c
-2151,ext,NNP,redis,cluster_legacy.c
-2152,hdr,NNP,redis,cluster_legacy.c
-2153,count,VB,redis,cluster_legacy.c
-2154,ext,NNP,redis,cluster_legacy.c
-2155,data Size,NN NN,redis,cluster_legacy.c
-2156,ext,NNP,redis,cluster_legacy.c
-2157,type,NN,redis,cluster_legacy.c
-2158,length,NN,redis,cluster_legacy.c
-2159,ext,NNP,redis,cluster_legacy.c
-2160,hdr,NNP,redis,cluster_legacy.c
-2161,gossip count,NN NN,redis,cluster_legacy.c
-2162,hdr,NNP,redis,cluster_legacy.c
-2163,link,NN,redis,cluster_legacy.c
-2164,link,NN,redis,cluster_legacy.c
-2165,hdr,NNP,redis,cluster_legacy.c
-2166,link,NN,redis,cluster_legacy.c
-2167,link,NN,redis,cluster_legacy.c
-2168,conn,NN,redis,cluster_legacy.c
-2169,conn,NN,redis,cluster_legacy.c
-2170,conn,NN,redis,cluster_legacy.c
-2171,link,NN,redis,cluster_legacy.c
-2172,msg block,NN NN,redis,cluster_legacy.c
-2173,msg block,NN NN,redis,cluster_legacy.c
-2174,hdr,NNP,redis,cluster_legacy.c
-2175,type,NN,redis,cluster_legacy.c
-2176,msg len,NN NNP,redis,cluster_legacy.c
-2177,hdr,NNP,redis,cluster_legacy.c
-2178,i,FW,redis,cluster_legacy.c
-2179,n,FW,redis,cluster_legacy.c
-2180,link,NN,redis,cluster_legacy.c
-2181,type,NN,redis,cluster_legacy.c
-2182,target,VB,redis,cluster_legacy.c
-2183,channel,NN,redis,cluster_legacy.c
-2184,message,NN,redis,cluster_legacy.c
-2185,type,NN,redis,cluster_legacy.c
-2186,node name,NN NN,redis,cluster_legacy.c
-2187,link,NN,redis,cluster_legacy.c
-2188,node,NN,redis,cluster_legacy.c
-2189,link,NN,redis,cluster_legacy.c
-2190,module id,NN NN,redis,cluster_legacy.c
-2191,type,NN,redis,cluster_legacy.c
-2192,payload,NN,redis,cluster_legacy.c
-2193,len,NN,redis,cluster_legacy.c
-2194,target,NN,redis,cluster_legacy.c
-2195,module id,NN NN,redis,cluster_legacy.c
-2196,type,NN,redis,cluster_legacy.c
-2197,payload,NN,redis,cluster_legacy.c
-2198,len,NN,redis,cluster_legacy.c
-2199,channel,NN,redis,cluster_legacy.c
-2200,message,NN,redis,cluster_legacy.c
-2201,sharded,VBN,redis,cluster_legacy.c
-2202,node,NN,redis,cluster_legacy.c
-2203,node,NN,redis,cluster_legacy.c
-2204,node,NN,redis,cluster_legacy.c
-2205,request,NN,redis,cluster_legacy.c
-2206,reason,NN,redis,cluster_legacy.c
-2207,max slaves,JJ NNS,redis,cluster_legacy.c
-2208,node,NN,redis,cluster_legacy.c
-2209,handshake timeout,NN NN,redis,cluster_legacy.c
-2210,now,NN,redis,cluster_legacy.c
-2211,link,NN,redis,cluster_legacy.c
-2212,node,NN,redis,cluster_legacy.c
-2213,flags,NNS,redis,cluster_legacy.c
-2214,bitmap,NN,redis,cluster_legacy.c
-2215,pos,NN,redis,cluster_legacy.c
-2216,bitmap,NN,redis,cluster_legacy.c
-2217,pos,NN,redis,cluster_legacy.c
-2218,bitmap,NN,redis,cluster_legacy.c
-2219,pos,NN,redis,cluster_legacy.c
-2220,n,FW,redis,cluster_legacy.c
-2221,slot,NN,redis,cluster_legacy.c
-2222,n,FW,redis,cluster_legacy.c
-2223,slot,NN,redis,cluster_legacy.c
-2224,n,FW,redis,cluster_legacy.c
-2225,slot,NN,redis,cluster_legacy.c
-2226,n,FW,redis,cluster_legacy.c
-2227,slot,NN,redis,cluster_legacy.c
-2228,slot,NN,redis,cluster_legacy.c
-2229,from node,IN NN,redis,cluster_legacy.c
-2230,to node,IN NN,redis,cluster_legacy.c
-2231,node,NN,redis,cluster_legacy.c
-2232,n,FW,redis,cluster_legacy.c
-2233,ci,FW,redis,cluster_legacy.c
-2234,flags,NNS,redis,cluster_legacy.c
-2235,ci,FW,redis,cluster_legacy.c
-2236,slot info pairs,NN NN NNS,redis,cluster_legacy.c
-2237,slot info pairs count,NN NN NNS NN,redis,cluster_legacy.c
-2238,c,FW,redis,cluster_legacy.c
-2239,node,NN,redis,cluster_legacy.c
-2240,tls primary,NNP NN,redis,cluster_legacy.c
-2241,filter,NN,redis,cluster_legacy.c
-2242,n,FW,redis,cluster_legacy.c
-2243,c,FWW,redis,cluster_legacy.c
-2244,filter,NN,redis,cluster_legacy.c
-2245,tls primary,NN NN,redis,cluster_legacy.c
-2246,c,FW,redis,cluster_legacy.c
-2247,link,NN,redis,cluster_legacy.c
-2248,c,FW,redis,cluster_legacy.c
-2249,type,NN,redis,cluster_legacy.c
-2250,c,FW,redis,cluster_legacy.c
-2251,o,FW,redis,cluster_legacy.c
-2252,c,FW,redis,cluster_legacy.c
-2253,slots,NNS,redis,cluster_legacy.c
-2254,del,VB,redis,cluster_legacy.c
-2255,start slot,NN NN,redis,cluster_legacy.c
-2256,end slot,NN NN,redis,cluster_legacy.c
-2257,c,FW,redis,cluster_legacy.c
-2258,slots,NNS,redis,cluster_legacy.c
-2259,del,VB,redis,cluster_legacy.c
-2260,c,FW,redis,cluster_legacy.c
-2261,node,NN,redis,cluster_legacy.c
-2262,c,FW,redis,cluster_legacy.c
-2263,nodes,NNS,redis,cluster_legacy.c
-2264,c,FW,redis,cluster_legacy.c
-2265,slot,NN,redis,cluster_legacy.c
-2266,hash slot,NN NN,redis,cluster_legacy.c
-2267,hash slot,NN NN,redis,cluster_legacy.c
-2268,n,FW,redis,cluster_legacy.c
-2269,num nodes,NN NNS,redis,cluster_legacy.c
-2270,n,FW,redis,cluster_legacy.c
-2271,c,FW,redis,cluster_legacy.c
-2272,node,NN,redis,cluster_legacy.c
-2273,node,NN,redis,cluster_legacy.c
-2274,node,NN,redis,cluster_legacy.c
-2275,node,NN,redis,cluster_legacy.c
-2276,node,NN,redis,cluster_legacy.c
-2277,node,NN,redis,cluster_legacy.c
-2278,node,NN,redis,cluster_legacy.c
-2279,node,NN,redis,cluster_legacy.c
-2280,node,NN,redis,cluster_legacy.c
-2281,node,NN,redis,cluster_legacy.c
-2282,c,FW,redis,cluster_legacy.c
-2283,node,NN,redis,cluster_legacy.c
-2284,node,NN,redis,cluster_legacy.c
-2285,slave idx,NN NN,redis,cluster_legacy.c
-2286,slot,NN,redis,cluster_legacy.c
-2287,slot,NN,redis,cluster_legacy.c
-2288,slot,NN,redis,cluster_legacy.c
-2289,node,NN,redis,cluster_legacy.c
-2290,node,NN,redis,cluster_legacy.c
-2291,n,FW,redis,cluster_legacy.c
-2292,c,FW,redis,cluster_legacy.c
-2293,tids,NNPS,redis,threads_mngr.c
-2294,tids len,NNPS NN,redis,threads_mngr.c
-2295,callback,NN,redis,threads_mngr.c
-2296,sig,NN,redis,threads_mngr.c
-2297,tids,NNPS,redis,threads_mngr.c
-2298,tids len,NNPS NN,redis,threads_mngr.c
-2299,callback,NN,redis,threads_mngr.c
-2300,level,NN,redis,server.c
-2301,msg,NN,redis,server.c
-2302,level,NN,redis,server.c
-2303,fmt,NN,redis,server.c
-2304,level,NN,redis,server.c
-2305,msg,NN,redis,server.c
-2306,level,NN,redis,server.c
-2307,fmt,NN,redis,server.c
-2308,ret code,NN NN,redis,server.c
-2309,d,FW,redis,server.c
-2310,val,NN,redis,server.c
-2311,d,FW,redis,server.c
-2312,val,NN,redis,server.c
-2313,d,FW,redis,server.c
-2314,val,NN,redis,server.c
-2315,d,FW,redis,server.c
-2316,key 1,NN CD,redis,server.c
-2317,key 2,NN CD,redis,server.c
-2318,d,FW,redis,server.c
-2319,key 1,NN CD,redis,server.c
-2320,key 2,NN CD,redis,server.c
-2321,d,FW,redis,server.c
-2322,val,NN,redis,server.c
-2323,d,FW,redis,server.c
-2324,val,NN,redis,server.c
-2325,d,FW,redis,server.c
-2326,key,NN,redis,server.c
-2327,d,FW,redis,server.c
-2328,key 1,NN CD,redis,server.c
-2329,key 2,NN CD,redis,server.c
-2330,key,NN,redis,server.c
-2331,key,NN,redis,server.c
-2332,key,NN,redis,server.c
-2333,key,NN,redis,server.c
-2334,key,NN,redis,server.c
-2335,key,NN,redis,server.c
-2336,d,FW,redis,server.c
-2337,key 1,NN CD,redis,server.c
-2338,key 2,NN CD,redis,server.c
-2339,d,FW,redis,server.c
-2340,key 1,NN CD,redis,server.c
-2341,key 2,NN CD,redis,server.c
-2342,d,FW,redis,server.c
-2343,key 1,NN CD,redis,server.c
-2344,key 2,NN CD,redis,server.c
-2345,d,FW,redis,server.c
-2346,key 1,NN CD,redis,server.c
-2347,key 2,NN CD,redis,server.c
-2348,key,NN,redis,server.c
-2349,more Mem,JJR NN,redis,server.c
-2350,used Ratio,JJ NN,redis,server.c
-2351,type,NN,redis,server.c
-2352,type,NN,redis,server.c
-2353,metric,NN,redis,server.c
-2354,current value,JJ NN,redis,server.c
-2355,current base,JJ NN,redis,server.c
-2356,factor,NN,redis,server.c
-2357,metric,NN,redis,server.c
-2358,c,FW,redis,server.c
-2359,c,FW,redis,server.c
-2360,now ms,JJ NN,redis,server.c
-2361,c,FW,redis,server.c
-2362,time idx,NN NN,redis,server.c
-2363,mem,NN,redis,server.c
-2364,c,FW,redis,server.c
-2365,c,FW,redis,server.c
-2366,c,FW,redis,server.c
-2367,allow eviction,VB NN,redis,server.c
-2368,c,FW,redis,server.c
-2369,in usage,NN NN,redis,server.c
-2370,out usage,NN NN,redis,server.c
-2371,update daylight info,VB NN NN,redis,server.c
-2372,us time,NNP NN,redis,server.c
-2373,update daylight info,VB NN NN,redis,server.c
-2374,update cached time,VB VBN NN,redis,server.c
-2375,us,NNP,redis,server.c
-2376,event Loop,NN NN,redis,server.c
-2377,id,NN,redis,server.c
-2378,client Data,NN NNS,redis,server.c
-2379,event Loop,NN NN,redis,server.c
-2380,event Loop,NN NN,redis,server.c
-2381,flags,NNS,redis,server.c
-2382,delay,VB,redis,server.c
-2383,process class,NN NN,redis,server.c
-2384,sfd,NNP,redis,server.c
-2385,sfd,NNP,redis,server.c
-2386,accept handler,VB NN,redis,server.c
-2387,sfd,NNP,redis,server.c
-2388,c,NN,redis,server.c
-2389,parent name,FW,redis,server.c
-2390,sub name,NN NN,redis,server.c
-2391,parent,NN,redis,server.c
-2392,sub command,NN NN,redis,server.c
-2393,declared name,JJ NN,redis,server.c
-2394,c,FW,redis,server.c
-2395,c,FW,redis,server.c
-2396,commands,NNS,redis,server.c
-2397,oa,FW,redis,server.c
-2398,db id,NN NN,redis,server.c
-2399,argv,NNP,redis,server.c
-2400,argc,NNP,redis,server.c
-2401,target,NN,redis,server.c
-2402,oa,FW,redis,server.c
-2403,s,FW,redis,server.c
-2404,container,NN,redis,server.c
-2405,sub name,NN NN,redis,server.c
-2406,commands,NNS,redis,server.c
-2407,argv,NNP,redis,server.c
-2408,argc,NNP,redis,server.c
-2409,strict,JJ,redis,server.c
-2410,argv,NNP,redis,server.c
-2411,argc,NNP,redis,server.c
-2412,commands,NNS,redis,server.c
-2413,s,FW,redis,server.c
-2414,s,FW,redis,server.c
-2415,commands,NNS,redis,server.c
-2416,s,FW,redis,server.c
-2417,s,FW,redis,server.c
-2418,argv,NNP,redis,server.c
-2419,argc,NNP,redis,server.c
-2420,c,FW,redis,server.c
-2421,target,VB,redis,server.c
-2422,db id,NN NN,redis,server.c
-2423,argv,NNP,redis,server.c
-2424,argc,NNP,redis,server.c
-2425,target,NN,redis,server.c
-2426,db id,NN NN,redis,server.c
-2427,argv,NNP,redis,server.c
-2428,argc,NNP,redis,server.c
-2429,target,NN,redis,server.c
-2430,c,FW,redis,server.c
-2431,flags,NNS,redis,server.c
-2432,c,FW,redis,server.c
-2433,c,FW,redis,server.c
-2434,c,FW,redis,server.c
-2435,c,FW,redis,server.c
-2436,cmd,NN,redis,server.c
-2437,duration,NN,redis,server.c
-2438,latency histogram,NN NN,redis,server.c
-2439,duration hist,NN NN,redis,server.c
-2440,cmd,NN,redis,server.c
-2441,flags,NNS,redis,server.c
-2442,c,FW,redis,server.c
-2443,flags,NNS,redis,server.c
-2444,c,FW,redis,server.c
-2445,reply,NN,redis,server.c
-2446,c,FW,redis,server.c
-2447,s,FW,redis,server.c
-2448,c,FW,redis,server.c
-2449,fmt,NN,redis,server.c
-2450,c,FW,redis,server.c
-2451,c,FW,redis,server.c
-2452,err,NN,redis,server.c
-2453,c,FW,redis,server.c
-2454,err,NN,redis,server.c
-2455,c,FW,redis,server.c
-2456,c,FW,redis,server.c
-2457,full err,JJ NN,redis,server.c
-2458,name len,NN NN,redis,server.c
-2459,unlink unix socket,VB NNP NN,redis,server.c
-2460,flags,NNS,redis,server.c
-2461,error code,NN NN,redis,server.c
-2462,c,FW,redis,server.c
-2463,c,FW,redis,server.c
-2464,c,FW,redis,server.c
-2465,c,FW,redis,server.c
-2466,flags,NNS,redis,server.c
-2467,reply Flags,NN NNS,redis,server.c
-2468,c,FW,redis,server.c
-2469,cmd,NN,redis,server.c
-2470,c,FW,redis,server.c
-2471,cmd,NN,redis,server.c
-2472,c,FW,redis,server.c
-2473,flags,NNS,redis,server.c
-2474,c,FW,redis,server.c
-2475,flags,NNS,redis,server.c
-2476,c,FW,redis,server.c
-2477,args,NNP,redis,server.c
-2478,num args,NN NNP,redis,server.c
-2479,c,FW,redis,server.c
-2480,rs,FW,redis,server.c
-2481,c,FW,redis,server.c
-2482,cmd,NN,redis,server.c
-2483,c,FW,redis,server.c
-2484,cmd,NN,redis,server.c
-2485,c,FW,redis,server.c
-2486,cmd,NN,redis,server.c
-2487,c,FW,redis,server.c
-2488,cmd,NN,redis,server.c
-2489,use map,NN NN,redis,server.c
-2490,c,FW,redis,server.c
-2491,cmd,NN,redis,server.c
-2492,c,FW,redis,server.c
-2493,cmd,NN,redis,server.c
-2494,c,FW,redis,server.c
-2495,with flags,IN NNS,redis,server.c
-2496,c,FW,redis,server.c
-2497,c,FW,redis,server.c
-2498,c,FW,redis,server.c
-2499,c,FW,redis,server.c
-2500,cmd,NN,redis,server.c
-2501,filter,NN,redis,server.c
-2502,c,FW,redis,server.c
-2503,commands,NNS,redis,server.c
-2504,filter,NN,redis,server.c
-2505,num cmds,NN NNS,redis,server.c
-2506,c,FW,redis,server.c
-2507,commands,NNS,redis,server.c
-2508,num cmds,NN NNS,redis,server.c
-2509,c,FW,redis,server.c
-2510,c,FW,redis,server.c
-2511,c,FW,redis,server.c
-2512,c,FW,redis,server.c
-2513,c,FW,redis,server.c
-2514,s,FW,redis,server.c
-2515,size,NN,redis,server.c
-2516,n,NNP,redis,server.c
-2517,info,NN,redis,server.c
-2518,histogram name,NN NN,redis,server.c
-2519,histogram,NN,redis,server.c
-2520,repl state,NNP NN,redis,server.c
-2521,s,FW,redis,server.c
-2522,len,NN,redis,server.c
-2523,tmp,NN,redis,server.c
-2524,info,NN,redis,server.c
-2525,commands,NNS,redis,server.c
-2526,info,NN,redis,server.c
-2527,info,NN,redis,server.c
-2528,commands,NNS,redis,server.c
-2529,section dict,NN NN,redis,server.c
-2530,sections,NNS,redis,server.c
-2531,sec,NNP,redis,server.c
-2532,argv,NNP,redis,server.c
-2533,argc,NNP,redis,server.c
-2534,defaults,NNS,redis,server.c
-2535,out all,IN DT,redis,server.c
-2536,out everything,IN NN,redis,server.c
-2537,blocking keys,NN NNS,redis,server.c
-2538,blocking keys on no key,NN NNS IN DT NN,redis,server.c
-2539,watched keys,NN NNS,redis,server.c
-2540,section dict,NN NN,redis,server.c
-2541,all sections,DT NNS,redis,server.c
-2542,everything,NN,redis,server.c
-2543,c,FW,redis,server.c
-2544,c,FW,redis,server.c
-2545,warning,NN,redis,server.c
-2546,type name,NN NN,redis,server.c
-2547,listener,NN,redis,server.c
-2548,sig,NN,redis,server.c
-2549,sig,NN,redis,server.c
-2550,purpose,NN,redis,server.c
-2551,info type,NN NN,redis,server.c
-2552,p name,FW NN,redis,server.c
-2553,info type,NN NN,redis,server.c
-2554,keys,NNS,redis,server.c
-2555,p name,FW NN,redis,server.c
-2556,ptr,NN,redis,server.c
-2557,size hint,NN NN,redis,server.c
-2558,c,FW,redis,server.c
-2559,argc,NNP,redis,server.c
-2560,argv,NNP,redis,server.c
-2561,exec name,NN NN,redis,server.c
-2562,allocation size,NN NN,redis,server.c
-2563,var name,NN NN,redis,server.c
-2564,arg,NN,redis,server.c
-2565,template,NN,redis,server.c
-2566,title,NN,redis,server.c
-2567,template,NN,redis,server.c
-2568,title,NN,redis,server.c
-2569,cpu list,NNP NN,redis,server.c
-2570,sd notify msg,FW VB NN,redis,server.c
-2571,mode,NN,redis,server.c
-2572,name,NN,redis,server.c
-2573,argc,NNP,redis,server.c
-2574,argv,NNP,redis,server.c
-2575,level,NN,redis,t_zset.c
-2576,score,VB,redis,t_zset.c
-2577,ele,NNP,redis,t_zset.c
-2578,node,NN,redis,t_zset.c
-2579,zsl,NNP,redis,t_zset.c
-2580,zsl,NNP,redis,t_zset.c
-2581,score,NN,redis,t_zset.c
-2582,ele,NNP,redis,t_zset.c
-2583,zsl,NNP,redis,t_zset.c
-2584,x,FW,redis,t_zset.c
-2585,update,NN,redis,t_zset.c
-2586,zsl,FW,redis,t_zset.c
-2587,score,NN,redis,t_zset.c
-2588,ele,NNP,redis,t_zset.c
-2589,node,NN,redis,t_zset.c
-2590,zsl,NNP,redis,t_zset.c
-2591,cur score,NN NN,redis,t_zset.c
-2592,ele,NNP,redis,t_zset.c
-2593,new score,JJ NN,redis,t_zset.c
-2594,value,NN,redis,t_zset.c
-2595,spec,NN,redis,t_zset.c
-2596,value,NN,redis,t_zset.c
-2597,spec,NN,redis,t_zset.c
-2598,zsl,NNP,redis,t_zset.c
-2599,range,NN,redis,t_zset.c
-2600,zsl,NNP,redis,t_zset.c
-2601,range,NN,redis,t_zset.c
-2602,n,FW,redis,t_zset.c
-2603,zsl,NNP,redis,t_zset.c
-2604,range,NN,redis,t_zset.c
-2605,dict,NN,redis,t_zset.c
-2606,zsl,NNP,redis,t_zset.c
-2607,range,NN,redis,t_zset.c
-2608,dict,NN,redis,t_zset.c
-2609,zsl,NNP,redis,t_zset.c
-2610,start,NN,redis,t_zset.c
-2611,end,NN,redis,t_zset.c
-2612,dict,NN,redis,t_zset.c
-2613,zsl,NN,redis,t_zset.c
-2614,score,VB,redis,t_zset.c
-2615,ele,NNP,redis,t_zset.c
-2616,start node,NN NN,redis,t_zset.c
-2617,start level,NN NN,redis,t_zset.c
-2618,rank,NN,redis,t_zset.c
-2619,zsl,NNP,redis,t_zset.c
-2620,rank,NN,redis,t_zset.c
-2621,min,NN,redis,t_zset.c
-2622,max,NN,redis,t_zset.c
-2623,spec,NN,redis,t_zset.c
-2624,item,NN,redis,t_zset.c
-2625,dest,NNP,redis,t_zset.c
-2626,ex,NNP,redis,t_zset.c
-2627,spec,NNP,redis,t_zset.c
-2628,min,NNP,redis,t_zset.c
-2629,max,NNP,redis,t_zset.c
-2630,spec,NNP,redis,t_zset.c
-2631,a,FW,redis,t_zset.c
-2632,b,FW,redis,t_zset.c
-2633,value,NN,redis,t_zset.c
-2634,spec,NN,redis,t_zset.c
-2635,value,NN,redis,t_zset.c
-2636,spec,NN,redis,t_zset.c
-2637,zsl,NNP,redis,t_zset.c
-2638,range,NN,redis,t_zset.c
-2639,zsl,NNP,redis,t_zset.c
-2640,range,NN,redis,t_zset.c
-2641,n,FW,redis,t_zset.c
-2642,vstr,NNP,redis,t_zset.c
-2643,vlen,NNP,redis,t_zset.c
-2644,s ptr,FW NN,redis,t_zset.c
-2645,s ptr,FW NN,redis,t_zset.c
-2646,e ptr,FW NN,redis,t_zset.c
-2647,cstr,NNP,redis,t_zset.c
-2648,clen,NNP,redis,t_zset.c
-2649,zl,FW,redis,t_zset.c
-2650,zl,FW,redis,t_zset.c
-2651,e ptr,FW NNP,redis,t_zset.c
-2652,s ptr,FW NNP,redis,t_zset.c
-2653,zl,FW,redis,t_zset.c
-2654,e ptr,FW NNP,redis,t_zset.c
-2655,s ptr,FW NNP,redis,t_zset.c
-2656,zl,FW,redis,t_zset.c
-2657,range,NN,redis,t_zset.c
-2658,zl,FW,redis,t_zset.c
-2659,range,NN,redis,t_zset.c
-2660,zl,FW,redis,t_zset.c
-2661,range,NN,redis,t_zset.c
-2662,p,FW,redis,t_zset.c
-2663,spec,NN,redis,t_zset.c
-2664,p,FW,redis,t_zset.c
-2665,spec,NN,redis,t_zset.c
-2666,zl,FW,redis,t_zset.c
-2667,range,NN,redis,t_zset.c
-2668,zl,FW,redis,t_zset.c
-2669,range,NN,redis,t_zset.c
-2670,zl,FW,redis,t_zset.c
-2671,range,NN,redis,t_zset.c
-2672,lp,FW,redis,t_zset.c
-2673,ele,NNP,redis,t_zset.c
-2674,score,NN,redis,t_zset.c
-2675,zl,FW,redis,t_zset.c
-2676,e ptr,FW NN,redis,t_zset.c
-2677,zl,FW,redis,t_zset.c
-2678,e ptr,FW NN,redis,t_zset.c
-2679,ele,NNP,redis,t_zset.c
-2680,score,NN,redis,t_zset.c
-2681,zl,FW,redis,t_zset.c
-2682,ele,NNP,redis,t_zset.c
-2683,score,NN,redis,t_zset.c
-2684,zl,FW,redis,t_zset.c
-2685,range,NN,redis,t_zset.c
-2686,deleted,VBN,redis,t_zset.c
-2687,zl,FW,redis,t_zset.c
-2688,range,NN,redis,t_zset.c
-2689,deleted,VBN,redis,t_zset.c
-2690,zl,FW,redis,t_zset.c
-2691,start,NN,redis,t_zset.c
-2692,end,NN,redis,t_zset.c
-2693,deleted,VBN,redis,t_zset.c
-2694,z obj,FW NN,redis,t_zset.c
-2695,size hint,NN NN,redis,t_zset.c
-2696,val len hint,NN NN NN,redis,t_zset.c
-2697,z obj,FW NN,redis,t_zset.c
-2698,size hint,NN NN,redis,t_zset.c
-2699,z obj,FW NN,redis,t_zset.c
-2700,encoding,NN,redis,t_zset.c
-2701,z obj,FW NN,redis,t_zset.c
-2702,encoding,NN,redis,t_zset.c
-2703,cap,NN,redis,t_zset.c
-2704,z obj,FW NN,redis,t_zset.c
-2705,max ele len,JJ NNP NN,redis,t_zset.c
-2706,tot ele len,JJ NNP NN,redis,t_zset.c
-2707,z obj,FW NN,redis,t_zset.c
-2708,member,NN,redis,t_zset.c
-2709,score,NN,redis,t_zset.c
-2710,z obj,FW NN,redis,t_zset.c
-2711,score,NN,redis,t_zset.c
-2712,ele,NNP,redis,t_zset.c
-2713,in flags,NN NNS,redis,t_zset.c
-2714,out flags,NN NNS,redis,t_zset.c
-2715,new score,JJ NN,redis,t_zset.c
-2716,zs,FW,redis,t_zset.c
-2717,ele,NNP,redis,t_zset.c
-2718,z obj,FW NN,redis,t_zset.c
-2719,ele,NNP,redis,t_zset.c
-2720,z obj,FW NN,redis,t_zset.c
-2721,ele,NNP,redis,t_zset.c
-2722,reverse,NN,redis,t_zset.c
-2723,output score,NN NN,redis,t_zset.c
-2724,o,FW,redis,t_zset.c
-2725,e,FW,redis,t_zset.c
-2726,c,FW,redis,t_zset.c
-2727,e,FW,redis,t_zset.c
-2728,zsetobj,NNP,redis,t_zset.c
-2729,zsetsize,NNP,redis,t_zset.c
-2730,key,NN,redis,t_zset.c
-2731,score,NN,redis,t_zset.c
-2732,c,FW,redis,t_zset.c
-2733,flags,NNS,redis,t_zset.c
-2734,c,FW,redis,t_zset.c
-2735,c,FW,redis,t_zset.c
-2736,c,FW,redis,t_zset.c
-2737,c,FW,redis,t_zset.c
-2738,range type,NN NN,redis,t_zset.c
-2739,c,FW,redis,t_zset.c
-2740,c,FW,redis,t_zset.c
-2741,c,FW,redis,t_zset.c
-2742,op,NN,redis,t_zset.c
-2743,op,NN,redis,t_zset.c
-2744,val,NN,redis,t_zset.c
-2745,op,NN,redis,t_zset.c
-2746,op,NN,redis,t_zset.c
-2747,val,NN,redis,t_zset.c
-2748,val,NN,redis,t_zset.c
-2749,val,NN,redis,t_zset.c
-2750,val,NN,redis,t_zset.c
-2751,val,NN,redis,t_zset.c
-2752,op,NN,redis,t_zset.c
-2753,val,NN,redis,t_zset.c
-2754,score,NN,redis,t_zset.c
-2755,s 1,FW CD,redis,t_zset.c
-2756,s 2,FW CD,redis,t_zset.c
-2757,s 1,FW CD,redis,t_zset.c
-2758,s 2,FW CD,redis,t_zset.c
-2759,target,NN,redis,t_zset.c
-2760,val,NN,redis,t_zset.c
-2761,aggregate,NN,redis,t_zset.c
-2762,d,FW,redis,t_zset.c
-2763,total len,JJ NN,redis,t_zset.c
-2764,src,NN,redis,t_zset.c
-2765,set num,VB NN,redis,t_zset.c
-2766,dst z set,NNP FW NN,redis,t_zset.c
-2767,max ele len,JJ NNP NN,redis,t_zset.c
-2768,tot ele len,JJ NNP NN,redis,t_zset.c
-2769,src,NN,redis,t_zset.c
-2770,set num,VB NN,redis,t_zset.c
-2771,dst z set,NNP FW NN,redis,t_zset.c
-2772,max ele len,JJ NNP NN,redis,t_zset.c
-2773,tot ele len,JJ NNP NN,redis,t_zset.c
-2774,src,NN,redis,t_zset.c
-2775,set num,VB NN,redis,t_zset.c
-2776,src,NN,redis,t_zset.c
-2777,set num,VB NN,redis,t_zset.c
-2778,dst z set,NNP FW NN,redis,t_zset.c
-2779,max ele len,JJ NNP NN,redis,t_zset.c
-2780,tot ele len,JJ NNP NN,redis,t_zset.c
-2781,c,FW,redis,t_zset.c
-2782,dst key,NNP NN,redis,t_zset.c
-2783,num keys Index,NN NNS NN,redis,t_zset.c
-2784,op,NN,redis,t_zset.c
-2785,cardinality only,NN RB,redis,t_zset.c
-2786,c,FW,redis,t_zset.c
-2787,c,FW,redis,t_zset.c
-2788,c,FW,redis,t_zset.c
-2789,c,FW,redis,t_zset.c
-2790,c,FW,redis,t_zset.c
-2791,c,FW,redis,t_zset.c
-2792,c,FW,redis,t_zset.c
-2793,handler,NN,redis,t_zset.c
-2794,length,NN,redis,t_zset.c
-2795,handler,NN,redis,t_zset.c
-2796,value,NN,redis,t_zset.c
-2797,value length in bytes,NN NN IN NNS,redis,t_zset.c
-2798,score,NN,redis,t_zset.c
-2799,handler,NN,redis,t_zset.c
-2800,value,NN,redis,t_zset.c
-2801,score,NN,redis,t_zset.c
-2802,handler,NN,redis,t_zset.c
-2803,result count,NN NN,redis,t_zset.c
-2804,handler,NN,redis,t_zset.c
-2805,length,NN,redis,t_zset.c
-2806,handler,NN,redis,t_zset.c
-2807,value,NN,redis,t_zset.c
-2808,value length in bytes,NN NN IN NNS,redis,t_zset.c
-2809,score,NN,redis,t_zset.c
-2810,handler,NN,redis,t_zset.c
-2811,value,NN,redis,t_zset.c
-2812,score,NN,redis,t_zset.c
-2813,handler,NN,redis,t_zset.c
-2814,result count,NN NN,redis,t_zset.c
-2815,handler,NN,redis,t_zset.c
-2816,client,NN,redis,t_zset.c
-2817,type,NN,redis,t_zset.c
-2818,handler,NN,redis,t_zset.c
-2819,handler,NN,redis,t_zset.c
-2820,dst key,NN NN,redis,t_zset.c
-2821,handler,NN,redis,t_zset.c
-2822,z obj,FW NN,redis,t_zset.c
-2823,start,NN,redis,t_zset.c
-2824,end,NN,redis,t_zset.c
-2825,with scores,IN NNS,redis,t_zset.c
-2826,reverse,NN,redis,t_zset.c
-2827,c,FW,redis,t_zset.c
-2828,c,FW,redis,t_zset.c
-2829,c,FW,redis,t_zset.c
-2830,handler,NN,redis,t_zset.c
-2831,range,NN,redis,t_zset.c
-2832,z obj,FW NN,redis,t_zset.c
-2833,offset,NN,redis,t_zset.c
-2834,limit,NN,redis,t_zset.c
-2835,reverse,NN,redis,t_zset.c
-2836,c,FW,redis,t_zset.c
-2837,c,FW,redis,t_zset.c
-2838,c,FW,redis,t_zset.c
-2839,c,FW,redis,t_zset.c
-2840,handler,NN,redis,t_zset.c
-2841,range,NN,redis,t_zset.c
-2842,z obj,FW NN,redis,t_zset.c
-2843,with scores,IN NNS,redis,t_zset.c
-2844,offset,NN,redis,t_zset.c
-2845,limit,NN,redis,t_zset.c
-2846,reverse,NN,redis,t_zset.c
-2847,c,FW,redis,t_zset.c
-2848,c,FW,redis,t_zset.c
-2849,handler,NN,redis,t_zset.c
-2850,argc start,NNP NN,redis,t_zset.c
-2851,store,NN,redis,t_zset.c
-2852,range type,NN NN,redis,t_zset.c
-2853,direction,NN,redis,t_zset.c
-2854,c,FW,redis,t_zset.c
-2855,c,FW,redis,t_zset.c
-2856,c,FW,redis,t_zset.c
-2857,c,FW,redis,t_zset.c
-2858,reverse,VB,redis,t_zset.c
-2859,c,FW,redis,t_zset.c
-2860,c,FW,redis,t_zset.c
-2861,c,FW,redis,t_zset.c
-2862,c,FW,redis,t_zset.c
-2863,keyv,NNP,redis,t_zset.c
-2864,keyc,NNP,redis,t_zset.c
-2865,where,WRB,redis,t_zset.c
-2866,emit key,VB NN,redis,t_zset.c
-2867,count,VB,redis,t_zset.c
-2868,use nested array,VB JJ NN,redis,t_zset.c
-2869,reply nil when empty,VB NNP WRB JJ,redis,t_zset.c
-2870,deleted,VBN,redis,t_zset.c
-2871,c,FW,redis,t_zset.c
-2872,where,WRB,redis,t_zset.c
-2873,c,FW,redis,t_zset.c
-2874,c,FW,redis,t_zset.c
-2875,c,FW,redis,t_zset.c
-2876,keys,NNS,redis,t_zset.c
-2877,num keys,NN NNS,redis,t_zset.c
-2878,where,WRB,redis,t_zset.c
-2879,timeout idx,NN NN,redis,t_zset.c
-2880,count,NN,redis,t_zset.c
-2881,use nested array,VB JJ NN,redis,t_zset.c
-2882,reply nil when empty,VB NNP WRB JJ,redis,t_zset.c
-2883,c,FW,redis,t_zset.c
-2884,c,FW,redis,t_zset.c
-2885,c,FW,redis,t_zset.c
-2886,count,NN,redis,t_zset.c
-2887,keys,NNS,redis,t_zset.c
-2888,vals,NNS,redis,t_zset.c
-2889,c,FW,redis,t_zset.c
-2890,l,FW,redis,t_zset.c
-2891,with scores,IN NNS,redis,t_zset.c
-2892,c,FW,redis,t_zset.c
-2893,c,FW,redis,t_zset.c
-2894,num keys idx,NN NNS NN,redis,t_zset.c
-2895,is block,VBZ NN,redis,t_zset.c
-2896,c,NNP,redis,t_zset.c
-2897,c,NNP,redis,t_zset.c
-2898,a,FW,redis,pqsort.c
-2899,b,FW,redis,pqsort.c
-2900,n,FW,redis,pqsort.c
-2901,swap type,NN NN,redis,pqsort.c
-2902,a,FW,redis,pqsort.c
-2903,b,FW,redis,pqsort.c
-2904,c,FW,redis,pqsort.c
-2905,a,FW,redis,pqsort.c
-2906,n,FW,redis,pqsort.c
-2907,es,FW,redis,pqsort.c
-2908,l range,FW NN,redis,pqsort.c
-2909,r range,FW NN,redis,pqsort.c
-2910,a,FW,redis,pqsort.c
-2911,n,FW,redis,pqsort.c
-2912,es,FW,redis,pqsort.c
-2913,l range,FW NN,redis,pqsort.c
-2914,r range,FW NN,redis,pqsort.c
-2915,key,NN,redis,redis-benchmark.c
-2916,d,FW,redis,redis-benchmark.c
-2917,key 1,NN CD,redis,redis-benchmark.c
-2918,key 2,NN CD,redis,redis-benchmark.c
-2919,ip,NNP,redis,redis-benchmark.c
-2920,port,NN,redis,redis-benchmark.c
-2921,host socket,NN NN,redis,redis-benchmark.c
-2922,ip,NNP,redis,redis-benchmark.c
-2923,port,NN,redis,redis-benchmark.c
-2924,host socket,NN NN,redis,redis-benchmark.c
-2925,cfg,NNP,redis,redis-benchmark.c
-2926,c,FW,redis,redis-benchmark.c
-2927,c,FW,redis,redis-benchmark.c
-2928,c,FW,redis,redis-benchmark.c
-2929,c,FW,redis,redis-benchmark.c
-2930,c,FW,redis,redis-benchmark.c
-2931,el,FW,redis,redis-benchmark.c
-2932,fd,FW,redis,redis-benchmark.c
-2933,priv data,JJ NNS,redis,redis-benchmark.c
-2934,mask,NN,redis,redis-benchmark.c
-2935,el,FW,redis,redis-benchmark.c
-2936,fd,FW,redis,redis-benchmark.c
-2937,priv data,JJ NNS,redis,redis-benchmark.c
-2938,mask,NN,redis,redis-benchmark.c
-2939,cmd,NN,redis,redis-benchmark.c
-2940,len,NN,redis,redis-benchmark.c
-2941,from,IN,redis,redis-benchmark.c
-2942,thread id,NN NN,redis,redis-benchmark.c
-2943,c,FW,redis,redis-benchmark.c
-2944,title,NN,redis,redis-benchmark.c
-2945,cmd,NN,redis,redis-benchmark.c
-2946,len,NN,redis,redis-benchmark.c
-2947,index,NN,redis,redis-benchmark.c
-2948,thread,NN,redis,redis-benchmark.c
-2949,ptr,NN,redis,redis-benchmark.c
-2950,ip,NNP,redis,redis-benchmark.c
-2951,port,NN,redis,redis-benchmark.c
-2952,node,NN,redis,redis-benchmark.c
-2953,node,NN,redis,redis-benchmark.c
-2954,c,FW,redis,redis-benchmark.c
-2955,data,NNS,redis,redis-benchmark.c
-2956,count,NN,redis,redis-benchmark.c
-2957,argc,NNP,redis,redis-benchmark.c
-2958,argv,NNP,redis,redis-benchmark.c
-2959,event Loop,NN NN,redis,redis-benchmark.c
-2960,id,NN,redis,redis-benchmark.c
-2961,client Data,NN NNS,redis,redis-benchmark.c
-2962,name,NN,redis,redis-benchmark.c
-2963,argc,NNP,redis,redis-benchmark.c
-2964,argv,NNP,redis,redis-benchmark.c
-2965,lp,NNP,redis,listpack.c
-2966,add,VB,redis,listpack.c
-2967,s,FW,redis,listpack.c
-2968,slen,NNP,redis,listpack.c
-2969,value,NN,redis,listpack.c
-2970,capacity,NN,redis,listpack.c
-2971,lp,NNP,redis,listpack.c
-2972,lp,NNP,redis,listpack.c
-2973,v,FW,redis,listpack.c
-2974,int enc,NNP NNP,redis,listpack.c
-2975,enc len,NNP NN,redis,listpack.c
-2976,ele,NNP,redis,listpack.c
-2977,size,NN,redis,listpack.c
-2978,int enc,NNP NNP,redis,listpack.c
-2979,enc len,NNP NN,redis,listpack.c
-2980,buf,NN,redis,listpack.c
-2981,l,FW,redis,listpack.c
-2982,p,FW,redis,listpack.c
-2983,buf,NN,redis,listpack.c
-2984,s,FW,redis,listpack.c
-2985,len,NN,redis,listpack.c
-2986,p,FW,redis,listpack.c
-2987,p,FW,redis,listpack.c
-2988,p,FW,redis,listpack.c
-2989,lp,NNP,redis,listpack.c
-2990,p,FW,redis,listpack.c
-2991,lp,NNP,redis,listpack.c
-2992,p,FW,redis,listpack.c
-2993,lp,NNP,redis,listpack.c
-2994,lp,NNP,redis,listpack.c
-2995,lp,NNP,redis,listpack.c
-2996,p,FW,redis,listpack.c
-2997,count,NN,redis,listpack.c
-2998,int buf,NNP NN,redis,listpack.c
-2999,entry size,NN NN,redis,listpack.c
+,ID,SEQUENCE,POS,PROJECT,FILE
+0,0,data,NNS,libobs,obs-avc.c
+1,1,size,NN,libobs,obs-avc.c
+2,2,p,FW,libobs,obs-avc.c
+3,3,end,NN,libobs,obs-avc.c
+4,4,nal start,NNP NN,libobs,obs-avc.c
+5,5,is key frame,VBZ JJ NN,libobs,obs-avc.c
+6,6,priority,NN,libobs,obs-avc.c
+7,7,s,FW,libobs,obs-avc.c
+8,12,avc packet,NNP NN,libobs,obs-avc.c
+9,13,src,NN,libobs,obs-avc.c
+10,14,packet,NN,libobs,obs-avc.c
+11,18,sps,NNP,libobs,obs-avc.c
+12,19,sps size,NNP NN,libobs,obs-avc.c
+13,20,pps,NNP,libobs,obs-avc.c
+14,21,pps size,NNP NN,libobs,obs-avc.c
+15,22,header,NN,libobs,obs-avc.c
+16,27,new packet data,JJ NN NNS,libobs,obs-avc.c
+17,28,new packet size,JJ NN NN,libobs,obs-avc.c
+18,29,header data,NN NNS,libobs,obs-avc.c
+19,30,header size,NN NN,libobs,obs-avc.c
+20,31,sei data,FW NNS,libobs,obs-avc.c
+21,32,sei size,FW NN,libobs,obs-avc.c
+22,33,vi,NNP,libobs,obs.c
+23,34,ovi,NNP,libobs,obs.c
+24,35,video,NN,libobs,obs.c
+25,38,i,FW,libobs,obs.c
+26,40,effect,NN,libobs,obs.c
+27,41,file,NN,libobs,obs.c
+28,44,info,NN,libobs,obs.c
+29,51,ai,NNP,libobs,obs.c
+30,52,view,NN,libobs,obs.c
+31,53,unused,JJ,libobs,obs.c
+32,54,locale,NN,libobs,obs.c
+33,55,module config path,NN NN NN,libobs,obs.c
+34,56,store,NN,libobs,obs.c
+35,58,path,NN,libobs,obs.c
+36,63,argc,NNP,libobs,obs.c
+37,64,argv,NNP,libobs,obs.c
+38,66,width,NN,libobs,obs.c
+39,67,height,NN,libobs,obs.c
+40,69,oai,NNP,libobs,obs.c
+41,72,sdr white level,NNP NN NN,libobs,obs.c
+42,73,hdr nominal peak level,NN JJ NN NN,libobs,obs.c
+43,75,idx,NN,libobs,obs.c
+44,76,id,NN,libobs,obs.c
+45,81,unversioned id,JJ NN,libobs,obs.c
+46,93,channel,NN,libobs,obs.c
+47,95,source,NN,libobs,obs.c
+48,96,param,NN,libobs,obs.c
+49,98,p start,FW NN,libobs,obs.c
+50,99,mutex,NN,libobs,obs.c
+51,100,proc,NN,libobs,obs.c
+52,110,v first,FW NN,libobs,obs.c
+53,111,name,NN,libobs,obs.c
+54,113,p table,FW NN,libobs,obs.c
+55,114,uuid,NNP,libobs,obs.c
+56,116,ref,NN,libobs,obs.c
+57,129,src c,NN FW,libobs,obs.c
+58,130,dest c,NN FW,libobs,obs.c
+59,131,src a,NN FW,libobs,obs.c
+60,132,dest a,NN FW,libobs,obs.c
+61,133,volume,NN,libobs,obs.c
+62,134,source data,NN NNS,libobs,obs.c
+63,135,is private,VBZ JJ,libobs,obs.c
+64,138,array,NN,libobs,obs.c
+65,139,cb,NNP,libobs,obs.c
+66,140,private data,JJ NNS,libobs,obs.c
+67,147,private,JJ,libobs,obs.c
+68,148,context,NN,libobs,obs.c
+69,149,type,NN,libobs,obs.c
+70,150,settings,NNS,libobs,obs.c
+71,153,hot key data,JJ NN NNS,libobs,obs.c
+72,164,object,NN,libobs,obs.c
+73,165,destroy,VB,libobs,obs.c
+74,168,p first,FW NN,libobs,obs.c
+75,169,p hash,FW NN,libobs,obs.c
+76,176,p first uuid,FW NN NNP,libobs,obs.c
+77,179,p head,FW NN,libobs,obs.c
+78,181,p uuid head,FW NNP NN,libobs,obs.c
+79,188,obj,NN,libobs,obs.c
+80,203,v,FW,libobs,obs.c
+81,205,conversion,NN,libobs,obs.c
+82,206,frame rate divisor,NN NN NN,libobs,obs.c
+83,216,mix idx,NN NN,libobs,obs.c
+84,218,callback,NN,libobs,obs.c
+85,225,encoder,NN,libobs,obs.c
+86,231,task,NN,libobs,obs.c
+87,233,wait,VB,libobs,obs.c
+88,235,handler,NN,libobs,obs.c
+89,238,weak,JJ,libobs,obs.c
+90,245,protocol,NN,libobs,obs.c
+91,267,f,FW,libobs,obs-source.c
+92,272,ver,NN,libobs,obs-source.c
+93,289,key,NN,libobs,obs-source.c
+94,290,pressed,JJ,libobs,obs-source.c
+95,310,last obs ver,JJ FW NN,libobs,obs-source.c
+96,325,dst,NNP,libobs,obs-source.c
+97,333,filter,NN,libobs,obs-source.c
+98,337,new name,JJ NN,libobs,obs-source.c
+99,338,create private,VB JJ,libobs,obs-source.c
+100,339,frame,NN,libobs,obs-source.c
+101,340,format,NN,libobs,obs-source.c
+102,365,new path,JJ NN,libobs,obs-source.c
+103,379,event,NN,libobs,obs-source.c
+104,381,mouse up,NN RP,libobs,obs-source.c
+105,382,click count,VB NN,libobs,obs-source.c
+106,385,mouse leave,NN VB,libobs,obs-source.c
+107,388,x delta,FW NN,libobs,obs-source.c
+108,389,y delta,FW NN,libobs,obs-source.c
+109,391,focus,NN,libobs,obs-source.c
+110,394,key up,VB RP,libobs,obs-source.c
+111,397,centered,JJ,libobs,obs-source.c
+112,402,parent,NN,libobs,obs-source.c
+113,403,child,NN,libobs,obs-source.c
+114,419,ref frame,NN NN,libobs,obs-source.c
+115,423,seconds,NNS,libobs,obs-source.c
+116,424,sample rate,NN NN,libobs,obs-source.c
+117,425,frames,NNS,libobs,obs-source.c
+118,427,duration,NN,libobs,obs-source.c
+119,429,timestamp,NN,libobs,obs-source.c
+120,430,os time,NNP NN,libobs,obs-source.c
+121,434,expected,JJ,libobs,obs-source.c
+122,435,ts,NNP,libobs,obs-source.c
+123,436,diff,NN,libobs,obs-source.c
+124,439,in,IN,libobs,obs-source.c
+125,440,muted,JJ,libobs,obs-source.c
+126,441,ts 1,NNP CD,libobs,obs-source.c
+127,442,ts 2,NNP CD,libobs,obs-source.c
+128,443,audio,NN,libobs,obs-source.c
+129,444,offset,NN,libobs,obs-source.c
+130,454,full range,JJ NN,libobs,obs-source.c
+131,455,trc,NNP,libobs,obs-source.c
+132,505,val,NN,libobs,obs-source.c
+133,511,tex render,NN VB,libobs,obs-source.c
+134,514,tex,NNP,libobs,obs-source.c
+135,527,rotation,NN,libobs,obs-source.c
+136,546,count,VB,libobs,obs-source.c
+137,547,preferred spaces,JJ NNS,libobs,obs-source.c
+138,562,cur idx,NN NN,libobs,obs-source.c
+139,569,movement,NN,libobs,obs-source.c
+140,577,index,NN,libobs,obs-source.c
+141,586,plane,NN,libobs,obs-source.c
+142,587,y,FW,libobs,obs-source.c
+143,591,lines,NNS,libobs,obs-source.c
+144,611,captions,NNS,libobs,obs-source.c
+145,644,balance,NN,libobs,obs-source.c
+146,649,audio in,NN IN,libobs,obs-source.c
+147,653,sys time,NN NN,libobs,obs-source.c
+148,666,target,NN,libobs,obs-source.c
+149,668,tech name,NN NN,libobs,obs-source.c
+150,676,filter flags,NN NNS,libobs,obs-source.c
+151,677,parent flags,JJ NNS,libobs,obs-source.c
+152,678,allow direct,VB JJ,libobs,obs-source.c
+153,679,space,NN,libobs,obs-source.c
+154,709,enum callback,NN NN,libobs,obs-source.c
+155,734,flags,NNS,libobs,obs-source.c
+156,739,mixers,NNS,libobs,obs-source.c
+157,741,color matrix,NN NN,libobs,obs-source.c
+158,742,color range min,NN NN NN,libobs,obs-source.c
+159,743,color range max,NN NN NN,libobs,obs-source.c
+160,744,texture,NN,libobs,obs-source.c
+161,745,x,FW,libobs,obs-source.c
+162,747,cx,FW,libobs,obs-source.c
+163,748,cy,FW,libobs,obs-source.c
+164,749,flip,VB,libobs,obs-source.c
+165,758,hidden,JJ,libobs,obs-source.c
+166,765,enabled,VBN,libobs,obs-source.c
+167,770,signal,NN,libobs,obs-source.c
+168,774,delay,VB,libobs,obs-source.c
+169,791,mix,NN,libobs,obs-source.c
+170,792,channels,NNS,libobs,obs-source.c
+171,793,vol,NN,libobs,obs-source.c
+172,797,vol data,NN NNS,libobs,obs-source.c
+173,799,action,NN,libobs,obs-source.c
+174,844,unbuffered,JJ,libobs,obs-source.c
+175,848,decouple,VB,libobs,obs-source.c
+176,851,enable,VB,libobs,obs-source.c
+177,857,active,JJ,libobs,obs-source.c
+178,862,pause,VB,libobs,obs-source.c
+179,870,ms,NNP,libobs,obs-source.c
+180,887,hevc packet,NNP NN,libobs,obs-hevc.c
+181,899,module,NN,libobs,obs-win-crash-handler.c
+182,900,func,NN,libobs,obs-win-crash-handler.c
+183,902,trace,NN,libobs,obs-win-crash-handler.c
+184,906,module name,NN NN,libobs,obs-win-crash-handler.c
+185,907,module base,NN NN,libobs,obs-win-crash-handler.c
+186,908,module size,NN NN,libobs,obs-win-crash-handler.c
+187,919,thread,NN,libobs,obs-win-crash-handler.c
+188,923,entry,NN,libobs,obs-win-crash-handler.c
+189,924,first thread,JJ NN,libobs,obs-win-crash-handler.c
+190,928,exception,NN,libobs,obs-win-crash-handler.c
+191,940,mixer idx,NN NN,libobs,obs-encoder.c
+192,959,shutdown,NN,libobs,obs-encoder.c
+193,974,extra data,JJ NNS,libobs,obs-encoder.c
+194,981,reroute id,VB NN,libobs,obs-encoder.c
+195,1000,input,NN,mpv-master,chmap.c
+196,1001,expected selection,JJ NN,mpv-master,chmap.c
+197,1002,layouts,NNS,mpv-master,chmap.c
+198,1003,av layout,FW NN,mpv-master,chmap.c
+199,1004,mp layout,FW NN,mpv-master,chmap.c
+200,1005,require default unspec,VB JJ JJ,mpv-master,chmap.c
+201,1006,p ctx,FW NN,mpv-master,scale_sws.c
+202,1010,img fmt dst,NN NN NNP,mpv-master,scale_sws.c
+203,1011,img fmt src,NN NN NN,mpv-master,scale_sws.c
+204,1013,status,NN,mpv-master,libmpv_test.c
+205,1014,property,NN,mpv-master,libmpv_test.c
+206,1015,expect,VB,mpv-master,libmpv_test.c
+207,1032,a,FW,mpv-master,img_utils.c
+208,1033,b,FW,mpv-master,img_utils.c
+209,1034,w,FW,mpv-master,scale_test.c
+210,1035,h,FW,mpv-master,scale_test.c
+211,1036,bytes,NNS,mpv-master,scale_test.c
+212,1037,rgb,NNP,mpv-master,scale_test.c
+213,1038,alpha,NN,mpv-master,scale_test.c
+214,1039,s test,FW NN,mpv-master,scale_test.c
+215,1041,img,NN,mpv-master,scale_test.c
+216,1045,new,JJ,mpv-master,scale_test.c
+217,1050,line,NN,mpv-master,paths.c
+218,1053,c,FW,mpv-master,paths.c
+219,1056,abs,NNP,mpv-master,paths.c
+220,1070,tolerance,NN,mpv-master,test_utils.c
+221,1071,out dir,NN NN,mpv-master,test_utils.c
+222,1075,ref dir,NN NN,mpv-master,test_utils.c
+223,1079,err,NN,mpv-master,test_utils.c
+224,1080,d,FW,mpv-master,test_utils.c
+225,1087,log,NN,mpv-master,test_utils.c
+226,1088,lev,NNP,mpv-master,test_utils.c
+227,1094,w stream,FW NN,mpv-master,test_utils.c
+228,1096,args,NNP,mpv-master,test_utils.c
+229,1098,str,NN,mpv-master,test_utils.c
+230,1099,handle,VB,mpv-master,test_utils.c
+231,1100,dict,NN,mpv-master,test_utils.c
+232,1101,kv,NNP,mpv-master,test_utils.c
+233,1102,tal loc ctx,NNP NN NN,mpv-master,test_utils.c
+234,1105,item,NN,mpv-master,linked_list.c
+235,1106,lst,NNP,mpv-master,linked_list.c
+236,1108,num c,NN FW,mpv-master,linked_list.c
+237,1109,img fmt,NN NN,mpv-master,repack.c
+238,1113,not if fmt,RB IN NN,mpv-master,repack.c
+239,1115,csp,NNP,mpv-master,repack.c
+240,1116,levels,NNS,mpv-master,repack.c
+241,1122,env,NN,mpv-master,jni.c
+242,1123,string,NN,mpv-master,jni.c
+243,1126,utf chars,NNP NNS,mpv-master,jni.c
+244,1130,error,NN,mpv-master,jni.c
+245,1133,logging,VBG,mpv-master,jni.c
+246,1136,j fields,FW NNS,mpv-master,jni.c
+247,1137,j fields mapping,FW NNS NN,mpv-master,jni.c
+248,1138,global,JJ,mpv-master,jni.c
+249,1149,root,NN,mpv-master,path_utils.c
+250,1152,p 1,FW CD,mpv-master,path_utils.c
+251,1153,p 2,FW CD,mpv-master,path_utils.c
+252,1164,out url,NN NNP,mpv-master,path_utils.c
+253,1165,dir,NN,mpv-master,path_utils.c
+254,1167,ta parent,FW NN,mpv-master,dispatch.c
+255,1168,queue,NN,mpv-master,dispatch.c
+256,1169,wakeup ctx,NN NN,mpv-master,dispatch.c
+257,1171,on lock ctx,IN NN NN,mpv-master,dispatch.c
+258,1175,fn,NNP,mpv-master,dispatch.c
+259,1176,fn data,NNP NNS,mpv-master,dispatch.c
+260,1190,timeout,NN,mpv-master,dispatch.c
+261,1193,until,RB,mpv-master,dispatch.c
+262,1196,arg,NN,mpv-master,thread_pool.c
+263,1197,ctx,NN,mpv-master,thread_pool.c
+264,1198,pool,NN,mpv-master,thread_pool.c
+265,1200,init threads,VB NNS,mpv-master,thread_pool.c
+266,1201,min threads,JJ NNS,mpv-master,thread_pool.c
+267,1202,max threads,JJ NNS,mpv-master,thread_pool.c
+268,1204,fn ctx,NNP NN,mpv-master,thread_pool.c
+269,1205,allow queue,VB NN,mpv-master,thread_pool.c
+270,1223,max depth,JJ NN,mpv-master,json.c
+271,1231,indent,NN,mpv-master,json.c
+272,1242,user cp,NN NN,mpv-master,charset_conv.c
+273,1244,buf,NN,mpv-master,charset_conv.c
+274,1255,cp,NN,mpv-master,charset_conv.c
+275,1257,template,NN,mpv-master,io_utils.c
+276,1258,suffix len,NN NN,mpv-master,io_utils.c
+277,1260,file path,NN NN,mpv-master,io_utils.c
+278,1263,str 1,NN CD,mpv-master,bstr.c
+279,1264,str 2,NN CD,mpv-master,bstr.c
+280,1272,reject,VB,mpv-master,bstr.c
+281,1274,accept,VB,mpv-master,bstr.c
+282,1275,haystack,NN,mpv-master,bstr.c
+283,1276,needle,NN,mpv-master,bstr.c
+284,1280,sep,VB,mpv-master,bstr.c
+285,1281,rest,NN,mpv-master,bstr.c
+286,1283,tok,NN,mpv-master,bstr.c
+287,1284,out left,NN JJ,mpv-master,bstr.c
+288,1285,out right,NN JJ,mpv-master,bstr.c
+289,1287,start,NN,mpv-master,bstr.c
+290,1291,base,NN,mpv-master,bstr.c
+291,1299,prefix,NN,mpv-master,bstr.c
+292,1307,out next,NN JJ,mpv-master,bstr.c
+293,1315,append min,VB NN,mpv-master,bstr.c
+294,1318,append,VB,mpv-master,bstr.c
+295,1321,fmt,NN,mpv-master,bstr.c
+296,1325,ap,FW,mpv-master,bstr.c
+297,1329,suffix,NN,mpv-master,bstr.c
+298,1334,hex,NN,mpv-master,bstr.c
+299,1335,out,NN,mpv-master,bstr.c
+300,1338,ret,NNP,mpv-master,bstr.c
+301,1372,k,FW,mpv-master,language.c
+302,1373,lang,NN,mpv-master,language.c
+303,1375,l 1,FW CD,mpv-master,language.c
+304,1376,s 1,FW CD,mpv-master,language.c
+305,1377,l 2,FW CD,mpv-master,language.c
+306,1378,s 2,FW CD,mpv-master,language.c
+307,1381,waiter,NN,mpv-master,thread_tools.c
+308,1383,value,NN,mpv-master,thread_tools.c
+309,1396,slave,NN,mpv-master,thread_tools.c
+310,1401,uu,FW,mpv-master,uuid.c
+311,1403,in start,IN NN,mpv-master,uuid.c
+312,1404,in end,IN NN,mpv-master,uuid.c
+313,1410,tag,NN,mpv-master,rendezvous.c
+314,1415,seed,NN,mpv-master,random.c
+315,1416,name 1,NN CD,mpv-master,natural_sort.c
+316,1417,name 2,NN CD,mpv-master,natural_sort.c
+317,1424,n,FW,mpv-master,ta_talloc.c
+318,1438,ptr,NN,mpv-master,ta.c
+319,1458,loc,NN,mpv-master,ta.c
+320,1466,element size,NN NN,mpv-master,ta_utils.c
+321,1468,next idx,JJ NN,mpv-master,ta_utils.c
+322,1476,at,IN,mpv-master,ta_utils.c
+323,1478,append len,VB NN,mpv-master,ta_utils.c
+324,1524,stream,NN,mpv-master,stream_null.c
+325,1526,url,NNP,mpv-master,stream.c
+326,1529,ok,NN,mpv-master,stream.c
+327,1531,proto,NN,mpv-master,stream.c
+328,1536,len,NN,mpv-master,stream.c
+329,1537,pos,NN,mpv-master,stream.c
+330,1539,keep,VB,mpv-master,stream.c
+331,1541,s info,FW NN,mpv-master,stream.c
+332,1550,filename,NN,mpv-master,stream.c
+333,1556,forward,VB,mpv-master,stream.c
+334,1559,buf size,NN NN,mpv-master,stream.c
+335,1562,mem,NN,mpv-master,stream.c
+336,1563,total,NN,mpv-master,stream.c
+337,1565,forward size,JJ NN,mpv-master,stream.c
+338,1576,new pos,JJ NN,mpv-master,stream.c
+339,1582,cmd,NN,mpv-master,stream.c
+340,1589,max size,JJ NN,mpv-master,stream.c
+341,1602,arch,NN,mpv-master,stream_libarchive.c
+342,1603,priv,JJ,mpv-master,stream_libarchive.c
+343,1604,buffer,NN,mpv-master,stream_libarchive.c
+344,1608,whence,WRB,mpv-master,stream_libarchive.c
+345,1611,request,NN,mpv-master,stream_libarchive.c
+346,1617,mpa,NNP,mpv-master,stream_libarchive.c
+347,1619,r,FW,mpv-master,stream_libarchive.c
+348,1638,max volumes,JJ NNS,mpv-master,stream_libarchive.c
+349,1647,max len,JJ NN,mpv-master,stream_libarchive.c
+350,1660,cur,NN,mpv-master,stream_concat.c
+351,1666,streams,NNS,mpv-master,stream_concat.c
+352,1667,num streams,NN NNS,mpv-master,stream_concat.c
+353,1668,del sys,VB NN,mpv-master,dvb_tune.c
+354,1669,fe fd,FW FW,mpv-master,dvb_tune.c
+355,1672,adapter,NN,mpv-master,dvb_tune.c
+356,1673,frontend,NN,mpv-master,dvb_tune.c
+357,1674,demux cnt,NN NN,mpv-master,dvb_tune.c
+358,1676,cnt,NN,mpv-master,dvb_tune.c
+359,1678,fd,FW,mpv-master,dvb_tune.c
+360,1679,pid,NNP,mpv-master,dvb_tune.c
+361,1680,pes type,NNP NN,mpv-master,dvb_tune.c
+362,1682,dev no,NN NN,mpv-master,dvb_tune.c
+363,1683,service id,NN NN,mpv-master,dvb_tune.c
+364,1685,fe status,FW NN,mpv-master,dvb_tune.c
+365,1687,fd frontend,FW NN,mpv-master,dvb_tune.c
+366,1688,tm out,VB RP,mpv-master,dvb_tune.c
+367,1692,t,FW,mpv-master,dvb_tune.c
+368,1694,secfd,FW,mpv-master,dvb_tune.c
+369,1695,sat no,NNP NN,mpv-master,dvb_tune.c
+370,1696,polv,NNP,mpv-master,dvb_tune.c
+371,1697,hi lo,UH FW,mpv-master,dvb_tune.c
+372,1701,cmd seq,NN NN,mpv-master,dvb_tune.c
+373,1705,freq,NN,mpv-master,dvb_tune.c
+374,1706,s rate,FW NN,mpv-master,dvb_tune.c
+375,1707,pol,NNP,mpv-master,dvb_tune.c
+376,1708,stream id,NN NN,mpv-master,dvb_tune.c
+377,1709,spec Inv,NN NN,mpv-master,dvb_tune.c
+378,1710,diseqc,NNP,mpv-master,dvb_tune.c
+379,1711,modulation,NN,mpv-master,dvb_tune.c
+380,1712,HP Code Rate,FW NN NN,mpv-master,dvb_tune.c
+381,1713,Transmission Mode,NN NN,mpv-master,dvb_tune.c
+382,1714,guard Interval,NN NN,mpv-master,dvb_tune.c
+383,1715,bandwidth,NN,mpv-master,dvb_tune.c
+384,1716,LP Code Rate,FW NN NN,mpv-master,dvb_tune.c
+385,1717,hier,NNP,mpv-master,dvb_tune.c
+386,1730,band Width,NN NN,mpv-master,dvb_tune.c
+387,1747,device,NN,mpv-master,stream_dvdnav.c
+388,1748,speed,NN,mpv-master,stream_dvdnav.c
+389,1750,ext,NNP,mpv-master,stream_dvdnav.c
+390,1751,sig,NN,mpv-master,stream_dvdnav.c
+391,1753,aid,NNP,mpv-master,stream_dvdnav.c
+392,1755,sid,NNP,mpv-master,stream_dvdnav.c
+393,1771,cr,FW,mpv-master,stream_dvb.c
+394,1772,mod string,NN NN,mpv-master,stream_dvb.c
+395,1773,vdr par str,NNP NN NN,mpv-master,stream_dvb.c
+396,1779,pid string,NNP NN,mpv-master,stream_dvb.c
+397,1782,list add,NN VB,mpv-master,stream_dvb.c
+398,1783,cfg full transponder,NN JJ NN,mpv-master,stream_dvb.c
+399,1787,del sys mask,VB NN NN,mpv-master,stream_dvb.c
+400,1799,prog name,NN NN,mpv-master,stream_dvb.c
+401,1849,target fmt,NN NN,mpv-master,stream_lavf.c
+402,1857,track,NN,mpv-master,stream_cdda.c
+403,1860,in pos,IN NN,mpv-master,stream_cdda.c
+404,1861,function,NN,mpv-master,stream_cdda.c
+405,1869,sector,NN,mpv-master,stream_cdda.c
+406,1873,st,FW,mpv-master,stream_cdda.c
+407,1897,playlist,NN,mpv-master,stream_bluray.c
+408,1899,title,NN,mpv-master,stream_bluray.c
+409,1902,ev,FW,mpv-master,stream_bluray.c
+410,1912,title guess,NN VB,mpv-master,stream_bluray.c
+411,1919,list,NN,mpv-master,external_files.c
+412,1920,opts,NNP,mpv-master,external_files.c
+413,1922,f name,FW NN,mpv-master,external_files.c
+414,1930,fn start,FW NN,mpv-master,external_files.c
+415,1935,s list,FW NN,mpv-master,external_files.c
+416,1936,n sub,FW NN,mpv-master,external_files.c
+417,1939,limit fuzziness,NN NN,mpv-master,external_files.c
+418,1940,limit type,NN NN,mpv-master,external_files.c
+419,1948,n subs,FW NNS,mpv-master,external_files.c
+420,1950,paths,NNS,mpv-master,external_files.c
+421,1951,cfg path,NNP NN,mpv-master,external_files.c
+422,1956,mp ctx,FW NN,mpv-master,audio.c
+423,1959,db,FW,mpv-master,audio.c
+424,1964,ao c,FW FW,mpv-master,audio.c
+425,1970,buf sz,NN NN,mpv-master,audio.c
+426,1971,rate,NN,mpv-master,audio.c
+427,1974,old,JJ,mpv-master,audio.c
+428,1977,ao,FW,mpv-master,audio.c
+429,1990,pts,NNP,mpv-master,audio.c
+430,1994,L,FW,mpv-master,lua.c
+431,1996,ud,FW,mpv-master,lua.c
+432,2001,job,NN,redis,bio.c
+433,2002,free fn,JJ NN,redis,bio.c
+434,2003,arg count,NN NN,redis,bio.c
+435,2005,need f sync,VB FW NN,redis,bio.c
+436,2006,need reclaim cache,VB VB NN,redis,bio.c
+437,2015,job type,NN NN,redis,bio.c
+438,2016,ct,FW,redis,connection.c
+439,2017,type name,NN NN,redis,connection.c
+440,2022,db id,NN NN,redis,lazyfree.c
+441,2027,tracking,NN,redis,lazyfree.c
+442,2028,lua scripts,NNP NNS,redis,lazyfree.c
+443,2029,lua,NNP,redis,lazyfree.c
+444,2030,functions lib ctx,NNS NN NN,redis,lazyfree.c
+445,2031,blocks,NNS,redis,lazyfree.c
+446,2044,use tls,VB NNP,redis,cluster_legacy.c
+447,2047,length,NN,redis,cluster_legacy.c
+448,2070,do f sync,VB FW NN,redis,cluster_legacy.c
+449,2073,announced tcp port,JJ NNP NN,redis,cluster_legacy.c
+450,2074,announced tls port,JJ NNP NN,redis,cluster_legacy.c
+451,2075,announced c port,JJ FW NN,redis,cluster_legacy.c
+452,2076,node,NN,redis,cluster_legacy.c
+453,2081,shard id,NN NN,redis,cluster_legacy.c
+454,2082,hard,JJ,redis,cluster_legacy.c
+455,2084,msg len,NN NN,redis,cluster_legacy.c
+456,2087,link,NN,redis,cluster_legacy.c
+457,2090,conn,NN,redis,cluster_legacy.c
+458,2091,el,FW,redis,cluster_legacy.c
+459,2093,priv data,JJ NNS,redis,cluster_legacy.c
+460,2094,mask,NN,redis,cluster_legacy.c
+461,2095,node name,NN NN,redis,cluster_legacy.c
+462,2097,failing,VBG,redis,cluster_legacy.c
+463,2098,sender,NN,redis,cluster_legacy.c
+464,2103,master,NN,redis,cluster_legacy.c
+465,2110,del node,VB NN,redis,cluster_legacy.c
+466,2121,node id,NN NN,redis,cluster_legacy.c
+467,2124,ip,NNP,redis,cluster_legacy.c
+468,2125,port,NN,redis,cluster_legacy.c
+469,2126,c port,FW NN,redis,cluster_legacy.c
+470,2130,hdr,NNP,redis,cluster_legacy.c
+471,2131,tls port,NNP NN,redis,cluster_legacy.c
+472,2132,tcp port,NNP NN,redis,cluster_legacy.c
+473,2133,g,FW,redis,cluster_legacy.c
+474,2136,gossip msg,NN NN,redis,cluster_legacy.c
+475,2143,announced ip,JJ NNP,redis,cluster_legacy.c
+476,2149,sender Config Epoch,NN NN NN,redis,cluster_legacy.c
+477,2150,slots,NNS,redis,cluster_legacy.c
+478,2155,data Size,NN NN,redis,cluster_legacy.c
+479,2161,gossip count,NN NN,redis,cluster_legacy.c
+480,2172,msg block,NN NN,redis,cluster_legacy.c
+481,2184,message,NN,redis,cluster_legacy.c
+482,2190,module id,NN NN,redis,cluster_legacy.c
+483,2192,payload,NN,redis,cluster_legacy.c
+484,2201,sharded,VBN,redis,cluster_legacy.c
+485,2206,reason,NN,redis,cluster_legacy.c
+486,2207,max slaves,JJ NNS,redis,cluster_legacy.c
+487,2209,handshake timeout,NN NN,redis,cluster_legacy.c
+488,2210,now,NN,redis,cluster_legacy.c
+489,2214,bitmap,NN,redis,cluster_legacy.c
+490,2221,slot,NN,redis,cluster_legacy.c
+491,2229,from node,IN NN,redis,cluster_legacy.c
+492,2230,to node,IN NN,redis,cluster_legacy.c
+493,2233,ci,FW,redis,cluster_legacy.c
+494,2236,slot info pairs,NN NN NNS,redis,cluster_legacy.c
+495,2237,slot info pairs count,NN NN NNS NN,redis,cluster_legacy.c
+496,2240,tls primary,NNP NN,redis,cluster_legacy.c
+497,2251,o,FW,redis,cluster_legacy.c
+498,2254,del,VB,redis,cluster_legacy.c
+499,2255,start slot,NN NN,redis,cluster_legacy.c
+500,2256,end slot,NN NN,redis,cluster_legacy.c
+501,2263,nodes,NNS,redis,cluster_legacy.c
+502,2266,hash slot,NN NN,redis,cluster_legacy.c
+503,2269,num nodes,NN NNS,redis,cluster_legacy.c
+504,2285,slave idx,NN NN,redis,cluster_legacy.c
+505,2293,tids,NNPS,redis,threads_mngr.c
+506,2294,tids len,NNPS NN,redis,threads_mngr.c
+507,2300,level,NN,redis,server.c
+508,2301,msg,NN,redis,server.c
+509,2308,ret code,NN NN,redis,server.c
+510,2316,key 1,NN CD,redis,server.c
+511,2317,key 2,NN CD,redis,server.c
+512,2349,more Mem,JJR NN,redis,server.c
+513,2350,used Ratio,JJ NN,redis,server.c
+514,2353,metric,NN,redis,server.c
+515,2354,current value,JJ NN,redis,server.c
+516,2355,current base,JJ NN,redis,server.c
+517,2356,factor,NN,redis,server.c
+518,2360,now ms,JJ NN,redis,server.c
+519,2362,time idx,NN NN,redis,server.c
+520,2367,allow eviction,VB NN,redis,server.c
+521,2369,in usage,NN NN,redis,server.c
+522,2370,out usage,NN NN,redis,server.c
+523,2371,update daylight info,VB NN NN,redis,server.c
+524,2372,us time,NNP NN,redis,server.c
+525,2374,update cached time,VB VBN NN,redis,server.c
+526,2375,us,NNP,redis,server.c
+527,2376,event Loop,NN NN,redis,server.c
+528,2378,client Data,NN NNS,redis,server.c
+529,2383,process class,NN NN,redis,server.c
+530,2384,sfd,NNP,redis,server.c
+531,2386,accept handler,VB NN,redis,server.c
+532,2389,parent name,NN NN,redis,server.c
+533,2390,sub name,NN NN,redis,server.c
+534,2392,sub command,NN NN,redis,server.c
+535,2393,declared name,JJ NN,redis,server.c
+536,2396,commands,NNS,redis,server.c
+537,2397,oa,FW,redis,server.c
+538,2404,container,NN,redis,server.c
+539,2409,strict,JJ,redis,server.c
+540,2438,latency histogram,NN NN,redis,server.c
+541,2439,duration hist,NN NN,redis,server.c
+542,2445,reply,NN,redis,server.c
+543,2457,full err,JJ NN,redis,server.c
+544,2458,name len,NN NN,redis,server.c
+545,2459,unlink unix socket,VB NNP NN,redis,server.c
+546,2461,error code,NN NN,redis,server.c
+547,2467,reply Flags,NN NNS,redis,server.c
+548,2478,num args,NN NNP,redis,server.c
+549,2480,rs,FW,redis,server.c
+550,2489,use map,NN NN,redis,server.c
+551,2495,with flags,IN NNS,redis,server.c
+552,2505,num cmds,NN NNS,redis,server.c
+553,2518,histogram name,NN NN,redis,server.c
+554,2519,histogram,NN,redis,server.c
+555,2520,repl state,NNP NN,redis,server.c
+556,2523,tmp,NN,redis,server.c
+557,2529,section dict,NN NN,redis,server.c
+558,2530,sections,NNS,redis,server.c
+559,2531,sec,NNP,redis,server.c
+560,2534,defaults,NNS,redis,server.c
+561,2535,out all,IN DT,redis,server.c
+562,2536,out everything,IN NN,redis,server.c
+563,2537,blocking keys,NN NNS,redis,server.c
+564,2538,blocking keys on no key,NN NNS IN DT NN,redis,server.c
+565,2539,watched keys,NN NNS,redis,server.c
+566,2541,all sections,DT NNS,redis,server.c
+567,2542,everything,NN,redis,server.c
+568,2545,warning,NN,redis,server.c
+569,2547,listener,NN,redis,server.c
+570,2550,purpose,NN,redis,server.c
+571,2551,info type,NN NN,redis,server.c
+572,2552,p name,FW NN,redis,server.c
+573,2554,keys,NNS,redis,server.c
+574,2557,size hint,NN NN,redis,server.c
+575,2561,exec name,NN NN,redis,server.c
+576,2562,allocation size,NN NN,redis,server.c
+577,2563,var name,NN NN,redis,server.c
+578,2569,cpu list,NNP NN,redis,server.c
+579,2570,sd notify msg,FW VB NN,redis,server.c
+580,2571,mode,NN,redis,server.c
+581,2576,score,VB,redis,t_zset.c
+582,2577,ele,NNP,redis,t_zset.c
+583,2579,zsl,NNP,redis,t_zset.c
+584,2585,update,NN,redis,t_zset.c
+585,2591,cur score,NN NN,redis,t_zset.c
+586,2593,new score,JJ NN,redis,t_zset.c
+587,2595,spec,NN,redis,t_zset.c
+588,2599,range,NN,redis,t_zset.c
+589,2616,start node,NN NN,redis,t_zset.c
+590,2617,start level,NN NN,redis,t_zset.c
+591,2618,rank,NN,redis,t_zset.c
+592,2621,min,NN,redis,t_zset.c
+593,2622,max,NN,redis,t_zset.c
+594,2625,dest,NNP,redis,t_zset.c
+595,2626,ex,NNP,redis,t_zset.c
+596,2642,vstr,NNP,redis,t_zset.c
+597,2643,vlen,NNP,redis,t_zset.c
+598,2644,s ptr,FW NN,redis,t_zset.c
+599,2646,e ptr,FW NN,redis,t_zset.c
+600,2647,cstr,NNP,redis,t_zset.c
+601,2648,clen,NNP,redis,t_zset.c
+602,2649,zl,FW,redis,t_zset.c
+603,2672,lp,FW,redis,t_zset.c
+604,2686,deleted,VBN,redis,t_zset.c
+605,2694,z obj,FW NN,redis,t_zset.c
+606,2696,val len hint,NN NN NN,redis,t_zset.c
+607,2700,encoding,NN,redis,t_zset.c
+608,2703,cap,NN,redis,t_zset.c
+609,2705,max ele len,JJ NNP NN,redis,t_zset.c
+610,2706,tot ele len,JJ NNP NN,redis,t_zset.c
+611,2708,member,NN,redis,t_zset.c
+612,2713,in flags,NN NNS,redis,t_zset.c
+613,2714,out flags,NN NNS,redis,t_zset.c
+614,2716,zs,FW,redis,t_zset.c
+615,2722,reverse,NN,redis,t_zset.c
+616,2723,output score,NN NN,redis,t_zset.c
+617,2725,e,FW,redis,t_zset.c
+618,2728,zsetobj,NNP,redis,t_zset.c
+619,2729,zsetsize,NNP,redis,t_zset.c
+620,2738,range type,NN NN,redis,t_zset.c
+621,2742,op,NN,redis,t_zset.c
+622,2761,aggregate,NN,redis,t_zset.c
+623,2763,total len,JJ NN,redis,t_zset.c
+624,2765,set num,VB NN,redis,t_zset.c
+625,2766,dst z set,NNP FW NN,redis,t_zset.c
+626,2782,dst key,NNP NN,redis,t_zset.c
+627,2783,num keys Index,NN NNS NN,redis,t_zset.c
+628,2785,cardinality only,NN RB,redis,t_zset.c
+629,2797,value length in bytes,NN NN IN NNS,redis,t_zset.c
+630,2803,result count,NN NN,redis,t_zset.c
+631,2816,client,NN,redis,t_zset.c
+632,2825,with scores,IN NNS,redis,t_zset.c
+633,2834,limit,NN,redis,t_zset.c
+634,2850,argc start,NNP NN,redis,t_zset.c
+635,2853,direction,NN,redis,t_zset.c
+636,2863,keyv,NNP,redis,t_zset.c
+637,2864,keyc,NNP,redis,t_zset.c
+638,2865,where,WRB,redis,t_zset.c
+639,2866,emit key,VB NN,redis,t_zset.c
+640,2868,use nested array,VB JJ NN,redis,t_zset.c
+641,2869,reply nil when empty,VB NNP WRB JJ,redis,t_zset.c
+642,2877,num keys,NN NNS,redis,t_zset.c
+643,2879,timeout idx,NN NN,redis,t_zset.c
+644,2888,vals,NNS,redis,t_zset.c
+645,2890,l,FW,redis,t_zset.c
+646,2894,num keys idx,NN NNS NN,redis,t_zset.c
+647,2895,is block,VBZ NN,redis,t_zset.c
+648,2901,swap type,NN NN,redis,pqsort.c
+649,2907,es,FW,redis,pqsort.c
+650,2908,l range,FW NN,redis,pqsort.c
+651,2909,r range,FW NN,redis,pqsort.c
+652,2921,host socket,NN NN,redis,redis-benchmark.c
+653,2925,cfg,NNP,redis,redis-benchmark.c
+654,2941,from,IN,redis,redis-benchmark.c
+655,2942,thread id,NN NN,redis,redis-benchmark.c
+656,2966,add,VB,redis,listpack.c
+657,2968,slen,NNP,redis,listpack.c
+658,2970,capacity,NN,redis,listpack.c
+659,2974,int enc,NNP NNP,redis,listpack.c
+660,2975,enc len,NNP NN,redis,listpack.c
+661,2998,int buf,NNP NN,redis,listpack.c
+662,2999,entry size,NN NN,redis,listpack.c
