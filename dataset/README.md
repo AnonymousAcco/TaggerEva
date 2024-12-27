@@ -1,9 +1,9 @@
 TaggerEva Datasets
 =========
 TaggerEva includes three datasets:
-* IDData: 9,000 identifiers (i.e., method names, parameter names and class names) from open-source projects with human annotation
+* IDData: 4,862 identifiers (i.e., method names, parameter names and class names) from open-source projects with human annotation
 * NLData: 3,000 natural language sentences sampled from [UD-GUM](https://gucorpling.org/gum/).  
-* MNTrain: contains 10,000 method names sampled from 10 open-source Java projects and 
+* MNTrain: contains 6,165 method names sampled from 10 open-source Java projects and 
 
 
 The columns are explained below:
@@ -17,9 +17,9 @@ The dataset is splitted into three parts:
 
 | Data | #Item | #Project |
 |----|----|----|
-|MNTrain-training|9,000|9|
-|MNTrain-dev|1,000|1|
-|Test(IDData)|9,000|9|
+|MNTrain-training|5,588|9|
+|MNTrain-dev|577|1|
+|Test(IDData)|4,862|9|
 |Test(NLData)|3,000|-|
 
 Adoption for taggers
