@@ -133,7 +133,6 @@ column buffers
 categorical description
 buffer
 column
-data frame
 arrow c types
 endianness
 year month day dict
@@ -158,12 +157,8 @@ py tables expr
 term value
 deep chain map
 scope
-term
-constant
 op
-bin op
 div
-unary op
 math call
 func node
 abstract engine
@@ -341,7 +336,6 @@ test masked arrays
 test 2 d compat
 test sparse array
 test string array
-test 2 d compat
 test interval array
 test arrow array
 test logical ops
@@ -351,13 +345,9 @@ dummy array
 test extension array d type
 capturing string array
 test numpy extension array
-test 2 d compat
 test datetime array
-test 2 d compat
 test period array
-test 2 d compat
 test categorical
-test 2 d compat
 float attr d type
 float attr array
 list d type
@@ -397,7 +387,6 @@ decimal array without from sequence
 decimal array without coercion
 test set ops
 test set ops unsorted
-test take
 test contains
 test get loc
 e
@@ -428,20 +417,14 @@ test mixed int index
 test index utils
 test timedelta index
 test timedelta index difference
-test timedelta index
 test get item
-test get loc
-test get indexer
 test where
-test take
 test maybe cast slice bound
-test contains
 test vectorized timedelta
 test freq
 test timedelta index arithmetic
 test pickle
 test timedelta index ops
-test timedelta index
 test timedelta index delete
 test timedeltas
 test join
@@ -449,17 +432,10 @@ test search sorted
 test timedelta index rendering
 test timedelta index factorize
 test timedelta index shift
-test timedelta index
 test timedelta index insert
 test repeat
 test fill na
-test set ops
 test set ops sort
-test get loc
-test get indexer
-test where
-test take
-test contains
 test slice locs
 test get slice bounds
 test astype
@@ -476,17 +452,7 @@ test from arrays
 test from breaks
 test from tuples
 test class constructors
-test get item
-test where
-test take
-test get loc
-test get indexer
-test slice locs
-test put mask
-test contains
-test interval index
 test equals
-test pickle
 astype tests
 test int subtype
 test float subtype
@@ -494,19 +460,11 @@ test datetime like subtype
 test interval index rendering
 test interval tree
 test categorical index constructors
-test take
-test get loc
-test get indexer
-test where
-test contains
 test categorical index
 test categorical index 2
-test equals
 test reindex
-test astype
 test append
 test categorical index repr
-test fill na
 equals tests
 test period index equals
 test datetime index equals
@@ -516,70 +474,39 @@ drop duplicates
 test drop duplicates period index
 test drop duplicates datetime index
 test drop duplicates timedelta index
-test value counts
-test get indexer
 test get indexer non unique
-test slice locs
 test period index
 test period index disallowed freqs
-test period index
 test simple new
 test shallow copy
 test series period
-test get item
-test get loc
-test get indexer
-test where
-test take
 test get value
-test contains
 test as of locs
 test resolution
 test period representation
 test period index conversion
 test period index ops
-test freq
-test pickle
-test period index
 test period range keywords
 test period range
 test period range disallowed freqs
-test period index
-test join
 test search sorted
 test period index rendering
-test factorize
 test period index shift
 test to timestamp
 test period index as type
 test insert
-test repeat
-test period index
-test fill na
 test datetime index set ops
 test business datetime index
 test custom datetime index
 test datetime index
 test time series
-test get item
-test where
-test take
-test get loc
-test contains
-test get indexer
-test maybe cast slice bound
-test get slice bounds
 test indexer between time
 test datetime index ops
-test freq
 test datetime index arithmetic
 test datetime index reindex
 fixed offset
 test datetime index timezones
-test pickle
 test datetime index iteration
-test datetime index ops
-test business datetime index
 test timestamp equiv date range
 test date ranges
 test date range tz
@@ -590,8 +517,6 @@ test date range non na no
 test date range non tick freq
 test split
 test slicing
-test datetime index
-test join
 test datetime index rendering
 test to period
 test datetime index factorize
@@ -599,42 +524,24 @@ test datetime index shift
 test tz localize
 test to series
 test as of
-test datetime index
-test astype
 test delete
 test date time index to julian date
 test to py datetime
-test insert
 test normalize
 test datetime index round
-test repeat
 test to frame
 test datetime index fill na
 test tz convert
 test map
-test slice locs
-test put mask
-test get indexer
-test get loc
-test where
-test contains
 test get level values
 test is lex sorted
 test lex sort depth
 test repr
 test range index set ops
 test range index constructors
-test get indexer
-test take
-test where
 test range index
-test join
 test index set ops
 test index constructor
-test get slice bounds
-test get indexer non unique
-test get loc
-test where
 test index rendering
 test reshape
 test comparison
@@ -652,7 +559,6 @@ test datetime 64 arithmetic
 test datetime 64 date offset arithmetic
 test datetime 64 overflow handling
 test timestamp series arithmetic
-test datetime index arithmetic
 test numeric comparisons
 test numeric array like arithmetic with datetime like
 test division by zero
@@ -685,8 +591,6 @@ test datetime parsing wrappers
 test origin
 test should cache
 test to time
-test timedeltas
-test reductions
 test index reductions
 test series reductions
 test datetime 64 series reductions
@@ -721,13 +625,7 @@ fn class
 test data frame plots
 test data frame group by plots
 test series plots
-test data frame plots
-test data frame group by plots
 test ts plot
-test common
-test series plots
-test series plots
-test data frame plots
 test get standard colors
 test registration
 test date time converter
@@ -735,12 +633,10 @@ test period converter
 axis
 test time delta converter
 mock axis
-test data frame group by plots
 test data frame color
 test hist with by
 test box with by
 test data frame plots subplots
-test data frame plots
 test data frame plots groupby
 test frame legend
 test types
@@ -752,20 +648,17 @@ test util
 test testing
 test block
 test block manager
-test indexing
 test block placement
 test can hold element
 test should store
 test pad backfill
 test infinity
-test hash table
 test hash table unsorted
 test py object hash table with nans
 test hash table with nans
 test help functions
 test help functions with nans
 test misc
-test indexing
 test indexer
 test config
 test get dummies
@@ -782,12 +675,9 @@ test merge multi
 test join multi multi
 test merge ordered
 not a data frame
-test merge
-not a data frame
 test merge d types
 test merge categorical
 test merge on indexes
-test join
 test as of merge
 test empty concat
 test invalid concat
@@ -797,7 +687,6 @@ test period concat
 test concatenate
 custom iterator 1
 custom iterator 2
-test append
 test concat append common
 test series concat
 test index concat
@@ -806,7 +695,6 @@ test categorical concat
 test concat sort
 test data frame concat
 test stata
-base
 test basic
 test parquet py arrow
 test parquet fast parquet
@@ -884,9 +772,6 @@ test fs path
 test build schema
 test table schema type
 test table orient
-test build schema
-test table schema type
-test table orient
 test table orient reader
 my reader
 test pandas container
@@ -898,8 +783,6 @@ test ultra json tests
 o 2
 o 1
 dict test
-test object
-test object
 test numpy json tests
 test pandas json tests
 invalid dialect
@@ -911,12 +794,9 @@ python parser
 py arrow parser
 test s 3
 no next buffer
-no next buffer
 test text reader
 test unsupported features
-no next buffer
 invalid buffer
-foo
 no seek tell buffer
 my text file reader
 my c parser wrapper
@@ -930,10 +810,8 @@ my numeric d type
 mock numpy like array
 not list like
 my data frame
-a
 d type list
 dict like
-mock file
 hashable class
 unhashable class 1
 unhashable class 2
@@ -943,7 +821,6 @@ dummy
 test number scalar
 test is scalar
 numeric
-base
 test categorical d type
 test datetime tzd type
 test period d type
@@ -965,8 +842,6 @@ test data frame nonunique indexes
 test data frame subclassing
 custom series
 custom data frame
-a
-subclassed data frame
 my subclass with metadata
 simple data frame sub class
 simple series sub class
@@ -977,10 +852,7 @@ test frame flex comparisons
 test frame flex arithmetic
 test frame arithmetic
 test frame arithmetic unsorted
-subclassed series
-subclassed data frame
 test data frame alter axes
-test iteration
 test data frame analytics
 test data frame reductions
 test nuisance columns
@@ -991,7 +863,6 @@ test data frame logical operators
 test data frame validate
 test data frame reshape
 test stack unstack multi level
-mock unstacker
 test data frame unary operators
 test data frame block internals
 test compat
@@ -1001,13 +872,6 @@ test data frame query num expr pandas
 my dense
 my dropout
 my model
-my dense
-my model
-my model
-my dense
-my model
-my model
-my model
 activity regularization layer
 custom callback
 loss and error printing callback
@@ -1015,59 +879,35 @@ early stopping at min loss
 custom learning rate scheduler
 linear
 compute sum
-linear
-linear
 mlp block
-activity regularization layer
 outer layer
 outer layer with kernel regularizer
-linear
-linear
 custom dropout
 sampling
 encoder
 decoder
 variational auto encoder
 custom model
-custom model
-custom model
 my layer
 temporal split
 custom embedding
 my activation
 temporal softmax
-activity regularization layer
-custom dense
 custom dense
 custom rnn
-custom rnn
-activity regularization layer
-custom model
-custom model
-custom model
-custom model
-gan
-custom model
-custom model
-custom model
-custom model
 gan
 custom mse
 categorical true positives
-activity regularization layer
 logistic endpoint
 example py dataset
 example torch dataset
 loss history
-keras export
 keras export
 example model
 clone model test
 sequential
 model test
 multi input model
-custom dense
-my model
 nested layer
 double nested layer
 variable mapping test
@@ -1076,7 +916,6 @@ sequential test
 dict layer
 list layer
 dynamic layer
-dict layer
 bad layer
 model
 functional test
@@ -1086,7 +925,6 @@ name scope
 jax trainer
 jax epoch iterator
 jax layer
-variable
 jax distribution lib test
 sharding capture layer
 jax optimizer
@@ -1096,20 +934,14 @@ tensor flow trainer
 deprecated compiled metric
 tf epoch iterator
 tf layer
-variable
-name scope
 optimizer distribute test
 tf name scope test
 custom model x
 custom signature model
 saved model test
 custom layer
-model
-custom layer
-custom model
 custom layer list
 custom layer dict
-adder
 adder
 distribute test
 tf optimizer
@@ -1117,7 +949,6 @@ keras auto trackable
 torch trainer
 torch epoch iterator
 torch layer
-variable
 custom gradient
 custom gradient function
 adam
@@ -1133,7 +964,6 @@ torch parallel optimizer
 ada delta
 numpy trainer
 numpy layer
-variable
 keras variable
 auto cast scope
 variable initialization test
@@ -1153,16 +983,12 @@ get output shape given tf padding test
 d types test
 test stateless scope
 global state test
-name scope
 stateless scope
 name scope test
 keras tensor
-compute output spec test
 container
 random layer
 export archive test
-my model
-custom model x
 test tfsm layer
 export archive
 tfsm layer
@@ -1174,9 +1000,7 @@ h 5 io store
 h 5 entry
 npz io store
 custom object scope
-my dense
 layer with custom saving
-custom model x
 model with custom saving
 compile overriding model
 compile overriding sequential
@@ -1191,24 +1015,19 @@ normal model
 weird model
 save model tests
 load model tests
-custom layer
 load weights tests
 save model tests warning
-custom layer
 nested custom layer
 wrapper layer
 serialization lib test
 plain functional subclass
 functional subclass w custom init
-my layer
 shared activation
-my dense
 my wrapper
 test object registration
 custom class
 test class
 other test class
-test class
 alpha dropout
 random height
 random width
@@ -1231,23 +1050,10 @@ noop loading scope
 shared object loading scope
 shared object config
 shared object saving scope
-encoder
-my model
 legacy h 5 weights test
 legacy h 5 whole model test
-my dense
-my dense
-my layer
 registered sub layer
 legacy h 5 backwards compat test
-my dense
-my dense
-my dense
-my dense
-my layer
-registered sub layer
-my layer
-registered sub layer
 directory creation test
 re lu
 mish
@@ -1319,23 +1125,14 @@ scatter update optimizer
 optimizer sparse test
 ada delta test
 loss scale optimizer
-rms prop
 loss scale optimizer test
-sgd
 ftrl test
-ada grad
-adam
-ada delta
 sgd test
-nadam
 base optimizer
-lion
 ada grad test
 ada factor
 adam test
-ada max
 lion test
-adam w
 legacy optimizer warning
 optimizer
 ada factor test
@@ -1388,7 +1185,6 @@ test raise if no g file
 text dataset from directory test
 torch module wrapper
 image dataset from directory test
-jax layer
 flax layer
 timeseries dataset test
 tree test
@@ -1591,7 +1387,6 @@ correlate
 function
 nn ops dynamic shape test
 softmax layer
-model
 nn ops static shape test
 nn ops correctness test
 test logit recovery
@@ -1657,9 +1452,6 @@ depthwise conv
 separable conv
 conv transpose
 one hot
-binary crossentropy
-categorical crossentropy
-sparse categorical crossentropy
 multi hot
 moments
 batch norm
@@ -1705,10 +1497,6 @@ lecun uniform
 he normal
 he uniform
 orthogonal initializer
-constant
-zeros
-ones
-identity
 constant initializers test
 initializers test
 initializer
@@ -1723,12 +1511,9 @@ d type policy
 float d type policy
 quantized d type policy
 test case
-test model
 get test data test
 class distribution tests
 named product test
-sum
-mean
 mean metric wrapper
 io u base
 io u
@@ -1756,11 +1541,6 @@ recall at precision test
 auc test
 multi auc test
 metric
-mean squared error test
-cosine similarity test
-mean absolute error test
-mean absolute percentage error test
-mean squared logarithmic error test
 root mean squared error test
 log cosh error test
 r 2 score test
@@ -1772,9 +1552,6 @@ top k categorical accuracy test
 sparse top k categorical accuracy test
 f beta score test
 f 1 score test
-hinge
-squared hinge
-categorical hinge
 io u test
 binary io u test
 mean io u test
@@ -1786,15 +1563,7 @@ categorical accuracy
 sparse categorical accuracy
 top k categorical accuracy
 sparse top k categorical accuracy
-hinge test
-squared hinge test
-categorical hinge test
-mean squared error
-mean absolute error
-mean absolute percentage error
-mean squared logarithmic error
 root mean squared error
-cosine similarity
 log cosh error
 r 2 score
 confusion matrix condition count
@@ -1810,19 +1579,9 @@ specificity at sensitivity
 precision at recall
 recall at precision
 auc
-kl divergence
-poisson
-binary crossentropy
-categorical crossentropy
-sparse categorical crossentropy
 sum test
 mean test
 metric wrapper test
-kl divergence test
-poisson test
-binary crossentropy test
-categorical crossentropy test
-sparse categorical crossentropy test
 callback
 callback list
 swap ema weights test
@@ -1836,9 +1595,7 @@ summary file
 test tensor board v 2
 layer with summary
 terminate on na n test
-terminate on na n test
 callback test
-test model
 cbk
 tensor board
 swap ema weights
@@ -1873,16 +1630,9 @@ call context
 input spec
 layer test
 test layer
-test layer
-test layer
-test layer
-test layer
-test layer
 some layer
 rng layer
 rng list layer
-nested layer
-double nested layer
 layer with metric
 nested layer with metric
 layer with unbuilt state
@@ -1892,7 +1642,6 @@ loss layer
 training layer
 wrapped training layer
 training layer explicit
-bad layer
 inner layer one
 inner layer two
 inner layer three
@@ -1901,7 +1650,6 @@ basic masked layer
 nested input masked layer
 positional inputs masked layer
 positional nested inputs masked layer
-test layer
 non trainable weights layer
 nested non trainable weights layer
 no shape suffix
@@ -1910,10 +1658,6 @@ matching arguments
 subset arguments
 single argument
 no training specified
-bad layer
-my layer
-my layer
-my layer
 random crop
 mel spectrogram
 resizing
@@ -1924,14 +1668,12 @@ index lookup layer test
 discretization
 random contrast test
 random zoom
-array like
 hashing test
 hashed crossing
 hashed crossing test
 random flip
 mocked random flip
 random flip test
-cross
 feature
 feature space
 random brightness test
@@ -1985,8 +1727,6 @@ global average pooling 1 d
 base pooling
 average pooling 2 d
 p re lu test
-re lu
-softmax
 re lu test
 activation
 p re lu
@@ -2006,7 +1746,6 @@ database failure
 simple test case
 transaction test case
 test data
-test case
 check condition
 quiet wsgi request handler
 fs files handler
@@ -2052,7 +1791,6 @@ time keeper
 null time keeper
 token base
 operator
-operator
 literal
 end token
 if parser
@@ -2074,10 +1812,7 @@ template
 token
 lexer
 debug lexer
-parser
 filter expression
-variable
-node
 node list
 text node
 variable node
@@ -2117,17 +1852,9 @@ template if parser
 invalid template engine error
 engine handler
 template strings
-template
 base engine
 jinja 2
-template
-origin
 django templates
-template
-loader
-loader
-loader
-loader
 loader
 resolver 404
 no reverse match
@@ -2149,8 +1876,6 @@ transaction management error
 atomic
 error
 interface error
-database error
-data error
 operational error
 integrity error
 internal error
@@ -2159,7 +1884,6 @@ not supported error
 database error wrapper
 connection handler
 connection router
-index
 index expression
 sq lite numeric mixin
 combinable
@@ -2188,7 +1912,6 @@ case
 subquery
 exists
 order by
-window
 window frame exclusion
 window frame
 row range
@@ -2239,12 +1962,10 @@ uuidi starts with
 uuid ends with
 uuidi ends with
 model signal
-options
 deferred
 model base
 model state fields cache descriptor
 model state
-model
 on conflict
 q
 deferred attribute
@@ -2266,10 +1987,7 @@ alters data
 aggregate
 avg
 count
-max
-min
 std dev
-sum
 variance
 base iterable
 model iterable
@@ -2302,7 +2020,6 @@ update query
 insert query
 aggregate query
 multi join
-empty
 join
 base table
 where node
@@ -2312,29 +2029,16 @@ subquery constraint
 raw query
 query
 join promoter
-abs
 a cos
 asin
 a tan
 a tan 2
-ceil
-cos
 cot
 degrees
-exp
-floor
 ln
-log
-mod
 pi
-power
 radians
 random
-round
-sign
-sin
-sqrt
-tan
 timezone mixin
 extract
 extract year
@@ -2376,7 +2080,6 @@ row number
 fix decimal input mixin
 fix duration input mixin
 numeric output field mixin
-cast
 coalesce
 collate
 greatest
@@ -2397,7 +2100,6 @@ l pad
 l trim
 md5
 ord
-repeat
 replace
 reverse
 right
@@ -2471,7 +2173,6 @@ foreign object rel
 many to one rel
 one to one rel
 many to many rel
-empty
 not provided
 field
 boolean field
@@ -2539,20 +2240,13 @@ database wrapper
 sq lite cursor wrapper
 database client
 database schema editor
-database creation
-database features
-database introspection
 interval to seconds
 seconds to interval
-database operations
 uninitialized operators descriptor
-database wrapper
 oracle param
 variable wrapper
 format style placeholder cursor
 database validation
-database client
-database schema editor
 insert var
 oracle datetime
 bulk insert mapper
@@ -2565,44 +2259,15 @@ base database validation
 base database client
 base database schema editor
 dummy database features
-database operations
-database client
-database creation
-database introspection
-database wrapper
-database creation
-database features
-database introspection
-sql compiler
-sql insert compiler
-sql delete compiler
-sql update compiler
-sql aggregate compiler
-database operations
-cursor wrapper
-database wrapper
-database validation
-database client
-database schema editor
-database creation
-database features
 base tz loader
 specific tz loader
 django range dumper
 isolation level
 jsonb
-database introspection
-database operations
-database wrapper
 cursor mixin
 server binding cursor
 cursor
 server side cursor
-cursor debug wrapper
-cursor debug wrapper
-database client
-database schema editor
-node
 dummy node
 migration graph
 operation writer
@@ -2623,7 +2288,6 @@ migration executor
 project state
 app config stub
 state apps
-model state
 migration loader
 migration questioner
 interactive migration questioner
@@ -2660,7 +2324,6 @@ tuple serializer
 type serializer
 uuid serializer
 serializer
-migration
 swappable tuple
 regex object
 migration optimizer
@@ -2673,7 +2336,6 @@ separate database and state
 run sql
 run python
 operation category
-operation
 model operation
 create model
 delete model
@@ -2739,27 +2401,20 @@ signature expired
 json serializer
 signer
 timestamp signer
-serializer
 deserializer
 def used expat parser
 def used xml exception
 dtd forbidden
 entities forbidden
 external reference forbidden
-serializer
 django json encoder
 django safe dumper
-serializer
-serializer
 serializer does not exist
 serialization error
 deserialization error
 m 2 m deserialization error
 progress bar
-serializer
-deserializer
 deserialized object
-serializer
 bad serializer
 bad header error
 mime mixin
@@ -2770,11 +2425,7 @@ email message
 email multi alternatives
 cached dns name
 email backend
-email backend
-email backend
-email backend
 base email backend
-email backend
 wsgi server
 threaded wsgi server
 server handler
@@ -2826,41 +2477,16 @@ label command
 management utility
 style
 command
-command
-command
-command
-command
 translatable file
 build file
-command
-command
-command
-command
 proxy model warning
-command
-command
-command
-command
-command
-command
-command
-command
-command
-command
-command
-command
 single zip reader
-command
-command
-command
-command
 tags
 check registry
 check message
 debug
 info
 warning
-error
 critical
 cache handler
 dummy cache
@@ -2873,7 +2499,6 @@ invalid cache backend error
 cache key warning
 invalid cache key
 base cache
-options
 base database cache
 cache entry
 database cache
@@ -2881,7 +2506,6 @@ base mem cached cache
 py lib mc cache
 py mem cache cache
 static files handler mixin
-static files handler
 asgi static files handler
 static live server test case
 base finder
@@ -2895,26 +2519,19 @@ manifest files mixin
 manifest static files storage
 configured storage
 static files config
-command
-command
-command
 flat page admin
 flatpage form
-meta
 flatpage fallback middleware
 flat pages config
 flat page
-meta
 flat page sitemap
 flatpage node
-migration
 minimum length validator
 user attribute similarity validator
 common password validator
 numeric password validator
 base user manager
 abstract base user
-meta
 perm lookup dict
 perm wrapper
 password reset token generator
@@ -2935,10 +2552,8 @@ read only password hash field
 username field
 set password mixin
 base user creation form
-meta
 user creation form
 user change form
-meta
 authentication form
 password reset form
 set password form
@@ -2969,32 +2584,13 @@ password change done view
 auth config
 permission manager
 permission
-meta
 group manager
 group
-meta
 user manager
 permissions mixin
-meta
 abstract user
-meta
 user
-meta
 anonymous user
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-migration
-command
 not running in tty exception
-command
 message failure
 messages test mixin
