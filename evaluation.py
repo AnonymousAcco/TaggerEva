@@ -224,7 +224,7 @@ def spacy_pos_tag(identifiers, tags):
 
 def flair_pos_tag(identifiers, tags):
     # tagger = SequenceTagger.load('pos')
-    tagger = Classifier.load('/home/hltang/.flair/models/pos-english/pytorch_model.bin')
+    tagger = Classifier.load('PATH_TO_FLAIR/.flair/models/pos-english/pytorch_model.bin')
     total = len(identifiers)
     total_tokens = len(list(chain(*identifiers)))
     correct_ids = 0
