@@ -5,6 +5,7 @@ from nltk.tag import pos_tag
 from stanfordcorenlp import StanfordCoreNLP
 import spacy
 from flair.nn import Classifier
+from flair.models import SequenceTagger
 from flair.data import Sentence
 import stanza
 
@@ -120,7 +121,10 @@ def corenlp_pos_tag(identifiers, tags, path2stanford):
 
 def parse_opennlp_output(out_file_path):
     out_lines = []
+    # evaluation
     # start_line = 4
+    # end_line = -6
+    # retrain
     start_line = 3
     end_line = -6
 
@@ -142,7 +146,7 @@ def parse_opennlp_output(out_file_path):
     return out_lines
 
 def opennlp_pos_tag(identifiers, tags, mode):
-    opennlp_out = parse_opennlp_output(f'./opennlp_format/{mode}.txt')
+    opennlp_out = parse_opennlp_output(f'./dataset/opennlp_format/opennlp_{mode}_results.txt')
     if mode == 'nl':
         data = pd.read_csv('./NLData/nl_data.csv')
         # sentences = data['sentences'].values.tolist()
@@ -219,7 +223,8 @@ def spacy_pos_tag(identifiers, tags):
 
 
 def flair_pos_tag(identifiers, tags):
-    tagger = Classifier.load('pos')
+    # tagger = SequenceTagger.load('pos')
+    tagger = Classifier.load('/home/hltang/.flair/models/pos-english/pytorch_model.bin')
     total = len(identifiers)
     total_tokens = len(list(chain(*identifiers)))
     correct_ids = 0
@@ -283,7 +288,7 @@ def stanza_pos_tag(identifiers, tags):
     # stanza.download('en')
     # model_path = './saved_models/pos/en_test_charlm_tagger.pt'
     # nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos', pos_model_path=model_path, download_method=None)
-    nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos')
+    nlp = stanza.Pipeline('en', processors='tokenize,mwt,pos', download_method=None)
     total = len(identifiers)
     total_tokens = len(list(chain(*identifiers)))
     correct_ids = 0
@@ -397,7 +402,7 @@ if __name__ == '__main__':
         poses = corpus.test_tags
 
     nltk_out = nltk_pos_tag(sequences, poses)
-    corenlp_out = corenlp_pos_tag(sequences, poses, path2stanford='../stanford-corenlp-4.3.2')
+    corenlp_out = corenlp_pos_tag(sequences, poses, path2stanford='../stanford-corenlp')
     opennlp_out = opennlp_pos_tag(sequences, poses, mode=eva_mode)
     spacy_out = spacy_pos_tag(sequences, poses)
     flair_out = flair_pos_tag(sequences, poses)
