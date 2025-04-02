@@ -29,12 +29,14 @@ python calculate_id_tagger_IDData.py
 ```
 
 ## NL taggers retrained on etdata
-1. Get the evaluation results from taggers retrained with ETData:
+1. You need to copy the ```ensemble_tagger_training_data``` into ```dataset/``` from the [repo](https://github.com/SCANL/datasets).
+
+2. Get the evaluation results from taggers retrained with ETData:
 ```shell
 python train_et_data.py
 ```
 
-2. (Optional) Retrained with ETData:
+3. (Optional) Retrained with ETData:
     *  NLTK/Flair: Remove the comment at the specified position.
     ```python
     # NLTK
