@@ -1,7 +1,19 @@
 import os
 from itertools import chain
 import pandas as pd
+import spacy
+from spacy.tokens import Doc, DocBin
+from spacy.training import Example
 
+
+def list2str(lists):
+    new_lists = []
+    for l in lists:
+        new_lists.append(' '.join(l))
+    return new_lists
+
+def str2list(str_list):
+    return [line.split(' ') for line in str_list]
 
 def cal_metrics(path='./retrain_out.csv'):
     # taggers = ['nltk', 'stanford', 'spacy', 'flair']
@@ -119,7 +131,10 @@ def evaluate(out_tags, true_tags):
 
     em = true_id / id_num
     token_acc = true_token /token_num
+    print(f'em: {em}')
+    print(f'token_acc: {token_acc}')
     return em, token_acc
+
 
 
 if __name__ == '__main__':

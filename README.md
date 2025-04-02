@@ -12,10 +12,10 @@ TaggerEva
 #### ID Taggers
 * [SWUM](https://github.com/SCANL/SWUM)
 * [POSSE](https://github.com/SCANL/POSSE) 
-* [Ensemble*](https://github.com/SCANL/ensemble_tagger)
+* [Ensemble](https://github.com/SCANL/ensemble_tagger)
 
 ### Dataset
-Please click [data](https://github.com/AnonymousAcco/TaggerEva/tree/main/dataset) to read the introduction of the TaggerEva dataset.
+Please click [data](./dataset/README.md) to read the introduction of the TaggerEva dataset. 
 
 ### Setup
 1. Install the dependencies:
@@ -23,6 +23,17 @@ Please click [data](https://github.com/AnonymousAcco/TaggerEva/tree/main/dataset
    
 2. Download the model of spaCy:
 ```python -m spacy download en_core_web_sm```
+
+3. Change the ```data_path``` in ```config.py``` into your data path.
+
+### RQs
+Please follow the instruction of each RQ.
+
+* [RQ1](./RQ1/README.md) 
+* [RQ2](./RQ2/README.md) 
+* RQ3
+* [RQ4](./RQ4/README.md) 
+* [RQ5/6](./RQ56/README.md) 
 
 ### Evaluation of Taggers
 #### Natural language Taggers
@@ -36,40 +47,16 @@ OpenNLP needs command line:
 ./opennlp POSTagger ../models/en-pos-maxent.bin < ../opennlp_format/opennlp_{id-type/nl}_input.txt > opennlp_{id-type/nl}_results.txt
 ```
 
-Run the evaluation.py using
-```
-python evaluation.py -m nl # NLData
-python evaluation.py -m method/args/class/all # IDData
-```
-
-
-#### Evaluation of ID Taggers
-1. Setup the taggers following its [documentation](https://github.com/SCANL/ensemble_tagger);
-2. Copy the "get_id_tagers_outputs.py" under "ensemble_tagger_implementation";
-3. Run the script by
-```
-python get_id_tagers_outputs.py
-```
-to get the output file "out.txt";
-4. Copy "out.txt" back to TaggerEva and run "utils.py"
 
 ### Train Taggers
-#### NLTK & Flair
-```
-python train.py -m method/args/class/all
-```
-Can directly train NLTK and Flair.
 
 #### CoreNLP & OpenNLP & spaCy
-These two taggers need to be trained by the command line interface. "train.py" can preprocess the dataset into their format.
-```
-python retrain.py -m method/args/class/all
-```
+These two taggers need to be trained by the command line interface.
 ##### Stanford CoreNLP
 * Copy the stanford_format data and "./model/stanford/maxnet.props" into the installation directory of Stanford CoreNLP.
 * Run the command in command line:
 ```
-java -mx1g -cp "*" edu.stanford.nlp.tagger.maxent.MaxentTagger -model "retrain_stanford.model" -testFile "stanford_test.txt" > stanford_out.txt
+java -mx1g -cp "*" edu.stanford.nlp.tagger.maxent.MaxentTagger -prop maxent.props -model "retrain_stanford.model" -testFile "stanford_test.txt" > stanford_out.txt
 ```
 * Copy the "stanford_out.txt" back to TaggerEva
 
@@ -98,3 +85,17 @@ for evaluation.
 ### Model
 The nltk, corenlp, opennlp and spacy retrained model has stored in "model". Due to the size limitation of Github, the flair model currently not been committed.
 
+## Docker Image
+1. [Click here to download the image.](https://drive.google.com/file/d/1GQkWDiHxGTf0OSZwBVUY4fVvMrHL_hGl/view?usp=sharing)
+
+2. Configure the docker image and run it:
+```shell
+gunzip -c taggereva_image.tar.gz | docker load
+docker run -it --name taggereva taggereva:1.0 /bin/bash
+```
+
+3. All programs/scripts are located in ```/home/taggereva```
+```shell
+cd /home/taggereva
+```
+Follow the instructions of each RQ.

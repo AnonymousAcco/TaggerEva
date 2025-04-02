@@ -1,4 +1,4 @@
-,Unnamed: 0,identifier,pos_tag,project,type,is_labeled,file
+,ID,SEQUENCE,POS,PROJECT,type,is_labeled,FILE
 0,0,on ready,IN JJ,libgdx,method,1,SoundManager.java
 1,1,on timeout,IN NN,libgdx,method,1,SoundManager.java
 2,2,get instance,VB NN,libgdx,method,1,SoundManager.java
