@@ -86,7 +86,7 @@ for evaluation.
 The nltk, corenlp, opennlp and spacy retrained model has stored in "model". Due to the size limitation of Github, the flair model currently not been committed.
 
 ## Docker Image
-1. [Click here to download the image.](https://drive.google.com/file/d/1GQkWDiHxGTf0OSZwBVUY4fVvMrHL_hGl/view?usp=sharing)
+1. [Click here to download the image.](https://drive.google.com/file/d/1cDxHUTV357YbMwWlXO4EXhrfCzAdCWHM/view?usp=sharing)
 
 2. Configure the docker image and run it:
 ```shell
