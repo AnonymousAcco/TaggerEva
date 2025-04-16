@@ -1,5 +1,22 @@
 TaggerEva
 ========
+
+### Introduction
+* Experimental Data:
+    - IDData: The test dataset introduced in this study.
+    - MNTrain: The training dataset used for training POS taggers.
+    - NLData: The natural language dataset used in selected experiments.
+    - NNP/NNPS Classification Results: Classification results for proper nouns and plural proper nouns.
+
+* Source Code:
+    - Complete experimental code and scripts organized by RQs, with a dedicated folder for each RQ.
+    - Installation instructions and Docker image configurations to facilitate reproducibility.
+
+* Experimental Results:
+    - Input data formatted for OpenNLP, CoreNLP, spaCy, Flair, and the Ensemble Tagger, provided in separate directories.
+    - Output results of all POS taggers stored in the ```evaluation_results``` directory for reference and further analysis.
+    - Model parameter files trained on the MNTrain dataset, available under the ```model``` directory.
+
 ### Install Selected Taggers
 #### NL Taggers
 * [NLTK](https://www.nltk.org/install.html)
