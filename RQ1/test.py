@@ -5,7 +5,7 @@ modes = ['all', 'method', 'args', 'class', 'nl']
 # fit evaluation_xx.csv
 
 for mode in modes:
-    path = f'./evaluation_results/evaluation_{mode}.csv'
+    path = f'../evaluation_results/evaluation_{mode}.csv'
     df = pd.read_csv(path)
     nltk_out = str2list(df['NLTK'].values.tolist())
     corenlp_out = str2list(df['CORENLP'].values.tolist())

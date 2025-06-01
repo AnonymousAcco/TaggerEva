@@ -14,16 +14,26 @@ python evaluation_iddata_id_tagset.py
 source /home/ensemble_tagger/ensemble_tagger_implementation/ensemble_env/bin/activate
 ```
 
-2. Copy evaluate.py to ```/home/ensemble_tagger/ensemble_tagger_implementation/```
+2. Link POSSE to PERL5LIB
+```shell
+export PERL5LIB=/home/ensemble_tagger/POSSE/Scripts
+```
 
-3. Run the script and get the result csv files
+3. Copy evaluate.py to ```/home/ensemble_tagger/ensemble_tagger_implementation/```
+
+4. Run the script and get the result csv files
 ```shell
 python evaluate.py
 ```
 
-4. Copy these csv files to ```ensemble_output_IDData```
+5. Run the following command
+```shell
+deactivate
+```
 
-5. Run the evaluation script **(you can directly run this script with current data)**
+5. Copy these csv files to ```ensemble_output_IDData```
+
+6. Run the evaluation script **(you can directly run this script with current data)**
 ```shell
 python calculate_id_tagger_IDData.py
 ```

@@ -14,9 +14,9 @@ if __name__=='__main__':
     # result = subprocess.run(command, shell=True)
     # print(result.returncode)
 
-    for file in os.listdir('/home/taggeva/dataset/ensemble_format'):
+    for file in os.listdir('/home/taggereva/dataset/ensemble_format'):
         outputs = []
-        df = pd.read_csv('/home/taggeva/dataset/ensemble_format/'+file)
+        df = pd.read_csv('/home/taggereva/dataset/ensemble_format/'+file)
         print(file)
         identifier_context = 'FUNCTION'
         if 'method' in file:

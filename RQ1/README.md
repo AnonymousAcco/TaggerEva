@@ -9,7 +9,7 @@ python evaluation.py
 
 > ```opennlp_output``` contains the output results form OpenNLP CLI.
 
-3. Get the metric value from outputs. Change to the root path and run the ```test.py```
+3. Get the metric value from outputs. Run the ```test.py```
 ```shell
 python test.py
 ```
